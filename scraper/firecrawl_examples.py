@@ -16,9 +16,11 @@ passed with --api-key.
 import argparse
 import json
 import os
+import re
 import sys
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 
 API_BASE = "https://api.firecrawl.dev"
@@ -113,6 +115,73 @@ def normalize_results(result):
     return out
 
 
+TRACKING_PARAMS = {
+    "utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content",
+    "utm_id", "fbclid", "gclid", "igshid", "mc_eid", "mc_cid",
+}
+
+
+def normalize_url(url: str) -> str:
+    """Canonical URL for intra-word dedup — scheme/www/fragment/tracking agnostic.
+
+    Keeps non-tracking query params (sorted) so ?page=1 != ?page=2, but
+    collapses https/http, www., default ports, trailing slash, fragment,
+    case-insensitive host, and utm_*/fbclid style trackers.
+    Returns "" for empty/invalid input.
+    """
+    raw = (url or "").strip()
+    if not raw:
+        return ""
+    try:
+        parsed = urllib.parse.urlparse(raw)
+    except Exception:
+        return raw.lower().strip()
+    # Need netloc; urlparse without scheme puts path in path — handle that
+    if not parsed.netloc and parsed.path:
+        # Try with dummy scheme for urls like "example.com/foo"
+        parsed = urllib.parse.urlparse("https://" + raw)
+
+    netloc = (parsed.netloc or "").lower().strip()
+    # strip default ports and www.
+    if netloc.startswith("www."):
+        netloc = netloc[4:]
+    if netloc.endswith(":80"):
+        netloc = netloc[:-3]
+    elif netloc.endswith(":443"):
+        netloc = netloc[:-4]
+    # Remove userinfo if any, keep host only
+    if "@" in netloc:
+        netloc = netloc.rsplit("@", 1)[-1]
+    if not netloc:
+        return ""
+
+    path = urllib.parse.unquote(parsed.path or "/")
+    # normalize path: collapse //, remove trailing slash (keep root as "")
+    path = re.sub(r"/{2,}", "/", path)
+    if len(path) > 1 and path.endswith("/"):
+        path = path[:-1]
+    if path == "/":
+        path = ""
+
+    # filter/sort query, drop tracking params
+    query = ""
+    if parsed.query:
+        try:
+            pairs = urllib.parse.parse_qsl(parsed.query, keep_blank_values=True)
+            kept = [(k, v) for k, v in pairs if k.lower() not in TRACKING_PARAMS]
+            kept.sort(key=lambda kv: (kv[0].lower(), kv[1]))
+            if kept:
+                query = urllib.parse.urlencode(kept, doseq=True)
+        except Exception:
+            query = parsed.query
+
+    # canonical key: netloc + path + ?query (no scheme, no fragment, host lower)
+    key = netloc + path
+    if query:
+        key += "?" + query
+    return key
+
+
 def is_source_page(example):
     url = (example.get("url") or "").lower()
     return any(marker in url for marker in SOURCE_URL_MARKERS)
@@ -177,9 +246,12 @@ def main():
         seen = set()
         deduped = []
         for e in filtered:
-            if e["url"] and e["url"] not in seen:
-                seen.add(e["url"])
-                deduped.append(e)
+            raw = (e.get("url") or "").strip()
+            key = normalize_url(raw)
+            if not key or key in seen:
+                continue
+            seen.add(key)
+            deduped.append(e)
 
         record["examples"] = deduped
         updated.add(id(record))

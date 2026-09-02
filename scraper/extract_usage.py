@@ -32,6 +32,14 @@ from pathlib import Path
 
 BASE = Path(__file__).resolve().parent
 
+# Optional slang_filter — if unavailable or model missing, falls back to allowing
+try:
+    from slang_filter import is_natural_usage as _is_natural_usage
+    HAS_FILTER = True
+except ImportError:
+    HAS_FILTER = False
+    _is_natural_usage = None
+
 DICT_DOMAINS = (
     "urbandictionary.com",
     "wiktionary.org",
@@ -384,10 +392,18 @@ def score(use, word):
     return round(score, 2)
 
 
-def harvest(entry, top, keep_definitions):
+def harvest(entry, top, keep_definitions, filter_natural=True, sense_threshold=None, filter_debug=False):
     """Collect ranked usage sentences for one entry."""
     matcher = build_matcher(entry.get("forms") or [entry.get("word", "")])
     word = entry.get("word", "")
+    definition = entry.get("definition", "")
+    # threshold from slang_filter if not overridden
+    if sense_threshold is None:
+        try:
+            from slang_filter import THRESHOLD as _THR
+            sense_threshold = _THR
+        except ImportError:
+            sense_threshold = 0.28
     hits = []
     seen = set()
 
@@ -408,6 +424,13 @@ def harvest(entry, top, keep_definitions):
                     continue
                 if is_junk(sentence) or is_definitional(sentence):
                     continue
+                # Natural-usage filter (metalanguage + embedding sense check)
+                if filter_natural and HAS_FILTER and _is_natural_usage is not None:
+                    ok, reason, dbg = _is_natural_usage(sentence, word, definition, entry.get("forms") or [word], threshold=sense_threshold)
+                    if not ok:
+                        if filter_debug:
+                            print(f"  [filter:{word}] REJECT {reason} | {sentence[:90]!r} dbg={dbg}")
+                        continue
                 if "?" in sentence or "!" == sentence[:0]:
                     continue
                 words = sentence.split()
@@ -467,6 +490,9 @@ def main(argv=None):
     parser.add_argument("--top", type=int, default=3, help="usage sentences per word")
     parser.add_argument("--keep-definitions", action="store_true")
     parser.add_argument("--word", default=None, help="limit to one word (debug)")
+    parser.add_argument("--no-filter", action="store_true", help="disable natural-usage (metalanguage+sense) filter")
+    parser.add_argument("--threshold", type=float, default=None, help="cosine threshold for sense filter (default from slang_filter)")
+    parser.add_argument("--filter-debug", action="store_true", help="log filtered-out sentences with reason")
     args = parser.parse_args(argv)
 
     data_path = Path(args.data)
@@ -479,7 +505,10 @@ def main(argv=None):
         word = raw.get("word", "")
         if args.word and word.lower() != args.word.lower():
             continue
-        uses = harvest(raw, args.top, args.keep_definitions)
+        uses = harvest(raw, args.top, args.keep_definitions,
+                       filter_natural=not args.no_filter,
+                       sense_threshold=args.threshold,
+                       filter_debug=args.filter_debug)
         if not uses:
             empty += 1
         total += len(uses)

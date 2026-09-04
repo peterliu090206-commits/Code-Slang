@@ -489,10 +489,11 @@ def main(argv=None):
     parser.add_argument("--txt-out", default=str(BASE / "slang_usage.txt"))
     parser.add_argument("--top", type=int, default=3, help="usage sentences per word")
     parser.add_argument("--keep-definitions", action="store_true")
-    parser.add_argument("--word", default=None, help="limit to one word (debug)")
+    parser.add_argument("--word", default=None, help="limit to one word (debug / incremental update - merges by default)")
     parser.add_argument("--no-filter", action="store_true", help="disable natural-usage (metalanguage+sense) filter")
     parser.add_argument("--threshold", type=float, default=None, help="cosine threshold for sense filter (default from slang_filter)")
     parser.add_argument("--filter-debug", action="store_true", help="log filtered-out sentences with reason")
+    parser.add_argument("--replace", action="store_true", help="when using --word, replace the output file instead of merging (old behavior)")
     args = parser.parse_args(argv)
 
     data_path = Path(args.data)
@@ -514,16 +515,68 @@ def main(argv=None):
         total += len(uses)
         out_entries.append({"word": word, "uses": uses})
 
+    # Incremental merge: when --word is used, preserve existing words instead of deleting them
+    is_incremental = bool(args.word) and not args.replace
+    if is_incremental and Path(args.json_out).exists():
+        try:
+            existing_payload = json.loads(Path(args.json_out).read_text(encoding="utf-8"))
+            if isinstance(existing_payload, dict) and "entries" in existing_payload:
+                existing_entries = existing_payload["entries"]
+            elif isinstance(existing_payload, list):
+                existing_entries = existing_payload
+            else:
+                existing_entries = []
+        except Exception:
+            existing_entries = []
+        if existing_entries:
+            new_by_word = {e["word"].lower(): e for e in out_entries if "word" in e}
+            existing_by_word = {e["word"].lower(): e for e in existing_entries if "word" in e}
+            # Build final list in slang.json order, preserving non-targeted words
+            final_entries = []
+            seen = set()
+            for raw in records:
+                wlow = raw.get("word", "").lower()
+                if wlow in new_by_word:
+                    final_entries.append(new_by_word[wlow])
+                    seen.add(wlow)
+                elif wlow in existing_by_word:
+                    final_entries.append(existing_by_word[wlow])
+                    seen.add(wlow)
+                else:
+                    # word was skipped by --word filter and has no prior entry -> skip
+                    continue
+            # Preserve any orphan entries that exist in old file but not in slang.json (e.g., custom words)
+            for e in existing_entries:
+                wl = e.get("word", "").lower()
+                if wl not in seen:
+                    final_entries.append(e)
+                    seen.add(wl)
+            # Also include any newly harvested words that are not in records order (should not happen)
+            for wl, e in new_by_word.items():
+                if wl not in seen:
+                    final_entries.append(e)
+                    seen.add(wl)
+            # Recompute stats from merged result for logging
+            out_entries = final_entries
+            total = sum(len(e.get("uses", [])) for e in out_entries)
+            empty = sum(1 for e in out_entries if not e.get("uses"))
+
     payload = {"count": len(out_entries), "entries": out_entries}
     Path(args.json_out).write_text(
         json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8"
     )
     write_txt(out_entries, Path(args.txt_out))
 
-    print(
-        f"{len(out_entries)} words processed, {total} usage sentence(s) kept, "
-        f"{empty} word(s) with no usage found."
-    )
+    if is_incremental and Path(args.json_out).exists():
+        print(
+            f"{len(out_entries)} words total (incremental merge for '{args.word}'), {total} usage sentence(s) kept, "
+            f"{empty} word(s) with no usage found."
+        )
+    else:
+        print(
+            f"{len(out_entries)} words processed, {total} usage sentence(s) kept, "
+            f"{empty} word(s) with no usage found."
+        )
     print(f"Wrote {args.txt_out} and {args.json_out}")
 
     return 0

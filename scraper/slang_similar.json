@@ -1,0 +1,2777 @@
+{
+  "generated_at": "2026-09-04T15:03:41.181005+00:00",
+  "model": "all-MiniLM-L6-v2",
+  "algorithm": "hac",
+  "config": {
+    "distance_threshold": 0.6,
+    "linkage": "average",
+    "metric": "cosine",
+    "top": 5,
+    "min_score": 0.55,
+    "use_usage": false
+  },
+  "count": 179,
+  "n_clusters": 118,
+  "silhouette_cosine": 0.122,
+  "clusters": [
+    {
+      "id": 0,
+      "size": 2,
+      "members": [
+        "cap",
+        "truth nuke"
+      ]
+    },
+    {
+      "id": 1,
+      "size": 2,
+      "members": [
+        "unc",
+        "uwu"
+      ]
+    },
+    {
+      "id": 2,
+      "size": 6,
+      "members": [
+        "-h",
+        "dih",
+        "fah",
+        "fuh",
+        "goofy ahh",
+        "sheesh"
+      ]
+    },
+    {
+      "id": 3,
+      "size": 2,
+      "members": [
+        "ate",
+        "bussin'"
+      ]
+    },
+    {
+      "id": 4,
+      "size": 3,
+      "members": [
+        "big yikes",
+        "clapback",
+        "oh that's not"
+      ]
+    },
+    {
+      "id": 5,
+      "size": 2,
+      "members": [
+        "ick",
+        "simp"
+      ]
+    },
+    {
+      "id": 6,
+      "size": 3,
+      "members": [
+        "fire",
+        "gas",
+        "lit"
+      ]
+    },
+    {
+      "id": 7,
+      "size": 4,
+      "members": [
+        "glaze",
+        "glizzy",
+        "gng",
+        "gyatt"
+      ]
+    },
+    {
+      "id": 8,
+      "size": 2,
+      "members": [
+        "nothing ever happens",
+        "unalive"
+      ]
+    },
+    {
+      "id": 9,
+      "size": 2,
+      "members": [
+        "gagged",
+        "shook"
+      ]
+    },
+    {
+      "id": 10,
+      "size": 2,
+      "members": [
+        "drip",
+        "snatched"
+      ]
+    },
+    {
+      "id": 11,
+      "size": 2,
+      "members": [
+        "fine shyt",
+        "tuff"
+      ]
+    },
+    {
+      "id": 12,
+      "size": 3,
+      "members": [
+        "IJBOL",
+        "iykyk",
+        "ts frying me"
+      ]
+    },
+    {
+      "id": 13,
+      "size": 2,
+      "members": [
+        "acoustic",
+        "slaps"
+      ]
+    },
+    {
+      "id": 14,
+      "size": 2,
+      "members": [
+        "bop",
+        "jit"
+      ]
+    },
+    {
+      "id": 15,
+      "size": 2,
+      "members": [
+        "opp",
+        "pushing P"
+      ]
+    },
+    {
+      "id": 16,
+      "size": 2,
+      "members": [
+        "gooning",
+        "hawk tuah"
+      ]
+    },
+    {
+      "id": 17,
+      "size": 2,
+      "members": [
+        "rage-bait",
+        "salty"
+      ]
+    },
+    {
+      "id": 18,
+      "size": 2,
+      "members": [
+        "yap",
+        "yart"
+      ]
+    },
+    {
+      "id": 19,
+      "size": 2,
+      "members": [
+        "pick-me",
+        "serving cunt"
+      ]
+    },
+    {
+      "id": 20,
+      "size": 1,
+      "members": [
+        "six-seven"
+      ]
+    },
+    {
+      "id": 21,
+      "size": 4,
+      "members": [
+        "icl",
+        "pmo",
+        "ts",
+        "ts pmo"
+      ]
+    },
+    {
+      "id": 22,
+      "size": 4,
+      "members": [
+        "bussy",
+        "SDIYBT",
+        "sybau",
+        "syfm"
+      ]
+    },
+    {
+      "id": 23,
+      "size": 2,
+      "members": [
+        "mog",
+        "moot"
+      ]
+    },
+    {
+      "id": 24,
+      "size": 2,
+      "members": [
+        "clanker",
+        "slop"
+      ]
+    },
+    {
+      "id": 25,
+      "size": 2,
+      "members": [
+        "oof",
+        "oomf"
+      ]
+    },
+    {
+      "id": 26,
+      "size": 2,
+      "members": [
+        "good boy",
+        "you good?"
+      ]
+    },
+    {
+      "id": 27,
+      "size": 2,
+      "members": [
+        "bffr",
+        "hb"
+      ]
+    },
+    {
+      "id": 28,
+      "size": 2,
+      "members": [
+        "blud",
+        "bruh"
+      ]
+    },
+    {
+      "id": 29,
+      "size": 2,
+      "members": [
+        "Khia",
+        "nugu"
+      ]
+    },
+    {
+      "id": 30,
+      "size": 1,
+      "members": [
+        "washed"
+      ]
+    },
+    {
+      "id": 31,
+      "size": 1,
+      "members": [
+        "demure"
+      ]
+    },
+    {
+      "id": 32,
+      "size": 1,
+      "members": [
+        "mew"
+      ]
+    },
+    {
+      "id": 33,
+      "size": 1,
+      "members": [
+        "pookie"
+      ]
+    },
+    {
+      "id": 34,
+      "size": 1,
+      "members": [
+        "understood the assignment"
+      ]
+    },
+    {
+      "id": 35,
+      "size": 2,
+      "members": [
+        "iPad kid",
+        "nepo baby"
+      ]
+    },
+    {
+      "id": 36,
+      "size": 1,
+      "members": [
+        "spiritually Israeli"
+      ]
+    },
+    {
+      "id": 37,
+      "size": 2,
+      "members": [
+        "brain rot",
+        "skibidi"
+      ]
+    },
+    {
+      "id": 38,
+      "size": 5,
+      "members": [
+        "broken heart emoji 💔",
+        "face with bags under eyes emoji 🫩",
+        "loudly crying face emoji 😭",
+        "skull emoji 💀",
+        "wilted flower emoji 🥀"
+      ]
+    },
+    {
+      "id": 39,
+      "size": 2,
+      "members": [
+        "cook",
+        "cooked"
+      ]
+    },
+    {
+      "id": 40,
+      "size": 1,
+      "members": [
+        "brat"
+      ]
+    },
+    {
+      "id": 41,
+      "size": 1,
+      "members": [
+        "sigma"
+      ]
+    },
+    {
+      "id": 42,
+      "size": 1,
+      "members": [
+        "it's joever"
+      ]
+    },
+    {
+      "id": 43,
+      "size": 1,
+      "members": [
+        "who is this diva?"
+      ]
+    },
+    {
+      "id": 44,
+      "size": 2,
+      "members": [
+        "L",
+        "W"
+      ]
+    },
+    {
+      "id": 45,
+      "size": 1,
+      "members": [
+        "situationship"
+      ]
+    },
+    {
+      "id": 46,
+      "size": 2,
+      "members": [
+        "jestermaxxing",
+        "zesty"
+      ]
+    },
+    {
+      "id": 47,
+      "size": 1,
+      "members": [
+        "twin"
+      ]
+    },
+    {
+      "id": 48,
+      "size": 3,
+      "members": [
+        "beige flag",
+        "green flag",
+        "red flag"
+      ]
+    },
+    {
+      "id": 49,
+      "size": 2,
+      "members": [
+        "flow state",
+        "locked in"
+      ]
+    },
+    {
+      "id": 50,
+      "size": 2,
+      "members": [
+        "L+Ratio",
+        "ratio"
+      ]
+    },
+    {
+      "id": 51,
+      "size": 1,
+      "members": [
+        "polyester"
+      ]
+    },
+    {
+      "id": 52,
+      "size": 1,
+      "members": [
+        "edge"
+      ]
+    },
+    {
+      "id": 53,
+      "size": 2,
+      "members": [
+        "sus",
+        "sussy baka"
+      ]
+    },
+    {
+      "id": 54,
+      "size": 1,
+      "members": [
+        "Yassify"
+      ]
+    },
+    {
+      "id": 55,
+      "size": 1,
+      "members": [
+        "main character"
+      ]
+    },
+    {
+      "id": 56,
+      "size": 1,
+      "members": [
+        "vro"
+      ]
+    },
+    {
+      "id": 57,
+      "size": 2,
+      "members": [
+        "lowkenuinely",
+        "lowkirkenuinely"
+      ]
+    },
+    {
+      "id": 58,
+      "size": 2,
+      "members": [
+        "Ohio",
+        "only in Ohio"
+      ]
+    },
+    {
+      "id": 59,
+      "size": 1,
+      "members": [
+        "vaguepost"
+      ]
+    },
+    {
+      "id": 60,
+      "size": 1,
+      "members": [
+        "BDE"
+      ]
+    },
+    {
+      "id": 61,
+      "size": 1,
+      "members": [
+        "ball knowledge"
+      ]
+    },
+    {
+      "id": 62,
+      "size": 1,
+      "members": [
+        "function"
+      ]
+    },
+    {
+      "id": 63,
+      "size": 1,
+      "members": [
+        "skill issue"
+      ]
+    },
+    {
+      "id": 64,
+      "size": 1,
+      "members": [
+        "tweaking"
+      ]
+    },
+    {
+      "id": 65,
+      "size": 1,
+      "members": [
+        "el cinco"
+      ]
+    },
+    {
+      "id": 66,
+      "size": 1,
+      "members": [
+        "fanum tax"
+      ]
+    },
+    {
+      "id": 67,
+      "size": 1,
+      "members": [
+        "buns"
+      ]
+    },
+    {
+      "id": 68,
+      "size": 1,
+      "members": [
+        "out of pocket"
+      ]
+    },
+    {
+      "id": 69,
+      "size": 1,
+      "members": [
+        "looksmaxxing"
+      ]
+    },
+    {
+      "id": 70,
+      "size": 1,
+      "members": [
+        "larp"
+      ]
+    },
+    {
+      "id": 71,
+      "size": 1,
+      "members": [
+        "Roman Empire"
+      ]
+    },
+    {
+      "id": 72,
+      "size": 1,
+      "members": [
+        "hit different"
+      ]
+    },
+    {
+      "id": 73,
+      "size": 1,
+      "members": [
+        "fit"
+      ]
+    },
+    {
+      "id": 74,
+      "size": 1,
+      "members": [
+        "Kirkifying"
+      ]
+    },
+    {
+      "id": 75,
+      "size": 1,
+      "members": [
+        "touch grass"
+      ]
+    },
+    {
+      "id": 76,
+      "size": 1,
+      "members": [
+        "tea"
+      ]
+    },
+    {
+      "id": 77,
+      "size": 1,
+      "members": [
+        "nostalgia-baiting"
+      ]
+    },
+    {
+      "id": 78,
+      "size": 2,
+      "members": [
+        "delulu",
+        "delusionship"
+      ]
+    },
+    {
+      "id": 79,
+      "size": 1,
+      "members": [
+        "big back"
+      ]
+    },
+    {
+      "id": 80,
+      "size": 1,
+      "members": [
+        "face card"
+      ]
+    },
+    {
+      "id": 81,
+      "size": 1,
+      "members": [
+        "zaza"
+      ]
+    },
+    {
+      "id": 82,
+      "size": 1,
+      "members": [
+        "Karen"
+      ]
+    },
+    {
+      "id": 83,
+      "size": 1,
+      "members": [
+        "gem"
+      ]
+    },
+    {
+      "id": 84,
+      "size": 1,
+      "members": [
+        "crine"
+      ]
+    },
+    {
+      "id": 85,
+      "size": 1,
+      "members": [
+        "based"
+      ]
+    },
+    {
+      "id": 86,
+      "size": 1,
+      "members": [
+        "glow-up"
+      ]
+    },
+    {
+      "id": 87,
+      "size": 1,
+      "members": [
+        "stan"
+      ]
+    },
+    {
+      "id": 88,
+      "size": 1,
+      "members": [
+        "baddie"
+      ]
+    },
+    {
+      "id": 89,
+      "size": 1,
+      "members": [
+        "ghost"
+      ]
+    },
+    {
+      "id": 90,
+      "size": 1,
+      "members": [
+        "owned"
+      ]
+    },
+    {
+      "id": 91,
+      "size": 1,
+      "members": [
+        "it's giving"
+      ]
+    },
+    {
+      "id": 92,
+      "size": 1,
+      "members": [
+        "mid"
+      ]
+    },
+    {
+      "id": 93,
+      "size": 1,
+      "members": [
+        "Bean Soup Theory"
+      ]
+    },
+    {
+      "id": 94,
+      "size": 1,
+      "members": [
+        "cracked"
+      ]
+    },
+    {
+      "id": 95,
+      "size": 1,
+      "members": [
+        "bet"
+      ]
+    },
+    {
+      "id": 96,
+      "size": 1,
+      "members": [
+        "grape"
+      ]
+    },
+    {
+      "id": 97,
+      "size": 1,
+      "members": [
+        "caught in 4K"
+      ]
+    },
+    {
+      "id": 98,
+      "size": 1,
+      "members": [
+        "big yahu"
+      ]
+    },
+    {
+      "id": 99,
+      "size": 1,
+      "members": [
+        "dead"
+      ]
+    },
+    {
+      "id": 100,
+      "size": 1,
+      "members": [
+        "slay"
+      ]
+    },
+    {
+      "id": 101,
+      "size": 2,
+      "members": [
+        "and I oop",
+        "sksksk"
+      ]
+    },
+    {
+      "id": 102,
+      "size": 2,
+      "members": [
+        "KMS",
+        "KYS"
+      ]
+    },
+    {
+      "id": 103,
+      "size": 1,
+      "members": [
+        "basic"
+      ]
+    },
+    {
+      "id": 104,
+      "size": 1,
+      "members": [
+        "Gucci"
+      ]
+    },
+    {
+      "id": 105,
+      "size": 1,
+      "members": [
+        "chopped"
+      ]
+    },
+    {
+      "id": 106,
+      "size": 1,
+      "members": [
+        "bar"
+      ]
+    },
+    {
+      "id": 107,
+      "size": 1,
+      "members": [
+        "aura"
+      ]
+    },
+    {
+      "id": 108,
+      "size": 1,
+      "members": [
+        "chud"
+      ]
+    },
+    {
+      "id": 109,
+      "size": 1,
+      "members": [
+        "OK boomer"
+      ]
+    },
+    {
+      "id": 110,
+      "size": 1,
+      "members": [
+        "rizz"
+      ]
+    },
+    {
+      "id": 111,
+      "size": 1,
+      "members": [
+        "GOAT"
+      ]
+    },
+    {
+      "id": 112,
+      "size": 1,
+      "members": [
+        "crash out"
+      ]
+    },
+    {
+      "id": 113,
+      "size": 1,
+      "members": [
+        "finna"
+      ]
+    },
+    {
+      "id": 114,
+      "size": 1,
+      "members": [
+        "moving"
+      ]
+    },
+    {
+      "id": 115,
+      "size": 1,
+      "members": [
+        "vibe check"
+      ]
+    },
+    {
+      "id": 116,
+      "size": 1,
+      "members": [
+        "geeked"
+      ]
+    },
+    {
+      "id": 117,
+      "size": 1,
+      "members": [
+        "flop era"
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "word": "acoustic",
+      "definition": "An algospeak form of the word \"autistic.\" Used as an insult to call someone stupid.",
+      "forms": [
+        "acoustic"
+      ],
+      "cluster": 13,
+      "similar": []
+    },
+    {
+      "word": "and I oop",
+      "definition": "Used to express shock, embarrassment, and/or amusement. Often associated with VSCO girls alongside 'sksksk'.",
+      "forms": [
+        "and I oop"
+      ],
+      "cluster": 101,
+      "similar": [
+        {
+          "word": "sksksk",
+          "score": 0.716
+        }
+      ]
+    },
+    {
+      "word": "aura",
+      "definition": "An individual's current reputation or charisma. Cultivating aura is known as aura farming.",
+      "forms": [
+        "aura"
+      ],
+      "cluster": 107,
+      "similar": []
+    },
+    {
+      "word": "ate",
+      "definition": "To have performed well or extremely good at something.",
+      "forms": [
+        "ate"
+      ],
+      "cluster": 3,
+      "similar": []
+    },
+    {
+      "word": "baddie",
+      "definition": "A confident, stylish, and attractive woman.",
+      "forms": [
+        "baddie"
+      ],
+      "cluster": 88,
+      "similar": []
+    },
+    {
+      "word": "ball knowledge",
+      "definition": "niche or uncommon knowledge, usually niche references, often in pop culture. Alternative forms include \"elite ball knowledge\" or \"knowing ball\".",
+      "forms": [
+        "ball knowledge"
+      ],
+      "cluster": 61,
+      "similar": []
+    },
+    {
+      "word": "based",
+      "definition": "Originated from rapper Lil B The BasedGod, who defined it as \"...being yourself. Not being scared of what people think about you. Not being afraid to do what you wanna do.\" More contemporary use has been to express approval of someone or agreeing with another's opinion. Similar to W.",
+      "forms": [
+        "based"
+      ],
+      "cluster": 85,
+      "similar": []
+    },
+    {
+      "word": "basic",
+      "definition": "those who prefer mainstream products, trends, and music. Derived from the term \"basic bitch\".",
+      "forms": [
+        "basic"
+      ],
+      "cluster": 103,
+      "similar": []
+    },
+    {
+      "word": "bar",
+      "definition": "A lyric in a rap song that is considered excellent. A talented rapper may be said to \"drop bars\" or be \"spitting bars\", sometimes shortened to just \"spitting\".",
+      "forms": [
+        "bar",
+        "bars"
+      ],
+      "cluster": 106,
+      "similar": []
+    },
+    {
+      "word": "BDE",
+      "definition": "Abbreviation for \"big dick energy\": confidence and ease.",
+      "forms": [
+        "BDE"
+      ],
+      "cluster": 60,
+      "similar": []
+    },
+    {
+      "word": "Bean Soup Theory",
+      "definition": "A specific phenomenon described as a 'What about me' effect. An individual watches a video that doesn't pertain to them, but finds a way to make it about them anyway. Stems from a 2023 TikTok recipe for bean soup by @vibingranolamom with commenters saying \"What if I don't like beans?\"",
+      "forms": [
+        "Bean Soup Theory"
+      ],
+      "cluster": 93,
+      "similar": []
+    },
+    {
+      "word": "beige flag",
+      "definition": "A behavior or personality trait that is neither good nor bad. Derived from the terms \"green flag\" and \"red flag\".",
+      "forms": [
+        "beige flag"
+      ],
+      "cluster": 48,
+      "similar": [
+        {
+          "word": "red flag",
+          "score": 0.76
+        },
+        {
+          "word": "green flag",
+          "score": 0.756
+        }
+      ]
+    },
+    {
+      "word": "bet",
+      "definition": "Agreeing to something; yes; okay; sure.",
+      "forms": [
+        "bet"
+      ],
+      "cluster": 95,
+      "similar": []
+    },
+    {
+      "word": "bffr",
+      "definition": "Acronym for \"be fucking for real\".",
+      "forms": [
+        "bffr"
+      ],
+      "cluster": 27,
+      "similar": []
+    },
+    {
+      "word": "big back",
+      "definition": "a person with excessive eating habits.",
+      "forms": [
+        "big back"
+      ],
+      "cluster": 79,
+      "similar": []
+    },
+    {
+      "word": "big yikes",
+      "definition": "something embarrassing or cringeworthy, particularly in response to an offensive comment.",
+      "forms": [
+        "big yikes"
+      ],
+      "cluster": 4,
+      "similar": []
+    },
+    {
+      "word": "big yahu",
+      "definition": "Nickname for Israeli Prime Minister Benjamin Netanyahu, occasionally used to portray Netanyahu as a spiritual being who assists in minor inconveniences.",
+      "forms": [
+        "big yahu"
+      ],
+      "cluster": 98,
+      "similar": []
+    },
+    {
+      "word": "bop",
+      "definition": "(1) A derogatory term, usually for females, suggesting excessive flirtatiousness or promiscuity. (2) An exceptionally good song. (3) An acronym for \"baddie on point\", meaning someone who uses their appearance to make money.",
+      "forms": [
+        "bop"
+      ],
+      "cluster": 14,
+      "similar": []
+    },
+    {
+      "word": "brain rot",
+      "definition": "The state of losing touch with the real world as a result of consuming hyper-stimulating or chronically online content, especially when characterized by online buzzwords (\"skibidi\", \"fanum tax\", \"rizz\", etc). Derived from the idea that one's brain would \"rot\" from consuming too much stimulating, addictive or degenerate content.",
+      "forms": [
+        "brain rot",
+        "brainrot"
+      ],
+      "cluster": 37,
+      "similar": []
+    },
+    {
+      "word": "bruh",
+      "definition": "A variant of \"bro\" originating from AAVE.",
+      "forms": [
+        "bruh",
+        "bru"
+      ],
+      "cluster": 28,
+      "similar": []
+    },
+    {
+      "word": "buns",
+      "definition": "Something that is considered bad or low quality.",
+      "forms": [
+        "buns"
+      ],
+      "cluster": 67,
+      "similar": []
+    },
+    {
+      "word": "bussin'",
+      "definition": "Extremely good, excellent. Originated from African-American vernacular for delicious food.",
+      "forms": [
+        "bussin'"
+      ],
+      "cluster": 3,
+      "similar": []
+    },
+    {
+      "word": "bussy",
+      "definition": "Portmanteau of \"boy\" and \"pussy\" (slang for the vagina). Effectively a man's anus, especially when used in gay penetrative sex.",
+      "forms": [
+        "bussy"
+      ],
+      "cluster": 22,
+      "similar": []
+    },
+    {
+      "word": "blud",
+      "definition": "A variant of \"blood brother\" or \"mate\".",
+      "forms": [
+        "blud"
+      ],
+      "cluster": 28,
+      "similar": []
+    },
+    {
+      "word": "cap",
+      "definition": "To lie originating from AAVE. The antonym, \"no cap\", is typically used after a statement to indicate truthfulness or being genuine.",
+      "forms": [
+        "cap"
+      ],
+      "cluster": 0,
+      "similar": []
+    },
+    {
+      "word": "caught in 4K",
+      "definition": "Refers to someone being indisputably caught doing something wrong or incriminating on camera or with evidence to prove it, referencing 4K resolution.",
+      "forms": [
+        "caught in 4K"
+      ],
+      "cluster": 97,
+      "similar": []
+    },
+    {
+      "word": "chopped",
+      "definition": "Ugly or unattractive.",
+      "forms": [
+        "chopped"
+      ],
+      "cluster": 105,
+      "similar": []
+    },
+    {
+      "word": "chud",
+      "definition": "Pejorative term for someone on the far-right. Commonly used to mean a rude, ugly, socially inept, or unintelligent person, often in self-deprecation.",
+      "forms": [
+        "chud"
+      ],
+      "cluster": 108,
+      "similar": []
+    },
+    {
+      "word": "clanker",
+      "definition": "Slur for robots, primarily used against generative AI. Originated from Star Wars media.",
+      "forms": [
+        "clanker"
+      ],
+      "cluster": 24,
+      "similar": []
+    },
+    {
+      "word": "clapback",
+      "definition": "Swift and witty response to an insult or critique.",
+      "forms": [
+        "clapback"
+      ],
+      "cluster": 4,
+      "similar": []
+    },
+    {
+      "word": "cook",
+      "definition": "To \"cook\" is to perform or do well. Often used in the phrase \"let him cook\".",
+      "forms": [
+        "cook"
+      ],
+      "cluster": 39,
+      "similar": [
+        {
+          "word": "cooked",
+          "score": 0.555
+        }
+      ]
+    },
+    {
+      "word": "cooked",
+      "definition": "To \"be cooked\" is to be in trouble.",
+      "forms": [
+        "cooked"
+      ],
+      "cluster": 39,
+      "similar": [
+        {
+          "word": "cook",
+          "score": 0.555
+        }
+      ]
+    },
+    {
+      "word": "cracked",
+      "definition": "To be skilled at something. Alternatively, \"getting cracked\" or \"cracking\" means to have sex.",
+      "forms": [
+        "cracked"
+      ],
+      "cluster": 94,
+      "similar": []
+    },
+    {
+      "word": "crash out",
+      "definition": "To have a bout of rage or upset. Sometimes more generally used to refer to anger or strong displeasure. Originated in the African-American community, specifically in Louisiana with usage by rappers like NBA YoungBoy, but became popular on TikTok in 2024.",
+      "forms": [
+        "crash out"
+      ],
+      "cluster": 112,
+      "similar": []
+    },
+    {
+      "word": "crine",
+      "definition": "Variant pronunciation/spelling of \"crying,\" typically meaning crying & dying from laughter (equivalent to \"dying of laughter\" or \"I'm crying\"). Often used in phrases like \"son I'm crine\".",
+      "forms": [
+        "crine",
+        "crying"
+      ],
+      "cluster": 84,
+      "similar": []
+    },
+    {
+      "word": "dead",
+      "definition": "Humorous to such an extent as to \"kill you\". Laughter and death have been associated since Ancient Greece, where it is held that Zeuxis died from laughing at a portrait of an ugly woman he was painting.",
+      "forms": [
+        "dead",
+        "ded"
+      ],
+      "cluster": 99,
+      "similar": []
+    },
+    {
+      "word": "delusionship",
+      "definition": "A relationship in which someone holds unrealistic or overly idealistic beliefs. A person who holds such beliefs is considered \"delulu\".",
+      "forms": [
+        "delusionship"
+      ],
+      "cluster": 78,
+      "similar": [
+        {
+          "word": "delulu",
+          "score": 0.679
+        }
+      ]
+    },
+    {
+      "word": "dih",
+      "definition": "Ironic algospeak for dick. Usually used with the wilting rose emoji for comedic effect or a symbolic eggplant emoji.",
+      "forms": [
+        "dih"
+      ],
+      "cluster": 2,
+      "similar": [
+        {
+          "word": "-h",
+          "score": 0.587
+        }
+      ]
+    },
+    {
+      "word": "drip",
+      "definition": "Good-looking or trendy high-class fashion.",
+      "forms": [
+        "drip"
+      ],
+      "cluster": 10,
+      "similar": []
+    },
+    {
+      "word": "edge",
+      "definition": "To maintain a high level of sexual arousal for an extended period without reaching climax (orgasm). Often used as a dysphemism for keeping something close to completion or a goal for an undue amount of time.",
+      "forms": [
+        "edge"
+      ],
+      "cluster": 52,
+      "similar": []
+    },
+    {
+      "word": "el cinco",
+      "definition": "Spanish expression meaning \"the five\", a slang term for PlayStation 5.",
+      "forms": [
+        "el cinco"
+      ],
+      "cluster": 65,
+      "similar": []
+    },
+    {
+      "word": "face card",
+      "definition": "An attractive face. Sometimes defined as never declining or receding. Often also used in the context of \"purchasing\" or receiving a benefit solely through beauty, in the sense that the face is the credit card used for \"payment\".",
+      "forms": [
+        "face card"
+      ],
+      "cluster": 80,
+      "similar": []
+    },
+    {
+      "word": "fah",
+      "definition": "An onomatopoeic internet catchphrase and viral TikTok sound effect that represents a loud, distorted, and vocalized scream of the word \"fuck\". It is heavily used in video editing as an audio exclamation point or impact marker to humorously signal a sudden failure, shock, or spiritual collapse. Also sometimes spelt “fahh.”",
+      "forms": [
+        "fah",
+        "fahh"
+      ],
+      "cluster": 2,
+      "similar": [
+        {
+          "word": "fuh",
+          "score": 0.699
+        }
+      ]
+    },
+    {
+      "word": "fanum tax",
+      "definition": "Theft of food between friends. Referring to the Twitch Streamer \"Fanum\" who took cookies from fellow Twitch Streamer Kai Cenat as a \"tax\" during a livestream",
+      "forms": [
+        "fanum tax"
+      ],
+      "cluster": 66,
+      "similar": []
+    },
+    {
+      "word": "fine shyt",
+      "definition": "A slang term and phonetic variation of \"fine shit\", used to describe a highly attractive or desirable person. The spelling pattern follows the mainstream 2020s -h suffix mutation trend. It is frequently abbreviated online as \"fs\".",
+      "forms": [
+        "fine shyt"
+      ],
+      "cluster": 11,
+      "similar": []
+    },
+    {
+      "word": "finna",
+      "definition": "Short for \"I am going to\" or \"I am about to\". The term has its roots in African American Vernacular English, where \"fixing to\" has been used to mean \"getting ready to\" since the 18th century. Often used interchangeably with \"gonna\".",
+      "forms": [
+        "finna"
+      ],
+      "cluster": 113,
+      "similar": []
+    },
+    {
+      "word": "fire",
+      "definition": "Term used to describe that something is impressive, good, or cool.",
+      "forms": [
+        "fire"
+      ],
+      "cluster": 6,
+      "similar": []
+    },
+    {
+      "word": "fit",
+      "definition": "Term used to highlight or bring attention to one's outfit or fashion. \"Fit\" is a truncation of \"outfit\".",
+      "forms": [
+        "fit",
+        "fit check"
+      ],
+      "cluster": 73,
+      "similar": []
+    },
+    {
+      "word": "flop era",
+      "definition": "Primarily used on TikTok and Twitter when a person is not getting enough likes and views and starts posting memes and putting text over them in hope of going viral. Also refers to a period of time where one is experiencing diminished success or relevance",
+      "forms": [
+        "flop era"
+      ],
+      "cluster": 117,
+      "similar": []
+    },
+    {
+      "word": "flow state",
+      "definition": "Used to portray being 'in the flow' or intensely focusing on a task. Being fully immersed in a task that one enjoys doing.",
+      "forms": [
+        "flow state"
+      ],
+      "cluster": 49,
+      "similar": [
+        {
+          "word": "locked in",
+          "score": 0.569
+        }
+      ]
+    },
+    {
+      "word": "fuh",
+      "definition": "A pronunciation spelling of \"fuck\", originating in African American Vernacular English but entering mainstream 2020s internet slang as a form of algospeak. It is most frequently utilised in the emphatic phrase \"fuh nah\" (a variation of \"fuck no\"), which became a widespread reaction template and audio format across TikTok and Twitter in the mid-2020s to express absolute refusal or incredulity.",
+      "forms": [
+        "fuh",
+        "fuck"
+      ],
+      "cluster": 2,
+      "similar": [
+        {
+          "word": "fah",
+          "score": 0.699
+        },
+        {
+          "word": "-h",
+          "score": 0.628
+        }
+      ]
+    },
+    {
+      "word": "function",
+      "definition": "An event, party, hangout, or social gathering.",
+      "forms": [
+        "function"
+      ],
+      "cluster": 62,
+      "similar": []
+    },
+    {
+      "word": "gagged",
+      "definition": "Shocked, amazed, or at a loss for words.",
+      "forms": [
+        "gagged"
+      ],
+      "cluster": 9,
+      "similar": []
+    },
+    {
+      "word": "gas",
+      "definition": "To describe something as highly entertaining, pleasant, or good.",
+      "forms": [
+        "gas"
+      ],
+      "cluster": 6,
+      "similar": []
+    },
+    {
+      "word": "geeked",
+      "definition": "To describe somebody filled with excitement, highly enthusiatic, can also be used as a verb (\"geeked out\"). Mostly considered to have a positive connotation, compared to the similar but pejorative word \"geek\". It is also used as a slang for being intoxicated.",
+      "forms": [
+        "geeked"
+      ],
+      "cluster": 116,
+      "similar": []
+    },
+    {
+      "word": "gem",
+      "definition": "something considered valuable, impressive, or high-quality, often being obscure or underrated. The expression “gem alert” is used to draw attention to such a discovery.",
+      "forms": [
+        "gem"
+      ],
+      "cluster": 83,
+      "similar": []
+    },
+    {
+      "word": "ghost",
+      "definition": "To end communication or contact with someone without warning.",
+      "forms": [
+        "ghost"
+      ],
+      "cluster": 89,
+      "similar": []
+    },
+    {
+      "word": "glaze",
+      "definition": "To hype, praise, or compliment someone or something so much that it becomes annoying or excessive, coined in 2021 by Kai Cenat after reacting to a video by streamer Blueryai.",
+      "forms": [
+        "glaze"
+      ],
+      "cluster": 7,
+      "similar": []
+    },
+    {
+      "word": "glizzy",
+      "definition": "A hot dog. Popularized in 2020, possibly from the Washington metropolitan area, and possibly originating from the slang term \"glizzy\" for a Glock handgun. It may also refer to a penis.",
+      "forms": [
+        "glizzy"
+      ],
+      "cluster": 7,
+      "similar": []
+    },
+    {
+      "word": "glow-up",
+      "definition": "A major improvement in oneself, usually an improvement in appearance, confidence, personality, and style. Frequently used in a context relating to puberty. A \"glow-down\" is a situation where someone's appearance has declined.",
+      "forms": [
+        "glow-up"
+      ],
+      "cluster": 86,
+      "similar": []
+    },
+    {
+      "word": "GOAT",
+      "definition": "Acronym for \"greatest of all time\".",
+      "forms": [
+        "GOAT"
+      ],
+      "cluster": 111,
+      "similar": []
+    },
+    {
+      "word": "good boy",
+      "definition": "A phrase that is mockingly used when one is told to do something and they do it. The phrase is derived from the way people praise dogs and young children for doing an instructed task.",
+      "forms": [
+        "good boy",
+        "good girl"
+      ],
+      "cluster": 26,
+      "similar": []
+    },
+    {
+      "word": "goofy ahh",
+      "definition": "An AAVE phrase and slang term meaning \"goofy ass\" used to label content as goofy or silly.",
+      "forms": [
+        "goofy ahh"
+      ],
+      "cluster": 2,
+      "similar": []
+    },
+    {
+      "word": "gooning",
+      "definition": "The act of masturbating or ejaculating for long periods of time or for someone who does it chronically.",
+      "forms": [
+        "gooning"
+      ],
+      "cluster": 16,
+      "similar": []
+    },
+    {
+      "word": "gng",
+      "definition": "Used to refer to a close group of friends or as a casual greeting/address (e.g., \"wassup gng\" meaning \"what's up, gang\"). Can also mean \"good night gang\" in parting contexts, especially among gamers or online communities.",
+      "forms": [
+        "gng"
+      ],
+      "cluster": 7,
+      "similar": []
+    },
+    {
+      "word": "green flag",
+      "definition": "Behaviors or personality traits that are considered positive, healthy, or desirable.",
+      "forms": [
+        "green flag"
+      ],
+      "cluster": 48,
+      "similar": [
+        {
+          "word": "beige flag",
+          "score": 0.756
+        },
+        {
+          "word": "red flag",
+          "score": 0.711
+        }
+      ]
+    },
+    {
+      "word": "Gucci",
+      "definition": "Meaning good, cool, fashionable, or excellent. Used to express approval or satisfaction for something. Originated from the luxury brand Gucci.",
+      "forms": [
+        "Gucci"
+      ],
+      "cluster": 104,
+      "similar": []
+    },
+    {
+      "word": "gyatt",
+      "definition": "(1) someone's buttocks, specifically attractive ones (2) Someone with large buttocks or an hourglass figure. The word comes from a stylized way of spelling \"god damn\" as \"gyatt damn\" in the context of being in awe of seeing a person's buttocks.",
+      "forms": [
+        "gyatt"
+      ],
+      "cluster": 7,
+      "similar": []
+    },
+    {
+      "word": "grape",
+      "definition": "An algospeak term for rape typically used online to bypass automatic filters. The use of the grape emoji (🍇) in substitution for the word \"rape\" is also common.",
+      "forms": [
+        "grape"
+      ],
+      "cluster": 96,
+      "similar": []
+    },
+    {
+      "word": "-h",
+      "definition": "A linguistic texting convention and phonetic spelling pattern popularized in 2020s internet slang, wherein the final consonant of a monosyllabic word is omitted and replaced with a soft \"h\" or \"ih\". Rooted in African American Vernacular English text spaces from the 2010s (such as \"bih\" for bitch), the format became a mainstream meme template and a tool for algospeak in the 2020s, it manifests either as an \"-ih\" ending – such as \"dih\" (dick) or \"fih\" (fish) — or an \"-uh/ah\" ending, such as \"fuh\" or \"fah\" (fuck).",
+      "forms": [
+        "-h"
+      ],
+      "cluster": 2,
+      "similar": [
+        {
+          "word": "fuh",
+          "score": 0.628
+        },
+        {
+          "word": "dih",
+          "score": 0.587
+        }
+      ]
+    },
+    {
+      "word": "hawk tuah",
+      "definition": "An onomatopoeia for spitting or expectoration on a penis as a form of oral sex used by Haliey Welch in 2024.",
+      "forms": [
+        "hawk tuah"
+      ],
+      "cluster": 16,
+      "similar": []
+    },
+    {
+      "word": "hb",
+      "definition": "An initialism of homeboy/homegirl. Slang used to refer to one's friends.",
+      "forms": [
+        "hb",
+        "hg"
+      ],
+      "cluster": 27,
+      "similar": []
+    },
+    {
+      "word": "hit different",
+      "definition": "To be better in a distinctive manner. The origin of the term is unclear. Possibly rooted in substance use, referring to how substances with differing qualities hits the user differently.",
+      "forms": [
+        "hit different"
+      ],
+      "cluster": 72,
+      "similar": []
+    },
+    {
+      "word": "ick",
+      "definition": "A sudden feeling of disgust or repulsion for something one was previously attracted to.",
+      "forms": [
+        "ick"
+      ],
+      "cluster": 5,
+      "similar": []
+    },
+    {
+      "word": "icl",
+      "definition": "Abbreviation of \"I can't lie\". Often used alongside ts and pmo.",
+      "forms": [
+        "icl"
+      ],
+      "cluster": 21,
+      "similar": [
+        {
+          "word": "ts",
+          "score": 0.573
+        }
+      ]
+    },
+    {
+      "word": "IJBOL",
+      "definition": "An acronym for \"I just burst out laughing\".",
+      "forms": [
+        "IJBOL"
+      ],
+      "cluster": 12,
+      "similar": []
+    },
+    {
+      "word": "iPad kid",
+      "definition": "Term describing late Gen Z and Generation Alpha children who spend most of their time consuming content via a phone or tablet screen. The term was popularized in January 2021 after a 21-year-old TikToker criticized Millennial parents for allowing their children excessive screen time, saying, \"I need everyone else in my generation to promise that we are not going to raise 'iPad children'. ... You've been shoving media and screens in these kids' faces since birth.\" He concludes: \"Gen Z isn't allowed to raise iPad kids.\" The viral video garnered more than 525 million views on TikTok.",
+      "forms": [
+        "iPad kid"
+      ],
+      "cluster": 35,
+      "similar": []
+    },
+    {
+      "word": "it's giving",
+      "definition": "Used to describe an attitude or connotation.",
+      "forms": [
+        "it's giving"
+      ],
+      "cluster": 91,
+      "similar": []
+    },
+    {
+      "word": "it's joever",
+      "definition": "Replacement for it's over, standing for complete physical and mental defeat. Emerged in 2024, when Joe Biden withdrew from the presidential election.",
+      "forms": [
+        "it's joever"
+      ],
+      "cluster": 42,
+      "similar": []
+    },
+    {
+      "word": "iykyk",
+      "definition": "Acronym for \"If you know, you know\". Used to describe inside jokes and niche references.",
+      "forms": [
+        "iykyk"
+      ],
+      "cluster": 12,
+      "similar": []
+    },
+    {
+      "word": "jit",
+      "definition": "An African-American term originating in the 1970s. Often used to describe an inexperienced or young individual. Ex:. Jit trippin",
+      "forms": [
+        "jit"
+      ],
+      "cluster": 14,
+      "similar": []
+    },
+    {
+      "word": "jestermaxxing",
+      "definition": "A slang term referring to both internet subcultures such as incels, and to the practice of using extreme humor, comedic antics, or acting like a \"clown\" to gain female attention and attraction (see also Clavicular).",
+      "forms": [
+        "jestermaxxing"
+      ],
+      "cluster": 46,
+      "similar": []
+    },
+    {
+      "word": "Karen",
+      "definition": "Pejorative term for an obnoxious, angry, or entitled (usually but not exclusively white and middle-aged) woman. Also male Karen or Kevin to denote a man of the same personality type.",
+      "forms": [
+        "Karen"
+      ],
+      "cluster": 82,
+      "similar": []
+    },
+    {
+      "word": "Khia",
+      "definition": "A nobody or irrelevant person. The term is used to describe female musical artists \"who people talk about, but who no one seems to care about culturally\", who are said to be stuck in the \"Khia Asylum\", an imaginary place where pop stars are kept until they find major success. The term is derived from the name of American rapper Khia.",
+      "forms": [
+        "Khia"
+      ],
+      "cluster": 29,
+      "similar": []
+    },
+    {
+      "word": "Kirkifying",
+      "definition": "Use of deepfake software to put Charlie Kirk's face on pictures of already popular online memes. Emerged after his assassination in September 2025.",
+      "forms": [
+        "Kirkifying"
+      ],
+      "cluster": 74,
+      "similar": []
+    },
+    {
+      "word": "KMS",
+      "definition": "Acronym for \"kill myself\".",
+      "forms": [
+        "KMS"
+      ],
+      "cluster": 102,
+      "similar": [
+        {
+          "word": "KYS",
+          "score": 0.731
+        }
+      ]
+    },
+    {
+      "word": "KYS",
+      "definition": "Acronym for \"kill yourself\". Can also be used humorously as \"keep yourself safe\".",
+      "forms": [
+        "KYS"
+      ],
+      "cluster": 102,
+      "similar": [
+        {
+          "word": "KMS",
+          "score": 0.731
+        }
+      ]
+    },
+    {
+      "word": "L",
+      "definition": "Short for \"loss,\" used to indicate failure, defeat, or something negative. Often contrasted with \"W\" (meaning win).",
+      "forms": [
+        "L"
+      ],
+      "cluster": 44,
+      "similar": [
+        {
+          "word": "W",
+          "score": 0.821
+        }
+      ]
+    },
+    {
+      "word": "L+Ratio",
+      "definition": "Insult used primarily online. Combined form of the L and ratio slang terms. Became popular in 2020.",
+      "forms": [
+        "L+Ratio"
+      ],
+      "cluster": 50,
+      "similar": []
+    },
+    {
+      "word": "larp",
+      "definition": "Acronym for \"Live-Action Role-Playing.\" The term was popularized in 2026 in reference to people perceived as fake, performative, or as posers.",
+      "forms": [
+        "larp"
+      ],
+      "cluster": 70,
+      "similar": []
+    },
+    {
+      "word": "lit",
+      "definition": "Remarkable, interesting, fun, or amusing.",
+      "forms": [
+        "lit"
+      ],
+      "cluster": 6,
+      "similar": []
+    },
+    {
+      "word": "locked in",
+      "definition": "A state of total concentration on a task. Similar to flow state.",
+      "forms": [
+        "locked in"
+      ],
+      "cluster": 49,
+      "similar": [
+        {
+          "word": "flow state",
+          "score": 0.569
+        }
+      ]
+    },
+    {
+      "word": "looksmaxxing",
+      "definition": "An attempt (often pseudoscientific) to maximize physical attractiveness.",
+      "forms": [
+        "looksmaxxing"
+      ],
+      "cluster": 69,
+      "similar": []
+    },
+    {
+      "word": "lowkenuinely",
+      "definition": "A portmanteau of 'lowkey' and 'genuinely'. Used to express a mix of emotions from both words.",
+      "forms": [
+        "lowkenuinely"
+      ],
+      "cluster": 57,
+      "similar": [
+        {
+          "word": "lowkirkenuinely",
+          "score": 0.82
+        }
+      ]
+    },
+    {
+      "word": "lowkirkenuinely",
+      "definition": "A blend of 'lowkey', 'Kirk' (referencing political figure Charlie Kirk), and 'genuinely'. Used similarly to 'lowkenuinely' above to express a sincere feeling or opinion, but with layered internet irony.",
+      "forms": [
+        "lowkirkenuinely"
+      ],
+      "cluster": 57,
+      "similar": [
+        {
+          "word": "lowkenuinely",
+          "score": 0.82
+        }
+      ]
+    },
+    {
+      "word": "main character",
+      "definition": "Someone who is or wants to be the star of their life. Often refers to someone who strives to be the center of attention.",
+      "forms": [
+        "main character",
+        "MC"
+      ],
+      "cluster": 55,
+      "similar": []
+    },
+    {
+      "word": "mew",
+      "definition": "A pseudoscientific method to restructure someone's jawline by pressing their tongue to the roof of their mouth. Coined by controversial British dentist John Mew and his son, Mike, the term became popular in the late 2010s and on TikTok.",
+      "forms": [
+        "mew"
+      ],
+      "cluster": 32,
+      "similar": []
+    },
+    {
+      "word": "mid",
+      "definition": "Average, mediocre, not bad or not special. Often used in a negative and insulting way. Sometimes used to emphasize the approachability of a conventionally attractive woman (e.g., \"beautiful mid\").",
+      "forms": [
+        "mid"
+      ],
+      "cluster": 92,
+      "similar": []
+    },
+    {
+      "word": "mog",
+      "definition": "To look significantly more attractive than someone or something, causing them to appear inferior in comparison. Derived from AMOG, or \"alpha male of the group\".",
+      "forms": [
+        "mog"
+      ],
+      "cluster": 23,
+      "similar": []
+    },
+    {
+      "word": "moot",
+      "definition": "Short for \"mutuals\" or \"mutual followers\".",
+      "forms": [
+        "moot",
+        "moots"
+      ],
+      "cluster": 23,
+      "similar": []
+    },
+    {
+      "word": "moving",
+      "definition": "An internet slang term and text-caption format – frequently structured as \"how I be moving\" or \"moving different\" – used to describe a person's behavior, tactical operations, or lifestyle choices in a given situation.",
+      "forms": [
+        "moving"
+      ],
+      "cluster": 114,
+      "similar": []
+    },
+    {
+      "word": "nepo baby",
+      "definition": "A colloquial term short for \"nepotism baby\". Used to describe a celebrity, influencer, or media professional whose career success is perceived to be heavily aided by their famous or wealthy parents. While the concept of industry nepotism is old, the specific catchphrase exploded into global internet culture and media discourse in late 2022 following viral TikTok trends and a dedicated investigative cover story by New York magazine.",
+      "forms": [
+        "nepo baby"
+      ],
+      "cluster": 35,
+      "similar": []
+    },
+    {
+      "word": "nugu",
+      "definition": "Relatively unknown, obscure, or new groups that have not yet gained significant recognition or popularity among the K-pop fandom. Comes from the Korean word \"\" (nugu), which translates directly to \"who?\". Sometimes comes with a negative connotation in fandom culture.",
+      "forms": [
+        "nugu"
+      ],
+      "cluster": 29,
+      "similar": []
+    },
+    {
+      "word": "nostalgia-baiting",
+      "definition": "The practice of leveraging someone’s fond memories of the past for profit.",
+      "forms": [
+        "nostalgia-baiting"
+      ],
+      "cluster": 77,
+      "similar": []
+    },
+    {
+      "word": "nothing ever happens",
+      "definition": "Originating on 4chan's /pol/ board, it is used to cynically dismiss breaking news or dramatic predictions by asserting they will not lead to meaningful or status quo-shattering consequences.",
+      "forms": [
+        "nothing ever happens"
+      ],
+      "cluster": 8,
+      "similar": []
+    },
+    {
+      "word": "only in Ohio",
+      "definition": "Internet slang used to describe strange or surreal occurrences humorously attributed to Ohio; compare Florida man.",
+      "forms": [
+        "only in Ohio"
+      ],
+      "cluster": 58,
+      "similar": [
+        {
+          "word": "Ohio",
+          "score": 0.702
+        }
+      ]
+    },
+    {
+      "word": "OK boomer",
+      "definition": "Pejorative directed toward members of the Baby Boomer generation, used to dismiss or mock attitudes typically associated with baby boomers as out of date.",
+      "forms": [
+        "OK boomer"
+      ],
+      "cluster": 109,
+      "similar": []
+    },
+    {
+      "word": "oof",
+      "definition": "Used to express discomfort, surprise, dismay, or sympathy for someone else's pain. It is also the sound of a Roblox avatar when it dies or respawns. Thus the verb \"to oof\" can mean killing another player in a game or messing up something oneself.",
+      "forms": [
+        "oof"
+      ],
+      "cluster": 25,
+      "similar": []
+    },
+    {
+      "word": "oh that's not",
+      "definition": "Slang used to react to a cringe-worthy, offensive, or misguided statement, or to express immediate disapproval of a situation. The phrase originated from a viral August 2015 episode of the American talk show The View, where co-host Rosie Perez uttered the phrase to interrupt and correct a controversial remark about immigration made by guest co-host Kelly Osbourne. The phrase saw a massive resurgence as a recycled meme format and popular catchphrase on TikTok and Twitter in the 2020s.",
+      "forms": [
+        "oh that's not"
+      ],
+      "cluster": 4,
+      "similar": []
+    },
+    {
+      "word": "oomf",
+      "definition": "Acronym for \"one of my followers\" or \"one of my friends\". Can be turned into \"oomfie\" to represent affection towards another individual.",
+      "forms": [
+        "oomf"
+      ],
+      "cluster": 25,
+      "similar": []
+    },
+    {
+      "word": "opp",
+      "definition": "Short for opposition or enemies; describes an individual's opponents. A secondary, older definition has the term be short for \"other people's pussy\". Originated from street and gang culture. Dexerto claims that the primary definition stems from the secondary one, which was derived from a 1991 Naughty by Nature song titled \"O.P.P.\". The initialism was derived from the acronym \"OPM\", which was used in the neighborhood the group grew up in and stood for \"other people's money\". An example of the term being used in popular culture is also in the Gangsta rap scene, with YBN Nahmir and his song \"Opp Stoppa\". Dictionary.com implies that the origins of the two meanings had little to do with each other.",
+      "forms": [
+        "opp"
+      ],
+      "cluster": 15,
+      "similar": []
+    },
+    {
+      "word": "out of pocket",
+      "definition": "To act (or say something) crazy, wild, unexpected, or extreme, sometimes to an extent that is considered too far; or unavailable.",
+      "forms": [
+        "out of pocket"
+      ],
+      "cluster": 68,
+      "similar": []
+    },
+    {
+      "word": "owned",
+      "definition": "Used to refer to defeat in a video game, or domination of an opposition. Also less commonly used to describe defeat in sports. Originated in the 1990s as a term used to describe hackers gaining administrative control over another person's computer.",
+      "forms": [
+        "owned"
+      ],
+      "cluster": 90,
+      "similar": []
+    },
+    {
+      "word": "pick-me",
+      "definition": "Someone who seeks validation by trying to stand out, often putting down others in their gender or group to gain favor or attention. This is most commonly done by degrading oneself.",
+      "forms": [
+        "pick-me"
+      ],
+      "cluster": 19,
+      "similar": []
+    },
+    {
+      "word": "pmo",
+      "definition": "An acronym that stands for \"piss(es) me off\", used to express discontent or anger at a certain topic. Often utilized alongside ts and icl.",
+      "forms": [
+        "pmo"
+      ],
+      "cluster": 21,
+      "similar": [
+        {
+          "word": "ts pmo",
+          "score": 0.878
+        }
+      ]
+    },
+    {
+      "word": "polyester",
+      "definition": "Inauthentic and low-quality. Stems from the perception of polyester clothing as cheap and artificial.",
+      "forms": [
+        "polyester"
+      ],
+      "cluster": 51,
+      "similar": []
+    },
+    {
+      "word": "pookie",
+      "definition": "An endearing nickname for a close friend or lover. Also used as a pet name, or in mocking sarcasm.",
+      "forms": [
+        "pookie"
+      ],
+      "cluster": 33,
+      "similar": []
+    },
+    {
+      "word": "pushing P",
+      "definition": "A phrase meaning acting with integrity and style while maintaining and displaying one's success. The P in the phrase is most often interpreted as standing for the slang word \"player\". Originated from the song \"Pushin P\" by the rappers Gunna, Future, and Young Thug.",
+      "forms": [
+        "pushing P"
+      ],
+      "cluster": 15,
+      "similar": []
+    },
+    {
+      "word": "ratio",
+      "definition": "When a post, particularly on X (Twitter), receives more replies than retweets and likes combined. It can also be used when a reply has better reception and more likes than the original post being replied to. Originates from the mathematical term \"ratio\" which compares the quantitative relationship between a set of numbers.",
+      "forms": [
+        "ratio"
+      ],
+      "cluster": 50,
+      "similar": []
+    },
+    {
+      "word": "rage-bait",
+      "definition": "To elicit rage within an individual or group. Usually for an increase in web traffic or personal enjoyment.",
+      "forms": [
+        "rage-bait"
+      ],
+      "cluster": 17,
+      "similar": []
+    },
+    {
+      "word": "red flag",
+      "definition": "A warning sign indicating behaviors or characteristics within a relationship that may potentially be harmful or toxic. On the other hand, a green flag indicates positive aspects or healthy behaviors. The use of the term red flag as a warning dates back to the 18th century. Historically, red flags were used as signals during wars or battles to indicate danger. The term green flag comes from the use of green-colored flags indicating permission to proceed. The concept of 'beige flags' has gained popularity to represent behaviors that are neither positive nor negative, but rather depend on individual preferences or boundaries.",
+      "forms": [
+        "red flag"
+      ],
+      "cluster": 48,
+      "similar": [
+        {
+          "word": "beige flag",
+          "score": 0.76
+        },
+        {
+          "word": "green flag",
+          "score": 0.711
+        }
+      ]
+    },
+    {
+      "word": "rizz",
+      "definition": "One's charm/seduction skills. Derived from charisma.",
+      "forms": [
+        "rizz"
+      ],
+      "cluster": 110,
+      "similar": []
+    },
+    {
+      "word": "Roman Empire",
+      "definition": "A random event, person, incident, or thing that fascinates or intrigues one to the point that one is frequently thinking about it. Originated in 2023 after influencer Saskia Cort encouraged her Instagram followers to ask their male partners how often they thought about the Roman Empire, to which many answered quite often. The term spread internationally and evolved to mean something that frequently occupies one's thoughts. It has also morphed into a joke about how often people think about/mention the Roman Empire.",
+      "forms": [
+        "Roman Empire"
+      ],
+      "cluster": 71,
+      "similar": []
+    },
+    {
+      "word": "salty",
+      "definition": "Used to describe someone who is behaving or expressing themselves in a resentful, bitter, or irritated manner. Originally referred to \"racy\" or \"vulgar\" sailors in the 1800s.",
+      "forms": [
+        "salty"
+      ],
+      "cluster": 17,
+      "similar": []
+    },
+    {
+      "word": "SDIYBT",
+      "definition": "Acronym for \"Start digging in your butt, twin.\" Used ironically.",
+      "forms": [
+        "SDIYBT"
+      ],
+      "cluster": 22,
+      "similar": []
+    },
+    {
+      "word": "serving cunt",
+      "definition": "To behave in a bold, confident, feminine manner.",
+      "forms": [
+        "serving cunt"
+      ],
+      "cluster": 19,
+      "similar": []
+    },
+    {
+      "word": "sheesh",
+      "definition": "To praise someone when they are doing something good. The vowels are often emphasized, as in \"sheeesh\". The one being praised is to do the \"ice in my veins\" pose popularized by basketball player D'Angelo Russell. Believed to be a variation of another word such as \"jeez\", \"Jesus\", or \"shit\". First used in 1955 as a word to express \"disappointment, annoyance or surprise\".",
+      "forms": [
+        "sheesh"
+      ],
+      "cluster": 2,
+      "similar": []
+    },
+    {
+      "word": "shook",
+      "definition": "To be shocked, surprised, or bothered. Became prominent in hip-hop starting in the 1990s, when it began to be used as a standalone adjective for uncontrollable emotions. One famous example is Mobb Deep's 1995 single \"Shook Ones, Part II\".",
+      "forms": [
+        "shook"
+      ],
+      "cluster": 9,
+      "similar": []
+    },
+    {
+      "word": "sigma",
+      "definition": "A person who is individualistic, self-reliant, successful, and non-conforming to existing social norms. Used predominantly by the manosphere. Can also mean something that is good.",
+      "forms": [
+        "sigma",
+        "sigma male"
+      ],
+      "cluster": 41,
+      "similar": []
+    },
+    {
+      "word": "simp",
+      "definition": "Sycophancy, being overly affectionate in pursuit of a sexual or romantic relationship.",
+      "forms": [
+        "simp"
+      ],
+      "cluster": 5,
+      "similar": []
+    },
+    {
+      "word": "situationship",
+      "definition": "Refers to an ambiguous romantic and/or sexual relationship in which both parties have feelings for one another, but said feelings are not clearly defined: a mid-point between dating and not dating.",
+      "forms": [
+        "situationship"
+      ],
+      "cluster": 45,
+      "similar": []
+    },
+    {
+      "word": "six-seven",
+      "definition": "A nonsense word derived from the song \"Doot Doot (6 7)\" by Skrilla. Inspired multiple numerical meme variants. Originating from TikTok.",
+      "forms": [
+        "six-seven",
+        "6-7"
+      ],
+      "cluster": 20,
+      "similar": []
+    },
+    {
+      "word": "skibidi",
+      "definition": "Word of multiple parts of speech that derives from the web-series Skibidi Toilet with no real meaning, and often associated with brain-rot.",
+      "forms": [
+        "skibidi"
+      ],
+      "cluster": 37,
+      "similar": []
+    },
+    {
+      "word": "skill issue",
+      "definition": "Refers to a situation where a person's lack of ability or proficiency is seen as the cause of their failure or difficulty in completing a task, sometimes used ironically.",
+      "forms": [
+        "skill issue"
+      ],
+      "cluster": 63,
+      "similar": []
+    },
+    {
+      "word": "sksksk",
+      "definition": "Used to convey happiness/laughter. A form of keysmashing. The earliest known usage is by Brazilian users on Twitter. Used by various British, African-American, and gay communities before becoming associated with stan Twitter in 2019. Became associated with VSCO girls alongside 'and I oop'. Similar forms can be found regionally, like the Indonesian \"wkwkwk\" or the Korean \"kkkk\".",
+      "forms": [
+        "sksksk"
+      ],
+      "cluster": 101,
+      "similar": [
+        {
+          "word": "and I oop",
+          "score": 0.716
+        }
+      ]
+    },
+    {
+      "word": "slaps",
+      "definition": "Used to refer to something that is perceived to be good, particularly used when referring to music.",
+      "forms": [
+        "slaps"
+      ],
+      "cluster": 13,
+      "similar": []
+    },
+    {
+      "word": "slay",
+      "definition": "To do something well.",
+      "forms": [
+        "slay"
+      ],
+      "cluster": 100,
+      "similar": []
+    },
+    {
+      "word": "slop",
+      "definition": "Low-quality internet content, particularly that which was created by generative AI.",
+      "forms": [
+        "slop"
+      ],
+      "cluster": 24,
+      "similar": []
+    },
+    {
+      "word": "snatched",
+      "definition": "Amazing, attractive, or flawlessly styled. Sometimes used to particularly describe a person as having a narrow waist.",
+      "forms": [
+        "snatched"
+      ],
+      "cluster": 10,
+      "similar": []
+    },
+    {
+      "word": "spiritually Israeli",
+      "definition": "A pejorative term implying something gives off the vibe of supporting Israel. Commonly used for things seen as culturally empty.",
+      "forms": [
+        "spiritually Israeli"
+      ],
+      "cluster": 36,
+      "similar": []
+    },
+    {
+      "word": "stan",
+      "definition": "Supporting something to an extreme degree. Specifically used in cases of overzealous or obsessive support of celebrities, originating with the eponymous song by Eminem.",
+      "forms": [
+        "stan"
+      ],
+      "cluster": 87,
+      "similar": []
+    },
+    {
+      "word": "sus",
+      "definition": "Short term for suspect/suspicious. Popularized in 2018 by players of the online video game Among Us and received mainstream usage with the game's explosion in popularity in mid-2020 amidst the COVID-19 pandemic. According to Merriam-Webster, the term has been in use among English speakers since at least the 1960s.",
+      "forms": [
+        "sus"
+      ],
+      "cluster": 53,
+      "similar": []
+    },
+    {
+      "word": "sussy baka",
+      "definition": "A combination of \"sus\" and \"baka\", the Japanese word for \"fool\". Stemmed from TikToker Akeam Francis.",
+      "forms": [
+        "sussy baka"
+      ],
+      "cluster": 53,
+      "similar": []
+    },
+    {
+      "word": "sybau",
+      "definition": "Acronym for \"shut your bitch ass up\"",
+      "forms": [
+        "sybau"
+      ],
+      "cluster": 22,
+      "similar": [
+        {
+          "word": "syfm",
+          "score": 0.628
+        }
+      ]
+    },
+    {
+      "word": "syfm",
+      "definition": "Acronym for \"shut your fucking mouth\", originally a meme taken from a scene in the movie Bronson.",
+      "forms": [
+        "syfm"
+      ],
+      "cluster": 22,
+      "similar": [
+        {
+          "word": "sybau",
+          "score": 0.628
+        }
+      ]
+    },
+    {
+      "word": "tea",
+      "definition": "Secret information or rumors. Originates from Black drag culture of the 1990s, where the letter \"t\" was used to mean \"truth\". \"Spilling the tea\" means to share gossip or rumors. Another meaning was popularized on TikTok, using 'tea' when referring to a person, action, outfit, or thing to mean it's fab, cute, iconic, etc.",
+      "forms": [
+        "tea"
+      ],
+      "cluster": 76,
+      "similar": []
+    },
+    {
+      "word": "touch grass",
+      "definition": "A way of telling someone to \"go outside\", usually after said person is believed to have been online for too long. Believed to have originated in 2015, before experiencing a resurgence in 2020–2021.",
+      "forms": [
+        "touch grass"
+      ],
+      "cluster": 75,
+      "similar": []
+    },
+    {
+      "word": "truth nuke",
+      "definition": "An impactful telling of factual, or sometimes opinionated, information; Sometimes spelt \"trvthnvke\" or shortened to \"trvke\".",
+      "forms": [
+        "truth nuke",
+        "trvthnvke"
+      ],
+      "cluster": 0,
+      "similar": []
+    },
+    {
+      "word": "ts",
+      "definition": "An abbreviation for \"this shit\", often used as a short form of \"this\"; it is also used as an initialism for \"type shit\" (or \"type shi\"), a Gen Z expression used to signal total agreement, validation, or shared vibes with a statement. Often accompanied by pmo and icl.",
+      "forms": [
+        "ts"
+      ],
+      "cluster": 21,
+      "similar": [
+        {
+          "word": "ts pmo",
+          "score": 0.664
+        },
+        {
+          "word": "icl",
+          "score": 0.573
+        }
+      ]
+    },
+    {
+      "word": "ts frying me",
+      "definition": "An expression that means something that is hilariously funny or extremely stressful.",
+      "forms": [
+        "ts frying me"
+      ],
+      "cluster": 12,
+      "similar": []
+    },
+    {
+      "word": "ts pmo",
+      "definition": "An abbreviation for \"this shit piss(es) me off\", used to express strong frustration or irritation.",
+      "forms": [
+        "ts pmo"
+      ],
+      "cluster": 21,
+      "similar": [
+        {
+          "word": "pmo",
+          "score": 0.878
+        },
+        {
+          "word": "ts",
+          "score": 0.664
+        }
+      ]
+    },
+    {
+      "word": "tuff",
+      "definition": "Eye dialect spelling of tough. Commonly meaning something or someone is cool or impressive, this spelling of it is mostly seen on TikTok.",
+      "forms": [
+        "tuff"
+      ],
+      "cluster": 11,
+      "similar": []
+    },
+    {
+      "word": "tweaking",
+      "definition": "To be acting strangely or thinking that someone is hallucinating.",
+      "forms": [
+        "tweaking"
+      ],
+      "cluster": 64,
+      "similar": []
+    },
+    {
+      "word": "twin",
+      "definition": "A term of endearment for a close friend, indicating a strong, sibling-like bond. Also used to imply that the user is similar to another person in a particular manner.",
+      "forms": [
+        "twin"
+      ],
+      "cluster": 47,
+      "similar": []
+    },
+    {
+      "word": "unalive",
+      "definition": "An algospeak based euphemism for the word \"kill\" or other death-related terms, often in the context of suicide. This word is often used to circumvent social media algorithms, especially YouTube and TikTok, from censoring or demonetizing content that involves death-related terms.",
+      "forms": [
+        "unalive"
+      ],
+      "cluster": 8,
+      "similar": []
+    },
+    {
+      "word": "unc",
+      "definition": "Abbreviation of uncle. Used mockingly to refer to someone who is old or acting old. Originated in African American English in the early 2000s.",
+      "forms": [
+        "unc"
+      ],
+      "cluster": 1,
+      "similar": []
+    },
+    {
+      "word": "understood the assignment",
+      "definition": "To understand what was supposed to be done; to do something well. Popularized by American rapper Tay Money's 2021 song \"The Assignment\". She posted a video on TikTok stating that she \"understood the assignment\".",
+      "forms": [
+        "understood the assignment"
+      ],
+      "cluster": 34,
+      "similar": []
+    },
+    {
+      "word": "uwu",
+      "definition": "Used to portray happiness or someone wanting to appear cute. Used more or less as an expression. Originated in the 2000s as an emoticon, with U's capitalized: UwU. The expression is commonly associated with e-girls, furries, femboys, and anime fandoms.",
+      "forms": [
+        "uwu"
+      ],
+      "cluster": 1,
+      "similar": []
+    },
+    {
+      "word": "vaguepost",
+      "definition": "A social media post that is intentionally cryptic or ambiguous, often for engagement farming.",
+      "forms": [
+        "vaguepost"
+      ],
+      "cluster": 59,
+      "similar": []
+    },
+    {
+      "word": "vibe check",
+      "definition": "To check one's personality, behavior, or attitude.",
+      "forms": [
+        "vibe check"
+      ],
+      "cluster": 115,
+      "similar": []
+    },
+    {
+      "word": "vro",
+      "definition": "Genderless synonym for bro, also used as \"very rare one\".",
+      "forms": [
+        "vro"
+      ],
+      "cluster": 56,
+      "similar": []
+    },
+    {
+      "word": "W",
+      "definition": "Short for \"win,\" used to indicate success, victory, or something positive. Often contrasted with \"L\" (loss). May also be used in the form of \"dub\".",
+      "forms": [
+        "W"
+      ],
+      "cluster": 44,
+      "similar": [
+        {
+          "word": "L",
+          "score": 0.821
+        }
+      ]
+    },
+    {
+      "word": "washed",
+      "definition": "To be no longer successful, popular, or skilled.",
+      "forms": [
+        "washed"
+      ],
+      "cluster": 30,
+      "similar": []
+    },
+    {
+      "word": "who is this diva?",
+      "definition": "An affectionate rhetorical question used to compliment people who positively embody diva-like qualities such as boldness, style, and/or confidence. A Diva is a Roman goddess as its original meaning Sometimes used with a purple heart emoji at the end. Originated from TikTok.",
+      "forms": [
+        "who is this diva?"
+      ],
+      "cluster": 43,
+      "similar": []
+    },
+    {
+      "word": "yap",
+      "definition": "To talk too much, especially without significant meaning. Speculated to be used as early as 1592 to express annoyance and irritation. Became a TikTok trend in 2023 for someone who talks too much or whose talking does not make sense.",
+      "forms": [
+        "yap"
+      ],
+      "cluster": 18,
+      "similar": []
+    },
+    {
+      "word": "yart",
+      "definition": "A slang for weed cart, or marijuana vape cartridge.",
+      "forms": [
+        "yart"
+      ],
+      "cluster": 18,
+      "similar": []
+    },
+    {
+      "word": "Yassify",
+      "definition": "To \"yassify\" something is to apply several beauty filters to a picture using FaceApp, an AI photo-editing application.",
+      "forms": [
+        "Yassify"
+      ],
+      "cluster": 54,
+      "similar": []
+    },
+    {
+      "word": "you good?",
+      "definition": "Derived from AAVE, this phrase is a short hand of the usual \"Are you okay?\" greeting, and is generally used to express concern for an acquaintance's well-being. However, the phrase could mean different things depending on the region.",
+      "forms": [
+        "you good?"
+      ],
+      "cluster": 26,
+      "similar": []
+    },
+    {
+      "word": "zesty",
+      "definition": "Flamboyant, effeminate, or otherwise using the stereotypical mannerisms of a gay man.",
+      "forms": [
+        "zesty"
+      ],
+      "cluster": 46,
+      "similar": []
+    },
+    {
+      "word": "zaza",
+      "definition": "A drug slang for Cannabis.",
+      "forms": [
+        "zaza",
+        "za"
+      ],
+      "cluster": 81,
+      "similar": []
+    },
+    {
+      "word": "skull emoji 💀",
+      "definition": "Replacement for the phrase \"I'm dying\", representing laughter or when something is considered \"unhinged\".",
+      "forms": [
+        "skull emoji 💀"
+      ],
+      "cluster": 38,
+      "similar": [
+        {
+          "word": "loudly crying face emoji 😭",
+          "score": 0.827
+        },
+        {
+          "word": "broken heart emoji 💔",
+          "score": 0.632
+        },
+        {
+          "word": "face with bags under eyes emoji 🫩",
+          "score": 0.586
+        }
+      ]
+    },
+    {
+      "word": "loudly crying face emoji 😭",
+      "definition": "Also a replacement for \"I'm dying\" or the crying with laughter emoji, representing laughter. Similar to the skull emoji.",
+      "forms": [
+        "loudly crying face emoji 😭"
+      ],
+      "cluster": 38,
+      "similar": [
+        {
+          "word": "skull emoji 💀",
+          "score": 0.827
+        },
+        {
+          "word": "broken heart emoji 💔",
+          "score": 0.68
+        },
+        {
+          "word": "face with bags under eyes emoji 🫩",
+          "score": 0.652
+        },
+        {
+          "word": "wilted flower emoji 🥀",
+          "score": 0.558
+        }
+      ]
+    },
+    {
+      "word": "broken heart emoji 💔",
+      "definition": "A way to express disappointment, albeit with humorous undertones.",
+      "forms": [
+        "broken heart emoji 💔"
+      ],
+      "cluster": 38,
+      "similar": [
+        {
+          "word": "loudly crying face emoji 😭",
+          "score": 0.68
+        },
+        {
+          "word": "wilted flower emoji 🥀",
+          "score": 0.657
+        },
+        {
+          "word": "skull emoji 💀",
+          "score": 0.632
+        },
+        {
+          "word": "face with bags under eyes emoji 🫩",
+          "score": 0.552
+        }
+      ]
+    },
+    {
+      "word": "wilted flower emoji 🥀",
+      "definition": "Commonly referred to as the \"wilted rose emoji,\" it replaces, or is used in addition to, the broken heart emoji.",
+      "forms": [
+        "wilted flower emoji 🥀"
+      ],
+      "cluster": 38,
+      "similar": [
+        {
+          "word": "broken heart emoji 💔",
+          "score": 0.657
+        },
+        {
+          "word": "loudly crying face emoji 😭",
+          "score": 0.558
+        }
+      ]
+    },
+    {
+      "word": "face with bags under eyes emoji 🫩",
+      "definition": "Used to express exasperation.",
+      "forms": [
+        "face with bags under eyes emoji 🫩"
+      ],
+      "cluster": 38,
+      "similar": [
+        {
+          "word": "loudly crying face emoji 😭",
+          "score": 0.652
+        },
+        {
+          "word": "skull emoji 💀",
+          "score": 0.586
+        },
+        {
+          "word": "broken heart emoji 💔",
+          "score": 0.552
+        }
+      ]
+    },
+    {
+      "word": "brat",
+      "definition": "Bold, hedonistic attitude inspired by Charli XCX album Brat; being confidently messy and party-forward.",
+      "forms": [
+        "brat"
+      ],
+      "cluster": 40,
+      "similar": []
+    },
+    {
+      "word": "delulu",
+      "definition": "Delusional, often used humorously for overly optimistic or fantasy-driven thinking.",
+      "forms": [
+        "delulu"
+      ],
+      "cluster": 78,
+      "similar": [
+        {
+          "word": "delusionship",
+          "score": 0.679
+        }
+      ]
+    },
+    {
+      "word": "demure",
+      "definition": "Modest, reserved and mindful in appearance/behavior; TikTok trend for cutesy mindfulness.",
+      "forms": [
+        "demure",
+        "very demure"
+      ],
+      "cluster": 31,
+      "similar": []
+    },
+    {
+      "word": "Ohio",
+      "definition": "Used for something weird, random or cursed; from the Only in Ohio meme.",
+      "forms": [
+        "Ohio"
+      ],
+      "cluster": 58,
+      "similar": [
+        {
+          "word": "only in Ohio",
+          "score": 0.702
+        }
+      ]
+    }
+  ]
+}

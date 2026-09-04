@@ -204,6 +204,12 @@ def main():
                         help="Seconds to wait between API calls (default 1.0).")
     parser.add_argument("--query-template", default='"{word}" slang usage',
                         help="Search query template; {word} is replaced (default: '\"{word}\" slang usage').")
+    parser.add_argument("--merge", action="store_true", default=True,
+                        help="Merge new examples with existing ones instead of replacing (default: merge).")
+    parser.add_argument("--no-merge", dest="merge", action="store_false",
+                        help="Disable merging and replace examples instead.")
+    parser.add_argument("--replace", action="store_true",
+                        help="Replace existing examples instead of merging (overrides --merge).")
     args = parser.parse_args()
 
     if not args.api_key:
@@ -243,19 +249,47 @@ def main():
             failures += 1
 
         filtered = [e for e in examples if not is_source_page(e)]
-        seen = set()
-        deduped = []
+        # Dedupe new results internally first
+        seen_new = set()
+        deduped_new = []
         for e in filtered:
             raw = (e.get("url") or "").strip()
             key = normalize_url(raw)
-            if not key or key in seen:
+            # Empty/invalid URL: use title+description as fallback key to avoid collapsing all empties
+            if not key:
+                fallback = (e.get("title") or "") + "\x1f" + (e.get("description") or "")
+                key = "__empty__:" + fallback.strip().lower()
+                if not key.strip():
+                    continue
+            if key in seen_new:
                 continue
-            seen.add(key)
-            deduped.append(e)
+            seen_new.add(key)
+            deduped_new.append(e)
 
-        record["examples"] = deduped
+        do_replace = args.replace or (not args.merge)
+        if do_replace:
+            record["examples"] = deduped_new
+        else:
+            # Merge: keep existing examples first, append new ones, deduped via normalize_url
+            existing = record.get("examples") or []
+            seen = set()
+            merged = []
+            for e in list(existing) + deduped_new:
+                raw = (e.get("url") or "").strip()
+                key = normalize_url(raw)
+                if not key:
+                    fallback = (e.get("title") or "") + "\x1f" + (e.get("description") or "")
+                    key = "__empty__:" + fallback.strip().lower()
+                    if not key.strip():
+                        continue
+                if key in seen:
+                    continue
+                seen.add(key)
+                merged.append(e)
+            record["examples"] = merged
         updated.add(id(record))
-        print(f"  {word}: {len(deduped)} example(s)")
+        action = "replaced" if do_replace else "merged"
+        print(f"  {word}: {len(deduped_new)} new, {len(record['examples'])} total ({action})")
         time.sleep(args.sleep)
 
     for record in records:

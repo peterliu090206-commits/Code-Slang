@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T15:03:41.181005+00:00",
+  "generated_at": "2026-09-04T15:38:24.552268+00:00",
   "model": "all-MiniLM-L6-v2",
   "algorithm": "hac",
   "config": {
@@ -8,301 +8,205 @@
     "metric": "cosine",
     "top": 5,
     "min_score": 0.55,
-    "use_usage": false
+    "use_usage": false,
+    "english": true,
+    "english_top": 5,
+    "english_threshold": 0.45,
+    "english_vocab_size": 10000
   },
   "count": 179,
-  "n_clusters": 118,
-  "silhouette_cosine": 0.122,
+  "n_clusters": 65,
+  "silhouette_cosine": 0.102,
+  "english_vocab_size": 10000,
   "clusters": [
     {
       "id": 0,
-      "size": 2,
+      "size": 9,
       "members": [
-        "cap",
-        "truth nuke"
+        "baddie",
+        "chopped",
+        "chud",
+        "clanker",
+        "pick-me",
+        "serving cunt",
+        "slay",
+        "slop",
+        "snatched"
       ]
     },
     {
       "id": 1,
-      "size": 2,
+      "size": 16,
       "members": [
-        "unc",
-        "uwu"
+        "-h",
+        "bffr",
+        "dih",
+        "fah",
+        "fine shyt",
+        "fuh",
+        "goofy ahh",
+        "hawk tuah",
+        "IJBOL",
+        "iykyk",
+        "SDIYBT",
+        "sheesh",
+        "stan",
+        "sybau",
+        "syfm",
+        "tuff"
       ]
     },
     {
       "id": 2,
-      "size": 6,
+      "size": 10,
       "members": [
-        "-h",
-        "dih",
-        "fah",
-        "fuh",
-        "goofy ahh",
-        "sheesh"
+        "bar",
+        "bop",
+        "glaze",
+        "glizzy",
+        "gng",
+        "gooning",
+        "gyatt",
+        "jit",
+        "pookie",
+        "zesty"
       ]
     },
     {
       "id": 3,
-      "size": 2,
+      "size": 4,
       "members": [
-        "ate",
-        "bussin'"
+        "acoustic",
+        "clapback",
+        "hit different",
+        "slaps"
       ]
     },
     {
       "id": 4,
-      "size": 3,
+      "size": 2,
       "members": [
-        "big yikes",
-        "clapback",
-        "oh that's not"
+        "finna",
+        "it's giving"
       ]
     },
     {
       "id": 5,
       "size": 2,
       "members": [
-        "ick",
-        "simp"
+        "crine",
+        "dead"
       ]
     },
     {
       "id": 6,
-      "size": 3,
+      "size": 4,
       "members": [
-        "fire",
-        "gas",
-        "lit"
+        "delulu",
+        "delusionship",
+        "geeked",
+        "tweaking"
       ]
     },
     {
       "id": 7,
-      "size": 4,
+      "size": 3,
       "members": [
-        "glaze",
-        "glizzy",
-        "gng",
-        "gyatt"
+        "yap",
+        "yart",
+        "Yassify"
       ]
     },
     {
       "id": 8,
-      "size": 2,
+      "size": 3,
       "members": [
-        "nothing ever happens",
-        "unalive"
+        "Kirkifying",
+        "lowkenuinely",
+        "lowkirkenuinely"
       ]
     },
     {
       "id": 9,
-      "size": 2,
+      "size": 7,
       "members": [
-        "gagged",
-        "shook"
+        "L",
+        "mog",
+        "moot",
+        "opp",
+        "owned",
+        "pushing P",
+        "W"
       ]
     },
     {
       "id": 10,
-      "size": 2,
+      "size": 6,
       "members": [
-        "drip",
-        "snatched"
+        "icl",
+        "pmo",
+        "simp",
+        "ts",
+        "ts pmo",
+        "vro"
       ]
     },
     {
       "id": 11,
-      "size": 2,
+      "size": 7,
       "members": [
-        "fine shyt",
-        "tuff"
+        "and I oop",
+        "ick",
+        "Khia",
+        "KMS",
+        "KYS",
+        "nugu",
+        "sksksk"
       ]
     },
     {
       "id": 12,
-      "size": 3,
+      "size": 7,
       "members": [
-        "IJBOL",
-        "iykyk",
+        "ate",
+        "buns",
+        "bussin'",
+        "bussy",
+        "cook",
+        "cooked",
         "ts frying me"
       ]
     },
     {
       "id": 13,
-      "size": 2,
+      "size": 3,
       "members": [
-        "acoustic",
-        "slaps"
+        "oh that's not",
+        "Ohio",
+        "only in Ohio"
       ]
     },
     {
       "id": 14,
-      "size": 2,
+      "size": 5,
       "members": [
-        "bop",
-        "jit"
+        "fire",
+        "function",
+        "gas",
+        "lit",
+        "zaza"
       ]
     },
     {
       "id": 15,
       "size": 2,
       "members": [
-        "opp",
-        "pushing P"
+        "aura",
+        "glow-up"
       ]
     },
     {
       "id": 16,
-      "size": 2,
-      "members": [
-        "gooning",
-        "hawk tuah"
-      ]
-    },
-    {
-      "id": 17,
-      "size": 2,
-      "members": [
-        "rage-bait",
-        "salty"
-      ]
-    },
-    {
-      "id": 18,
-      "size": 2,
-      "members": [
-        "yap",
-        "yart"
-      ]
-    },
-    {
-      "id": 19,
-      "size": 2,
-      "members": [
-        "pick-me",
-        "serving cunt"
-      ]
-    },
-    {
-      "id": 20,
-      "size": 1,
-      "members": [
-        "six-seven"
-      ]
-    },
-    {
-      "id": 21,
-      "size": 4,
-      "members": [
-        "icl",
-        "pmo",
-        "ts",
-        "ts pmo"
-      ]
-    },
-    {
-      "id": 22,
-      "size": 4,
-      "members": [
-        "bussy",
-        "SDIYBT",
-        "sybau",
-        "syfm"
-      ]
-    },
-    {
-      "id": 23,
-      "size": 2,
-      "members": [
-        "mog",
-        "moot"
-      ]
-    },
-    {
-      "id": 24,
-      "size": 2,
-      "members": [
-        "clanker",
-        "slop"
-      ]
-    },
-    {
-      "id": 25,
-      "size": 2,
-      "members": [
-        "oof",
-        "oomf"
-      ]
-    },
-    {
-      "id": 26,
-      "size": 2,
-      "members": [
-        "good boy",
-        "you good?"
-      ]
-    },
-    {
-      "id": 27,
-      "size": 2,
-      "members": [
-        "bffr",
-        "hb"
-      ]
-    },
-    {
-      "id": 28,
-      "size": 2,
-      "members": [
-        "blud",
-        "bruh"
-      ]
-    },
-    {
-      "id": 29,
-      "size": 2,
-      "members": [
-        "Khia",
-        "nugu"
-      ]
-    },
-    {
-      "id": 30,
-      "size": 1,
-      "members": [
-        "washed"
-      ]
-    },
-    {
-      "id": 31,
-      "size": 1,
-      "members": [
-        "demure"
-      ]
-    },
-    {
-      "id": 32,
-      "size": 1,
-      "members": [
-        "mew"
-      ]
-    },
-    {
-      "id": 33,
-      "size": 1,
-      "members": [
-        "pookie"
-      ]
-    },
-    {
-      "id": 34,
-      "size": 1,
-      "members": [
-        "understood the assignment"
-      ]
-    },
-    {
-      "id": 35,
       "size": 2,
       "members": [
         "iPad kid",
@@ -310,138 +214,95 @@
       ]
     },
     {
-      "id": 36,
-      "size": 1,
+      "id": 17,
+      "size": 2,
       "members": [
-        "spiritually Israeli"
+        "oof",
+        "oomf"
       ]
     },
     {
-      "id": 37,
+      "id": 18,
+      "size": 3,
+      "members": [
+        "demure",
+        "drip",
+        "tea"
+      ]
+    },
+    {
+      "id": 19,
       "size": 2,
+      "members": [
+        "cap",
+        "face card"
+      ]
+    },
+    {
+      "id": 20,
+      "size": 3,
+      "members": [
+        "basic",
+        "main character",
+        "mid"
+      ]
+    },
+    {
+      "id": 21,
+      "size": 2,
+      "members": [
+        "flop era",
+        "OK boomer"
+      ]
+    },
+    {
+      "id": 22,
+      "size": 7,
       "members": [
         "brain rot",
-        "skibidi"
+        "gagged",
+        "rizz",
+        "salty",
+        "shook",
+        "skibidi",
+        "washed"
       ]
     },
     {
-      "id": 38,
-      "size": 5,
-      "members": [
-        "broken heart emoji 💔",
-        "face with bags under eyes emoji 🫩",
-        "loudly crying face emoji 😭",
-        "skull emoji 💀",
-        "wilted flower emoji 🥀"
-      ]
-    },
-    {
-      "id": 39,
-      "size": 2,
-      "members": [
-        "cook",
-        "cooked"
-      ]
-    },
-    {
-      "id": 40,
-      "size": 1,
-      "members": [
-        "brat"
-      ]
-    },
-    {
-      "id": 41,
-      "size": 1,
-      "members": [
-        "sigma"
-      ]
-    },
-    {
-      "id": 42,
-      "size": 1,
-      "members": [
-        "it's joever"
-      ]
-    },
-    {
-      "id": 43,
-      "size": 1,
-      "members": [
-        "who is this diva?"
-      ]
-    },
-    {
-      "id": 44,
-      "size": 2,
-      "members": [
-        "L",
-        "W"
-      ]
-    },
-    {
-      "id": 45,
-      "size": 1,
-      "members": [
-        "situationship"
-      ]
-    },
-    {
-      "id": 46,
+      "id": 23,
       "size": 2,
       "members": [
         "jestermaxxing",
-        "zesty"
+        "looksmaxxing"
       ]
     },
     {
-      "id": 47,
+      "id": 24,
+      "size": 2,
+      "members": [
+        "bet",
+        "fanum tax"
+      ]
+    },
+    {
+      "id": 25,
       "size": 1,
       "members": [
-        "twin"
+        "moving"
       ]
     },
     {
-      "id": 48,
-      "size": 3,
+      "id": 26,
+      "size": 4,
       "members": [
         "beige flag",
         "green flag",
-        "red flag"
+        "red flag",
+        "vibe check"
       ]
     },
     {
-      "id": 49,
-      "size": 2,
-      "members": [
-        "flow state",
-        "locked in"
-      ]
-    },
-    {
-      "id": 50,
-      "size": 2,
-      "members": [
-        "L+Ratio",
-        "ratio"
-      ]
-    },
-    {
-      "id": 51,
-      "size": 1,
-      "members": [
-        "polyester"
-      ]
-    },
-    {
-      "id": 52,
-      "size": 1,
-      "members": [
-        "edge"
-      ]
-    },
-    {
-      "id": 53,
+      "id": 27,
       "size": 2,
       "members": [
         "sus",
@@ -449,456 +310,282 @@
       ]
     },
     {
-      "id": 54,
-      "size": 1,
-      "members": [
-        "Yassify"
-      ]
-    },
-    {
-      "id": 55,
-      "size": 1,
-      "members": [
-        "main character"
-      ]
-    },
-    {
-      "id": 56,
-      "size": 1,
-      "members": [
-        "vro"
-      ]
-    },
-    {
-      "id": 57,
+      "id": 28,
       "size": 2,
       "members": [
-        "lowkenuinely",
-        "lowkirkenuinely"
+        "fit",
+        "polyester"
       ]
     },
     {
-      "id": 58,
+      "id": 29,
+      "size": 6,
+      "members": [
+        "broken heart emoji 💔",
+        "face with bags under eyes emoji 🫩",
+        "grape",
+        "loudly crying face emoji 😭",
+        "skull emoji 💀",
+        "wilted flower emoji 🥀"
+      ]
+    },
+    {
+      "id": 30,
       "size": 2,
       "members": [
-        "Ohio",
-        "only in Ohio"
+        "cracked",
+        "skill issue"
       ]
     },
     {
-      "id": 59,
+      "id": 31,
       "size": 1,
       "members": [
-        "vaguepost"
+        "twin"
       ]
     },
     {
-      "id": 60,
+      "id": 32,
       "size": 1,
       "members": [
-        "BDE"
+        "spiritually Israeli"
       ]
     },
     {
-      "id": 61,
+      "id": 33,
       "size": 1,
       "members": [
         "ball knowledge"
       ]
     },
     {
-      "id": 62,
-      "size": 1,
-      "members": [
-        "function"
-      ]
-    },
-    {
-      "id": 63,
-      "size": 1,
-      "members": [
-        "skill issue"
-      ]
-    },
-    {
-      "id": 64,
-      "size": 1,
-      "members": [
-        "tweaking"
-      ]
-    },
-    {
-      "id": 65,
-      "size": 1,
-      "members": [
-        "el cinco"
-      ]
-    },
-    {
-      "id": 66,
-      "size": 1,
-      "members": [
-        "fanum tax"
-      ]
-    },
-    {
-      "id": 67,
-      "size": 1,
-      "members": [
-        "buns"
-      ]
-    },
-    {
-      "id": 68,
-      "size": 1,
-      "members": [
-        "out of pocket"
-      ]
-    },
-    {
-      "id": 69,
-      "size": 1,
-      "members": [
-        "looksmaxxing"
-      ]
-    },
-    {
-      "id": 70,
-      "size": 1,
-      "members": [
-        "larp"
-      ]
-    },
-    {
-      "id": 71,
-      "size": 1,
-      "members": [
-        "Roman Empire"
-      ]
-    },
-    {
-      "id": 72,
-      "size": 1,
-      "members": [
-        "hit different"
-      ]
-    },
-    {
-      "id": 73,
-      "size": 1,
-      "members": [
-        "fit"
-      ]
-    },
-    {
-      "id": 74,
-      "size": 1,
-      "members": [
-        "Kirkifying"
-      ]
-    },
-    {
-      "id": 75,
-      "size": 1,
-      "members": [
-        "touch grass"
-      ]
-    },
-    {
-      "id": 76,
-      "size": 1,
-      "members": [
-        "tea"
-      ]
-    },
-    {
-      "id": 77,
-      "size": 1,
-      "members": [
-        "nostalgia-baiting"
-      ]
-    },
-    {
-      "id": 78,
+      "id": 34,
       "size": 2,
       "members": [
-        "delulu",
-        "delusionship"
+        "good boy",
+        "you good?"
       ]
     },
     {
-      "id": 79,
+      "id": 35,
       "size": 1,
       "members": [
-        "big back"
+        "mew"
       ]
     },
     {
-      "id": 80,
+      "id": 36,
       "size": 1,
       "members": [
-        "face card"
+        "edge"
       ]
     },
     {
-      "id": 81,
-      "size": 1,
-      "members": [
-        "zaza"
-      ]
-    },
-    {
-      "id": 82,
-      "size": 1,
-      "members": [
-        "Karen"
-      ]
-    },
-    {
-      "id": 83,
-      "size": 1,
-      "members": [
-        "gem"
-      ]
-    },
-    {
-      "id": 84,
-      "size": 1,
-      "members": [
-        "crine"
-      ]
-    },
-    {
-      "id": 85,
-      "size": 1,
-      "members": [
-        "based"
-      ]
-    },
-    {
-      "id": 86,
-      "size": 1,
-      "members": [
-        "glow-up"
-      ]
-    },
-    {
-      "id": 87,
-      "size": 1,
-      "members": [
-        "stan"
-      ]
-    },
-    {
-      "id": 88,
-      "size": 1,
-      "members": [
-        "baddie"
-      ]
-    },
-    {
-      "id": 89,
-      "size": 1,
-      "members": [
-        "ghost"
-      ]
-    },
-    {
-      "id": 90,
-      "size": 1,
-      "members": [
-        "owned"
-      ]
-    },
-    {
-      "id": 91,
-      "size": 1,
-      "members": [
-        "it's giving"
-      ]
-    },
-    {
-      "id": 92,
-      "size": 1,
-      "members": [
-        "mid"
-      ]
-    },
-    {
-      "id": 93,
-      "size": 1,
-      "members": [
-        "Bean Soup Theory"
-      ]
-    },
-    {
-      "id": 94,
-      "size": 1,
-      "members": [
-        "cracked"
-      ]
-    },
-    {
-      "id": 95,
-      "size": 1,
-      "members": [
-        "bet"
-      ]
-    },
-    {
-      "id": 96,
-      "size": 1,
-      "members": [
-        "grape"
-      ]
-    },
-    {
-      "id": 97,
-      "size": 1,
-      "members": [
-        "caught in 4K"
-      ]
-    },
-    {
-      "id": 98,
-      "size": 1,
-      "members": [
-        "big yahu"
-      ]
-    },
-    {
-      "id": 99,
-      "size": 1,
-      "members": [
-        "dead"
-      ]
-    },
-    {
-      "id": 100,
-      "size": 1,
-      "members": [
-        "slay"
-      ]
-    },
-    {
-      "id": 101,
+      "id": 37,
       "size": 2,
       "members": [
-        "and I oop",
-        "sksksk"
+        "unc",
+        "uwu"
       ]
     },
     {
-      "id": 102,
-      "size": 2,
-      "members": [
-        "KMS",
-        "KYS"
-      ]
-    },
-    {
-      "id": 103,
-      "size": 1,
-      "members": [
-        "basic"
-      ]
-    },
-    {
-      "id": 104,
+      "id": 38,
       "size": 1,
       "members": [
         "Gucci"
       ]
     },
     {
-      "id": 105,
+      "id": 39,
       "size": 1,
       "members": [
-        "chopped"
+        "gem"
       ]
     },
     {
-      "id": 106,
+      "id": 40,
       "size": 1,
       "members": [
-        "bar"
+        "understood the assignment"
       ]
     },
     {
-      "id": 107,
+      "id": 41,
       "size": 1,
       "members": [
-        "aura"
+        "who is this diva?"
       ]
     },
     {
-      "id": 108,
+      "id": 42,
       "size": 1,
       "members": [
-        "chud"
+        "brat"
       ]
     },
     {
-      "id": 109,
-      "size": 1,
+      "id": 43,
+      "size": 2,
       "members": [
-        "OK boomer"
+        "L+Ratio",
+        "ratio"
       ]
     },
     {
-      "id": 110,
-      "size": 1,
+      "id": 44,
+      "size": 3,
       "members": [
-        "rizz"
+        "big back",
+        "big yahu",
+        "big yikes"
       ]
     },
     {
-      "id": 111,
+      "id": 45,
+      "size": 1,
+      "members": [
+        "vaguepost"
+      ]
+    },
+    {
+      "id": 46,
+      "size": 1,
+      "members": [
+        "touch grass"
+      ]
+    },
+    {
+      "id": 47,
+      "size": 1,
+      "members": [
+        "Roman Empire"
+      ]
+    },
+    {
+      "id": 48,
+      "size": 1,
+      "members": [
+        "six-seven"
+      ]
+    },
+    {
+      "id": 49,
+      "size": 2,
+      "members": [
+        "nostalgia-baiting",
+        "rage-bait"
+      ]
+    },
+    {
+      "id": 50,
+      "size": 1,
+      "members": [
+        "based"
+      ]
+    },
+    {
+      "id": 51,
+      "size": 1,
+      "members": [
+        "caught in 4K"
+      ]
+    },
+    {
+      "id": 52,
+      "size": 1,
+      "members": [
+        "it's joever"
+      ]
+    },
+    {
+      "id": 53,
       "size": 1,
       "members": [
         "GOAT"
       ]
     },
     {
-      "id": 112,
+      "id": 54,
       "size": 1,
       "members": [
-        "crash out"
+        "Karen"
       ]
     },
     {
-      "id": 113,
+      "id": 55,
       "size": 1,
       "members": [
-        "finna"
+        "ghost"
       ]
     },
     {
-      "id": 114,
+      "id": 56,
       "size": 1,
       "members": [
-        "moving"
+        "Bean Soup Theory"
       ]
     },
     {
-      "id": 115,
-      "size": 1,
+      "id": 57,
+      "size": 2,
       "members": [
-        "vibe check"
+        "crash out",
+        "out of pocket"
       ]
     },
     {
-      "id": 116,
-      "size": 1,
+      "id": 58,
+      "size": 4,
       "members": [
-        "geeked"
+        "BDE",
+        "blud",
+        "bruh",
+        "hb"
       ]
     },
     {
-      "id": 117,
+      "id": 59,
       "size": 1,
       "members": [
-        "flop era"
+        "el cinco"
+      ]
+    },
+    {
+      "id": 60,
+      "size": 2,
+      "members": [
+        "flow state",
+        "locked in"
+      ]
+    },
+    {
+      "id": 61,
+      "size": 1,
+      "members": [
+        "larp"
+      ]
+    },
+    {
+      "id": 62,
+      "size": 3,
+      "members": [
+        "nothing ever happens",
+        "truth nuke",
+        "unalive"
+      ]
+    },
+    {
+      "id": 63,
+      "size": 1,
+      "members": [
+        "sigma"
+      ]
+    },
+    {
+      "id": 64,
+      "size": 1,
+      "members": [
+        "situationship"
       ]
     }
   ],
@@ -909,8 +596,9 @@
       "forms": [
         "acoustic"
       ],
-      "cluster": 13,
-      "similar": []
+      "cluster": 3,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "and I oop",
@@ -918,13 +606,14 @@
       "forms": [
         "and I oop"
       ],
-      "cluster": 101,
+      "cluster": 11,
       "similar": [
         {
           "word": "sksksk",
-          "score": 0.716
+          "score": 0.703
         }
-      ]
+      ],
+      "similar_english": []
     },
     {
       "word": "aura",
@@ -932,8 +621,9 @@
       "forms": [
         "aura"
       ],
-      "cluster": 107,
-      "similar": []
+      "cluster": 15,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "ate",
@@ -941,8 +631,23 @@
       "forms": [
         "ate"
       ],
-      "cluster": 3,
-      "similar": []
+      "cluster": 12,
+      "similar": [
+        {
+          "word": "bussin'",
+          "score": 0.578
+        },
+        {
+          "word": "cook",
+          "score": 0.558
+        }
+      ],
+      "similar_english": [
+        {
+          "word": "meaning",
+          "score": 0.462
+        }
+      ]
     },
     {
       "word": "baddie",
@@ -950,8 +655,9 @@
       "forms": [
         "baddie"
       ],
-      "cluster": 88,
-      "similar": []
+      "cluster": 0,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "ball knowledge",
@@ -959,8 +665,14 @@
       "forms": [
         "ball knowledge"
       ],
-      "cluster": 61,
-      "similar": []
+      "cluster": 33,
+      "similar": [],
+      "similar_english": [
+        {
+          "word": "knowledge",
+          "score": 0.481
+        }
+      ]
     },
     {
       "word": "based",
@@ -968,8 +680,9 @@
       "forms": [
         "based"
       ],
-      "cluster": 85,
-      "similar": []
+      "cluster": 50,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "basic",
@@ -977,8 +690,9 @@
       "forms": [
         "basic"
       ],
-      "cluster": 103,
-      "similar": []
+      "cluster": 20,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "bar",
@@ -987,8 +701,9 @@
         "bar",
         "bars"
       ],
-      "cluster": 106,
-      "similar": []
+      "cluster": 2,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "BDE",
@@ -996,8 +711,14 @@
       "forms": [
         "BDE"
       ],
-      "cluster": 60,
-      "similar": []
+      "cluster": 58,
+      "similar": [
+        {
+          "word": "blud",
+          "score": 0.557
+        }
+      ],
+      "similar_english": []
     },
     {
       "word": "Bean Soup Theory",
@@ -1005,8 +726,22 @@
       "forms": [
         "Bean Soup Theory"
       ],
-      "cluster": 93,
-      "similar": []
+      "cluster": 56,
+      "similar": [],
+      "similar_english": [
+        {
+          "word": "bean",
+          "score": 0.51
+        },
+        {
+          "word": "soup",
+          "score": 0.464
+        },
+        {
+          "word": "beans",
+          "score": 0.46
+        }
+      ]
     },
     {
       "word": "beige flag",
@@ -1014,17 +749,18 @@
       "forms": [
         "beige flag"
       ],
-      "cluster": 48,
+      "cluster": 26,
       "similar": [
         {
           "word": "red flag",
-          "score": 0.76
+          "score": 0.803
         },
         {
           "word": "green flag",
-          "score": 0.756
+          "score": 0.778
         }
-      ]
+      ],
+      "similar_english": []
     },
     {
       "word": "bet",
@@ -1032,8 +768,18 @@
       "forms": [
         "bet"
       ],
-      "cluster": 95,
-      "similar": []
+      "cluster": 24,
+      "similar": [],
+      "similar_english": [
+        {
+          "word": "betting",
+          "score": 0.595
+        },
+        {
+          "word": "bets",
+          "score": 0.566
+        }
+      ]
     },
     {
       "word": "bffr",
@@ -1041,8 +787,9 @@
       "forms": [
         "bffr"
       ],
-      "cluster": 27,
-      "similar": []
+      "cluster": 1,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "big back",
@@ -1050,8 +797,23 @@
       "forms": [
         "big back"
       ],
-      "cluster": 79,
-      "similar": []
+      "cluster": 44,
+      "similar": [
+        {
+          "word": "big yikes",
+          "score": 0.557
+        }
+      ],
+      "similar_english": [
+        {
+          "word": "skinny",
+          "score": 0.476
+        },
+        {
+          "word": "fat",
+          "score": 0.462
+        }
+      ]
     },
     {
       "word": "big yikes",
@@ -1059,8 +821,18 @@
       "forms": [
         "big yikes"
       ],
-      "cluster": 4,
-      "similar": []
+      "cluster": 44,
+      "similar": [
+        {
+          "word": "big yahu",
+          "score": 0.569
+        },
+        {
+          "word": "big back",
+          "score": 0.557
+        }
+      ],
+      "similar_english": []
     },
     {
       "word": "big yahu",
@@ -1068,8 +840,14 @@
       "forms": [
         "big yahu"
       ],
-      "cluster": 98,
-      "similar": []
+      "cluster": 44,
+      "similar": [
+        {
+          "word": "big yikes",
+          "score": 0.569
+        }
+      ],
+      "similar_english": []
     },
     {
       "word": "bop",
@@ -1077,8 +855,14 @@
       "forms": [
         "bop"
       ],
-      "cluster": 14,
-      "similar": []
+      "cluster": 2,
+      "similar": [
+        {
+          "word": "jit",
+          "score": 0.559
+        }
+      ],
+      "similar_english": []
     },
     {
       "word": "brain rot",
@@ -1087,8 +871,14 @@
         "brain rot",
         "brainrot"
       ],
-      "cluster": 37,
-      "similar": []
+      "cluster": 22,
+      "similar": [
+        {
+          "word": "skibidi",
+          "score": 0.584
+        }
+      ],
+      "similar_english": []
     },
     {
       "word": "bruh",
@@ -1097,8 +887,18 @@
         "bruh",
         "bru"
       ],
-      "cluster": 28,
-      "similar": []
+      "cluster": 58,
+      "similar": [
+        {
+          "word": "blud",
+          "score": 0.569
+        },
+        {
+          "word": "hb",
+          "score": 0.561
+        }
+      ],
+      "similar_english": []
     },
     {
       "word": "buns",
@@ -1106,8 +906,9 @@
       "forms": [
         "buns"
       ],
-      "cluster": 67,
-      "similar": []
+      "cluster": 12,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "bussin'",
@@ -1115,8 +916,23 @@
       "forms": [
         "bussin'"
       ],
-      "cluster": 3,
-      "similar": []
+      "cluster": 12,
+      "similar": [
+        {
+          "word": "bussy",
+          "score": 0.661
+        },
+        {
+          "word": "ate",
+          "score": 0.578
+        }
+      ],
+      "similar_english": [
+        {
+          "word": "bus",
+          "score": 0.459
+        }
+      ]
     },
     {
       "word": "bussy",
@@ -1124,8 +940,19 @@
       "forms": [
         "bussy"
       ],
-      "cluster": 22,
-      "similar": []
+      "cluster": 12,
+      "similar": [
+        {
+          "word": "bussin'",
+          "score": 0.661
+        }
+      ],
+      "similar_english": [
+        {
+          "word": "bus",
+          "score": 0.515
+        }
+      ]
     },
     {
       "word": "blud",
@@ -1133,8 +960,18 @@
       "forms": [
         "blud"
       ],
-      "cluster": 28,
-      "similar": []
+      "cluster": 58,
+      "similar": [
+        {
+          "word": "bruh",
+          "score": 0.569
+        },
+        {
+          "word": "BDE",
+          "score": 0.557
+        }
+      ],
+      "similar_english": []
     },
     {
       "word": "cap",
@@ -1142,8 +979,14 @@
       "forms": [
         "cap"
       ],
-      "cluster": 0,
-      "similar": []
+      "cluster": 19,
+      "similar": [],
+      "similar_english": [
+        {
+          "word": "caps",
+          "score": 0.455
+        }
+      ]
     },
     {
       "word": "caught in 4K",
@@ -1151,8 +994,14 @@
       "forms": [
         "caught in 4K"
       ],
-      "cluster": 97,
-      "similar": []
+      "cluster": 51,
+      "similar": [],
+      "similar_english": [
+        {
+          "word": "caught",
+          "score": 0.478
+        }
+      ]
     },
     {
       "word": "chopped",
@@ -1160,8 +1009,23 @@
       "forms": [
         "chopped"
       ],
-      "cluster": 105,
-      "similar": []
+      "cluster": 0,
+      "similar": [
+        {
+          "word": "snatched",
+          "score": 0.562
+        }
+      ],
+      "similar_english": [
+        {
+          "word": "chop",
+          "score": 0.53
+        },
+        {
+          "word": "meaning",
+          "score": 0.479
+        }
+      ]
     },
     {
       "word": "chud",
@@ -1169,8 +1033,9 @@
       "forms": [
         "chud"
       ],
-      "cluster": 108,
-      "similar": []
+      "cluster": 0,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "clanker",
@@ -1178,8 +1043,9 @@
       "forms": [
         "clanker"
       ],
-      "cluster": 24,
-      "similar": []
+      "cluster": 0,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "clapback",
@@ -1187,8 +1053,9 @@
       "forms": [
         "clapback"
       ],
-      "cluster": 4,
-      "similar": []
+      "cluster": 3,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "cook",
@@ -1196,11 +1063,29 @@
       "forms": [
         "cook"
       ],
-      "cluster": 39,
+      "cluster": 12,
       "similar": [
         {
           "word": "cooked",
-          "score": 0.555
+          "score": 0.697
+        },
+        {
+          "word": "ate",
+          "score": 0.558
+        }
+      ],
+      "similar_english": [
+        {
+          "word": "cooking",
+          "score": 0.622
+        },
+        {
+          "word": "chef",
+          "score": 0.521
+        },
+        {
+          "word": "cuisine",
+          "score": 0.5
         }
       ]
     },
@@ -1210,11 +1095,21 @@
       "forms": [
         "cooked"
       ],
-      "cluster": 39,
+      "cluster": 12,
       "similar": [
         {
           "word": "cook",
-          "score": 0.555
+          "score": 0.697
+        },
+        {
+          "word": "ts frying me",
+          "score": 0.566
+        }
+      ],
+      "similar_english": [
+        {
+          "word": "cooking",
+          "score": 0.56
         }
       ]
     },
@@ -1224,8 +1119,26 @@
       "forms": [
         "cracked"
       ],
-      "cluster": 94,
-      "similar": []
+      "cluster": 30,
+      "similar": [],
+      "similar_english": [
+        {
+          "word": "cracking",
+          "score": 0.714
+        },
+        {
+          "word": "crack",
+          "score": 0.681
+        },
+        {
+          "word": "cracks",
+          "score": 0.671
+        },
+        {
+          "word": "breaking",
+          "score": 0.459
+        }
+      ]
     },
     {
       "word": "crash out",
@@ -1233,8 +1146,14 @@
       "forms": [
         "crash out"
       ],
-      "cluster": 112,
-      "similar": []
+      "cluster": 57,
+      "similar": [],
+      "similar_english": [
+        {
+          "word": "crash",
+          "score": 0.5
+        }
+      ]
     },
     {
       "word": "crine",
@@ -1243,8 +1162,9 @@
         "crine",
         "crying"
       ],
-      "cluster": 84,
-      "similar": []
+      "cluster": 5,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "dead",
@@ -1253,8 +1173,14 @@
         "dead",
         "ded"
       ],
-      "cluster": 99,
-      "similar": []
+      "cluster": 5,
+      "similar": [],
+      "similar_english": [
+        {
+          "word": "death",
+          "score": 0.463
+        }
+      ]
     },
     {
       "word": "delusionship",
@@ -1262,13 +1188,14 @@
       "forms": [
         "delusionship"
       ],
-      "cluster": 78,
+      "cluster": 6,
       "similar": [
         {
           "word": "delulu",
-          "score": 0.679
+          "score": 0.743
         }
-      ]
+      ],
+      "similar_english": []
     },
     {
       "word": "dih",
@@ -1276,13 +1203,22 @@
       "forms": [
         "dih"
       ],
-      "cluster": 2,
+      "cluster": 1,
       "similar": [
         {
           "word": "-h",
-          "score": 0.587
+          "score": 0.631
+        },
+        {
+          "word": "fuh",
+          "score": 0.6
+        },
+        {
+          "word": "fah",
+          "score": 0.567
         }
-      ]
+      ],
+      "similar_english": []
     },
     {
       "word": "drip",
@@ -1290,8 +1226,9 @@
       "forms": [
         "drip"
       ],
-      "cluster": 10,
-      "similar": []
+      "cluster": 18,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "edge",
@@ -1299,8 +1236,14 @@
       "forms": [
         "edge"
       ],
-      "cluster": 52,
-      "similar": []
+      "cluster": 36,
+      "similar": [],
+      "similar_english": [
+        {
+          "word": "edges",
+          "score": 0.565
+        }
+      ]
     },
     {
       "word": "el cinco",
@@ -1308,8 +1251,9 @@
       "forms": [
         "el cinco"
       ],
-      "cluster": 65,
-      "similar": []
+      "cluster": 59,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "face card",
@@ -1317,8 +1261,14 @@
       "forms": [
         "face card"
       ],
-      "cluster": 80,
-      "similar": []
+      "cluster": 19,
+      "similar": [],
+      "similar_english": [
+        {
+          "word": "face",
+          "score": 0.463
+        }
+      ]
     },
     {
       "word": "fah",
@@ -1327,13 +1277,26 @@
         "fah",
         "fahh"
       ],
-      "cluster": 2,
+      "cluster": 1,
       "similar": [
         {
           "word": "fuh",
-          "score": 0.699
+          "score": 0.726
+        },
+        {
+          "word": "-h",
+          "score": 0.623
+        },
+        {
+          "word": "goofy ahh",
+          "score": 0.597
+        },
+        {
+          "word": "dih",
+          "score": 0.567
         }
-      ]
+      ],
+      "similar_english": []
     },
     {
       "word": "fanum tax",
@@ -1341,8 +1304,14 @@
       "forms": [
         "fanum tax"
       ],
-      "cluster": 66,
-      "similar": []
+      "cluster": 24,
+      "similar": [],
+      "similar_english": [
+        {
+          "word": "twitch",
+          "score": 0.467
+        }
+      ]
     },
     {
       "word": "fine shyt",
@@ -1350,8 +1319,14 @@
       "forms": [
         "fine shyt"
       ],
-      "cluster": 11,
-      "similar": []
+      "cluster": 1,
+      "similar": [
+        {
+          "word": "fuh",
+          "score": 0.556
+        }
+      ],
+      "similar_english": []
     },
     {
       "word": "finna",
@@ -1359,8 +1334,14 @@
       "forms": [
         "finna"
       ],
-      "cluster": 113,
-      "similar": []
+      "cluster": 4,
+      "similar": [],
+      "similar_english": [
+        {
+          "word": "finn",
+          "score": 0.504
+        }
+      ]
     },
     {
       "word": "fire",
@@ -1368,8 +1349,39 @@
       "forms": [
         "fire"
       ],
-      "cluster": 6,
-      "similar": []
+      "cluster": 14,
+      "similar": [
+        {
+          "word": "lit",
+          "score": 0.621
+        },
+        {
+          "word": "gas",
+          "score": 0.593
+        }
+      ],
+      "similar_english": [
+        {
+          "word": "fires",
+          "score": 0.538
+        },
+        {
+          "word": "flame",
+          "score": 0.521
+        },
+        {
+          "word": "fireworks",
+          "score": 0.473
+        },
+        {
+          "word": "burning",
+          "score": 0.471
+        },
+        {
+          "word": "flames",
+          "score": 0.468
+        }
+      ]
     },
     {
       "word": "fit",
@@ -1378,8 +1390,18 @@
         "fit",
         "fit check"
       ],
-      "cluster": 73,
-      "similar": []
+      "cluster": 28,
+      "similar": [],
+      "similar_english": [
+        {
+          "word": "fitted",
+          "score": 0.504
+        },
+        {
+          "word": "fitting",
+          "score": 0.481
+        }
+      ]
     },
     {
       "word": "flop era",
@@ -1387,8 +1409,9 @@
       "forms": [
         "flop era"
       ],
-      "cluster": 117,
-      "similar": []
+      "cluster": 21,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "flow state",
@@ -1396,11 +1419,20 @@
       "forms": [
         "flow state"
       ],
-      "cluster": 49,
-      "similar": [
+      "cluster": 60,
+      "similar": [],
+      "similar_english": [
         {
-          "word": "locked in",
-          "score": 0.569
+          "word": "flow",
+          "score": 0.61
+        },
+        {
+          "word": "flowing",
+          "score": 0.586
+        },
+        {
+          "word": "flows",
+          "score": 0.564
         }
       ]
     },
@@ -1411,17 +1443,30 @@
         "fuh",
         "fuck"
       ],
-      "cluster": 2,
+      "cluster": 1,
       "similar": [
         {
           "word": "fah",
-          "score": 0.699
+          "score": 0.726
         },
         {
           "word": "-h",
-          "score": 0.628
+          "score": 0.698
+        },
+        {
+          "word": "dih",
+          "score": 0.6
+        },
+        {
+          "word": "goofy ahh",
+          "score": 0.559
+        },
+        {
+          "word": "fine shyt",
+          "score": 0.556
         }
-      ]
+      ],
+      "similar_english": []
     },
     {
       "word": "function",
@@ -1429,8 +1474,18 @@
       "forms": [
         "function"
       ],
-      "cluster": 62,
-      "similar": []
+      "cluster": 14,
+      "similar": [],
+      "similar_english": [
+        {
+          "word": "functions",
+          "score": 0.5
+        },
+        {
+          "word": "meaning",
+          "score": 0.457
+        }
+      ]
     },
     {
       "word": "gagged",
@@ -1438,8 +1493,9 @@
       "forms": [
         "gagged"
       ],
-      "cluster": 9,
-      "similar": []
+      "cluster": 22,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "gas",
@@ -1447,8 +1503,18 @@
       "forms": [
         "gas"
       ],
-      "cluster": 6,
-      "similar": []
+      "cluster": 14,
+      "similar": [
+        {
+          "word": "fire",
+          "score": 0.593
+        },
+        {
+          "word": "lit",
+          "score": 0.559
+        }
+      ],
+      "similar_english": []
     },
     {
       "word": "geeked",
@@ -1456,8 +1522,9 @@
       "forms": [
         "geeked"
       ],
-      "cluster": 116,
-      "similar": []
+      "cluster": 6,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "gem",
@@ -1465,8 +1532,18 @@
       "forms": [
         "gem"
       ],
-      "cluster": 83,
-      "similar": []
+      "cluster": 39,
+      "similar": [],
+      "similar_english": [
+        {
+          "word": "ruby",
+          "score": 0.477
+        },
+        {
+          "word": "rails",
+          "score": 0.454
+        }
+      ]
     },
     {
       "word": "ghost",
@@ -1474,8 +1551,18 @@
       "forms": [
         "ghost"
       ],
-      "cluster": 89,
-      "similar": []
+      "cluster": 55,
+      "similar": [],
+      "similar_english": [
+        {
+          "word": "ghosts",
+          "score": 0.523
+        },
+        {
+          "word": "haunted",
+          "score": 0.466
+        }
+      ]
     },
     {
       "word": "glaze",
@@ -1483,8 +1570,18 @@
       "forms": [
         "glaze"
       ],
-      "cluster": 7,
-      "similar": []
+      "cluster": 2,
+      "similar": [
+        {
+          "word": "gng",
+          "score": 0.599
+        },
+        {
+          "word": "glizzy",
+          "score": 0.593
+        }
+      ],
+      "similar_english": []
     },
     {
       "word": "glizzy",
@@ -1492,8 +1589,26 @@
       "forms": [
         "glizzy"
       ],
-      "cluster": 7,
-      "similar": []
+      "cluster": 2,
+      "similar": [
+        {
+          "word": "gng",
+          "score": 0.623
+        },
+        {
+          "word": "glaze",
+          "score": 0.593
+        },
+        {
+          "word": "zesty",
+          "score": 0.576
+        },
+        {
+          "word": "gyatt",
+          "score": 0.551
+        }
+      ],
+      "similar_english": []
     },
     {
       "word": "glow-up",
@@ -1501,8 +1616,14 @@
       "forms": [
         "glow-up"
       ],
-      "cluster": 86,
-      "similar": []
+      "cluster": 15,
+      "similar": [],
+      "similar_english": [
+        {
+          "word": "glow",
+          "score": 0.674
+        }
+      ]
     },
     {
       "word": "GOAT",
@@ -1510,8 +1631,9 @@
       "forms": [
         "GOAT"
       ],
-      "cluster": 111,
-      "similar": []
+      "cluster": 53,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "good boy",
@@ -1520,8 +1642,14 @@
         "good boy",
         "good girl"
       ],
-      "cluster": 26,
-      "similar": []
+      "cluster": 34,
+      "similar": [
+        {
+          "word": "you good?",
+          "score": 0.613
+        }
+      ],
+      "similar_english": []
     },
     {
       "word": "goofy ahh",
@@ -1529,8 +1657,22 @@
       "forms": [
         "goofy ahh"
       ],
-      "cluster": 2,
-      "similar": []
+      "cluster": 1,
+      "similar": [
+        {
+          "word": "fah",
+          "score": 0.597
+        },
+        {
+          "word": "-h",
+          "score": 0.566
+        },
+        {
+          "word": "fuh",
+          "score": 0.559
+        }
+      ],
+      "similar_english": []
     },
     {
       "word": "gooning",
@@ -1538,8 +1680,9 @@
       "forms": [
         "gooning"
       ],
-      "cluster": 16,
-      "similar": []
+      "cluster": 2,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "gng",
@@ -1547,8 +1690,18 @@
       "forms": [
         "gng"
       ],
-      "cluster": 7,
-      "similar": []
+      "cluster": 2,
+      "similar": [
+        {
+          "word": "glizzy",
+          "score": 0.623
+        },
+        {
+          "word": "glaze",
+          "score": 0.599
+        }
+      ],
+      "similar_english": []
     },
     {
       "word": "green flag",
@@ -1556,15 +1709,21 @@
       "forms": [
         "green flag"
       ],
-      "cluster": 48,
+      "cluster": 26,
       "similar": [
         {
           "word": "beige flag",
-          "score": 0.756
+          "score": 0.778
         },
         {
           "word": "red flag",
-          "score": 0.711
+          "score": 0.772
+        }
+      ],
+      "similar_english": [
+        {
+          "word": "green",
+          "score": 0.53
         }
       ]
     },
@@ -1574,8 +1733,9 @@
       "forms": [
         "Gucci"
       ],
-      "cluster": 104,
-      "similar": []
+      "cluster": 38,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "gyatt",
@@ -1583,8 +1743,14 @@
       "forms": [
         "gyatt"
       ],
-      "cluster": 7,
-      "similar": []
+      "cluster": 2,
+      "similar": [
+        {
+          "word": "glizzy",
+          "score": 0.551
+        }
+      ],
+      "similar_english": []
     },
     {
       "word": "grape",
@@ -1592,8 +1758,9 @@
       "forms": [
         "grape"
       ],
-      "cluster": 96,
-      "similar": []
+      "cluster": 29,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "-h",
@@ -1601,17 +1768,26 @@
       "forms": [
         "-h"
       ],
-      "cluster": 2,
+      "cluster": 1,
       "similar": [
         {
           "word": "fuh",
-          "score": 0.628
+          "score": 0.698
         },
         {
           "word": "dih",
-          "score": 0.587
+          "score": 0.631
+        },
+        {
+          "word": "fah",
+          "score": 0.623
+        },
+        {
+          "word": "goofy ahh",
+          "score": 0.566
         }
-      ]
+      ],
+      "similar_english": []
     },
     {
       "word": "hawk tuah",
@@ -1619,8 +1795,14 @@
       "forms": [
         "hawk tuah"
       ],
-      "cluster": 16,
-      "similar": []
+      "cluster": 1,
+      "similar": [],
+      "similar_english": [
+        {
+          "word": "hawk",
+          "score": 0.524
+        }
+      ]
     },
     {
       "word": "hb",
@@ -1629,8 +1811,14 @@
         "hb",
         "hg"
       ],
-      "cluster": 27,
-      "similar": []
+      "cluster": 58,
+      "similar": [
+        {
+          "word": "bruh",
+          "score": 0.561
+        }
+      ],
+      "similar_english": []
     },
     {
       "word": "hit different",
@@ -1638,8 +1826,9 @@
       "forms": [
         "hit different"
       ],
-      "cluster": 72,
-      "similar": []
+      "cluster": 3,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "ick",
@@ -1647,8 +1836,9 @@
       "forms": [
         "ick"
       ],
-      "cluster": 5,
-      "similar": []
+      "cluster": 11,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "icl",
@@ -1656,13 +1846,22 @@
       "forms": [
         "icl"
       ],
-      "cluster": 21,
+      "cluster": 10,
       "similar": [
         {
           "word": "ts",
-          "score": 0.573
+          "score": 0.67
+        },
+        {
+          "word": "pmo",
+          "score": 0.665
+        },
+        {
+          "word": "ts pmo",
+          "score": 0.564
         }
-      ]
+      ],
+      "similar_english": []
     },
     {
       "word": "IJBOL",
@@ -1670,8 +1869,14 @@
       "forms": [
         "IJBOL"
       ],
-      "cluster": 12,
-      "similar": []
+      "cluster": 1,
+      "similar": [
+        {
+          "word": "iykyk",
+          "score": 0.581
+        }
+      ],
+      "similar_english": []
     },
     {
       "word": "iPad kid",
@@ -1679,8 +1884,14 @@
       "forms": [
         "iPad kid"
       ],
-      "cluster": 35,
-      "similar": []
+      "cluster": 16,
+      "similar": [],
+      "similar_english": [
+        {
+          "word": "ipad",
+          "score": 0.479
+        }
+      ]
     },
     {
       "word": "it's giving",
@@ -1688,8 +1899,26 @@
       "forms": [
         "it's giving"
       ],
-      "cluster": 91,
-      "similar": []
+      "cluster": 4,
+      "similar": [],
+      "similar_english": [
+        {
+          "word": "giving",
+          "score": 0.541
+        },
+        {
+          "word": "meaning",
+          "score": 0.498
+        },
+        {
+          "word": "means",
+          "score": 0.488
+        },
+        {
+          "word": "mean",
+          "score": 0.455
+        }
+      ]
     },
     {
       "word": "it's joever",
@@ -1697,8 +1926,14 @@
       "forms": [
         "it's joever"
       ],
-      "cluster": 42,
-      "similar": []
+      "cluster": 52,
+      "similar": [],
+      "similar_english": [
+        {
+          "word": "joe",
+          "score": 0.49
+        }
+      ]
     },
     {
       "word": "iykyk",
@@ -1706,8 +1941,14 @@
       "forms": [
         "iykyk"
       ],
-      "cluster": 12,
-      "similar": []
+      "cluster": 1,
+      "similar": [
+        {
+          "word": "IJBOL",
+          "score": 0.581
+        }
+      ],
+      "similar_english": []
     },
     {
       "word": "jit",
@@ -1715,8 +1956,14 @@
       "forms": [
         "jit"
       ],
-      "cluster": 14,
-      "similar": []
+      "cluster": 2,
+      "similar": [
+        {
+          "word": "bop",
+          "score": 0.559
+        }
+      ],
+      "similar_english": []
     },
     {
       "word": "jestermaxxing",
@@ -1724,8 +1971,14 @@
       "forms": [
         "jestermaxxing"
       ],
-      "cluster": 46,
-      "similar": []
+      "cluster": 23,
+      "similar": [
+        {
+          "word": "looksmaxxing",
+          "score": 0.583
+        }
+      ],
+      "similar_english": []
     },
     {
       "word": "Karen",
@@ -1733,8 +1986,9 @@
       "forms": [
         "Karen"
       ],
-      "cluster": 82,
-      "similar": []
+      "cluster": 54,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "Khia",
@@ -1742,8 +1996,9 @@
       "forms": [
         "Khia"
       ],
-      "cluster": 29,
-      "similar": []
+      "cluster": 11,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "Kirkifying",
@@ -1751,8 +2006,14 @@
       "forms": [
         "Kirkifying"
       ],
-      "cluster": 74,
-      "similar": []
+      "cluster": 8,
+      "similar": [],
+      "similar_english": [
+        {
+          "word": "kirk",
+          "score": 0.553
+        }
+      ]
     },
     {
       "word": "KMS",
@@ -1760,13 +2021,14 @@
       "forms": [
         "KMS"
       ],
-      "cluster": 102,
+      "cluster": 11,
       "similar": [
         {
           "word": "KYS",
-          "score": 0.731
+          "score": 0.743
         }
-      ]
+      ],
+      "similar_english": []
     },
     {
       "word": "KYS",
@@ -1774,13 +2036,14 @@
       "forms": [
         "KYS"
       ],
-      "cluster": 102,
+      "cluster": 11,
       "similar": [
         {
           "word": "KMS",
-          "score": 0.731
+          "score": 0.743
         }
-      ]
+      ],
+      "similar_english": []
     },
     {
       "word": "L",
@@ -1788,11 +2051,17 @@
       "forms": [
         "L"
       ],
-      "cluster": 44,
+      "cluster": 9,
       "similar": [
         {
           "word": "W",
-          "score": 0.821
+          "score": 0.829
+        }
+      ],
+      "similar_english": [
+        {
+          "word": "meaning",
+          "score": 0.51
         }
       ]
     },
@@ -1802,8 +2071,14 @@
       "forms": [
         "L+Ratio"
       ],
-      "cluster": 50,
-      "similar": []
+      "cluster": 43,
+      "similar": [
+        {
+          "word": "ratio",
+          "score": 0.638
+        }
+      ],
+      "similar_english": []
     },
     {
       "word": "larp",
@@ -1811,8 +2086,9 @@
       "forms": [
         "larp"
       ],
-      "cluster": 70,
-      "similar": []
+      "cluster": 61,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "lit",
@@ -1820,8 +2096,23 @@
       "forms": [
         "lit"
       ],
-      "cluster": 6,
-      "similar": []
+      "cluster": 14,
+      "similar": [
+        {
+          "word": "fire",
+          "score": 0.621
+        },
+        {
+          "word": "gas",
+          "score": 0.559
+        }
+      ],
+      "similar_english": [
+        {
+          "word": "meaning",
+          "score": 0.453
+        }
+      ]
     },
     {
       "word": "locked in",
@@ -1829,11 +2120,24 @@
       "forms": [
         "locked in"
       ],
-      "cluster": 49,
-      "similar": [
+      "cluster": 60,
+      "similar": [],
+      "similar_english": [
         {
-          "word": "flow state",
+          "word": "locking",
+          "score": 0.636
+        },
+        {
+          "word": "lock",
           "score": 0.569
+        },
+        {
+          "word": "locks",
+          "score": 0.536
+        },
+        {
+          "word": "locked",
+          "score": 0.528
         }
       ]
     },
@@ -1843,8 +2147,14 @@
       "forms": [
         "looksmaxxing"
       ],
-      "cluster": 69,
-      "similar": []
+      "cluster": 23,
+      "similar": [
+        {
+          "word": "jestermaxxing",
+          "score": 0.583
+        }
+      ],
+      "similar_english": []
     },
     {
       "word": "lowkenuinely",
@@ -1852,13 +2162,14 @@
       "forms": [
         "lowkenuinely"
       ],
-      "cluster": 57,
+      "cluster": 8,
       "similar": [
         {
           "word": "lowkirkenuinely",
-          "score": 0.82
+          "score": 0.819
         }
-      ]
+      ],
+      "similar_english": []
     },
     {
       "word": "lowkirkenuinely",
@@ -1866,13 +2177,14 @@
       "forms": [
         "lowkirkenuinely"
       ],
-      "cluster": 57,
+      "cluster": 8,
       "similar": [
         {
           "word": "lowkenuinely",
-          "score": 0.82
+          "score": 0.819
         }
-      ]
+      ],
+      "similar_english": []
     },
     {
       "word": "main character",
@@ -1881,8 +2193,14 @@
         "main character",
         "MC"
       ],
-      "cluster": 55,
-      "similar": []
+      "cluster": 20,
+      "similar": [],
+      "similar_english": [
+        {
+          "word": "character",
+          "score": 0.478
+        }
+      ]
     },
     {
       "word": "mew",
@@ -1890,8 +2208,9 @@
       "forms": [
         "mew"
       ],
-      "cluster": 32,
-      "similar": []
+      "cluster": 35,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "mid",
@@ -1899,8 +2218,9 @@
       "forms": [
         "mid"
       ],
-      "cluster": 92,
-      "similar": []
+      "cluster": 20,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "mog",
@@ -1908,8 +2228,14 @@
       "forms": [
         "mog"
       ],
-      "cluster": 23,
-      "similar": []
+      "cluster": 9,
+      "similar": [
+        {
+          "word": "moot",
+          "score": 0.628
+        }
+      ],
+      "similar_english": []
     },
     {
       "word": "moot",
@@ -1918,8 +2244,14 @@
         "moot",
         "moots"
       ],
-      "cluster": 23,
-      "similar": []
+      "cluster": 9,
+      "similar": [
+        {
+          "word": "mog",
+          "score": 0.628
+        }
+      ],
+      "similar_english": []
     },
     {
       "word": "moving",
@@ -1927,8 +2259,18 @@
       "forms": [
         "moving"
       ],
-      "cluster": 114,
-      "similar": []
+      "cluster": 25,
+      "similar": [],
+      "similar_english": [
+        {
+          "word": "move",
+          "score": 0.543
+        },
+        {
+          "word": "movement",
+          "score": 0.503
+        }
+      ]
     },
     {
       "word": "nepo baby",
@@ -1936,8 +2278,9 @@
       "forms": [
         "nepo baby"
       ],
-      "cluster": 35,
-      "similar": []
+      "cluster": 16,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "nugu",
@@ -1945,8 +2288,9 @@
       "forms": [
         "nugu"
       ],
-      "cluster": 29,
-      "similar": []
+      "cluster": 11,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "nostalgia-baiting",
@@ -1954,8 +2298,19 @@
       "forms": [
         "nostalgia-baiting"
       ],
-      "cluster": 77,
-      "similar": []
+      "cluster": 49,
+      "similar": [
+        {
+          "word": "rage-bait",
+          "score": 0.553
+        }
+      ],
+      "similar_english": [
+        {
+          "word": "bait",
+          "score": 0.451
+        }
+      ]
     },
     {
       "word": "nothing ever happens",
@@ -1963,8 +2318,9 @@
       "forms": [
         "nothing ever happens"
       ],
-      "cluster": 8,
-      "similar": []
+      "cluster": 62,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "only in Ohio",
@@ -1972,13 +2328,14 @@
       "forms": [
         "only in Ohio"
       ],
-      "cluster": 58,
+      "cluster": 13,
       "similar": [
         {
           "word": "Ohio",
-          "score": 0.702
+          "score": 0.772
         }
-      ]
+      ],
+      "similar_english": []
     },
     {
       "word": "OK boomer",
@@ -1986,8 +2343,9 @@
       "forms": [
         "OK boomer"
       ],
-      "cluster": 109,
-      "similar": []
+      "cluster": 21,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "oof",
@@ -1995,8 +2353,14 @@
       "forms": [
         "oof"
       ],
-      "cluster": 25,
-      "similar": []
+      "cluster": 17,
+      "similar": [
+        {
+          "word": "oomf",
+          "score": 0.589
+        }
+      ],
+      "similar_english": []
     },
     {
       "word": "oh that's not",
@@ -2004,8 +2368,9 @@
       "forms": [
         "oh that's not"
       ],
-      "cluster": 4,
-      "similar": []
+      "cluster": 13,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "oomf",
@@ -2013,8 +2378,14 @@
       "forms": [
         "oomf"
       ],
-      "cluster": 25,
-      "similar": []
+      "cluster": 17,
+      "similar": [
+        {
+          "word": "oof",
+          "score": 0.589
+        }
+      ],
+      "similar_english": []
     },
     {
       "word": "opp",
@@ -2022,8 +2393,9 @@
       "forms": [
         "opp"
       ],
-      "cluster": 15,
-      "similar": []
+      "cluster": 9,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "out of pocket",
@@ -2031,8 +2403,14 @@
       "forms": [
         "out of pocket"
       ],
-      "cluster": 68,
-      "similar": []
+      "cluster": 57,
+      "similar": [],
+      "similar_english": [
+        {
+          "word": "pocket",
+          "score": 0.489
+        }
+      ]
     },
     {
       "word": "owned",
@@ -2040,8 +2418,9 @@
       "forms": [
         "owned"
       ],
-      "cluster": 90,
-      "similar": []
+      "cluster": 9,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "pick-me",
@@ -2049,8 +2428,18 @@
       "forms": [
         "pick-me"
       ],
-      "cluster": 19,
-      "similar": []
+      "cluster": 0,
+      "similar": [],
+      "similar_english": [
+        {
+          "word": "picking",
+          "score": 0.546
+        },
+        {
+          "word": "pick",
+          "score": 0.464
+        }
+      ]
     },
     {
       "word": "pmo",
@@ -2058,13 +2447,22 @@
       "forms": [
         "pmo"
       ],
-      "cluster": 21,
+      "cluster": 10,
       "similar": [
         {
           "word": "ts pmo",
-          "score": 0.878
+          "score": 0.916
+        },
+        {
+          "word": "icl",
+          "score": 0.665
+        },
+        {
+          "word": "ts",
+          "score": 0.654
         }
-      ]
+      ],
+      "similar_english": []
     },
     {
       "word": "polyester",
@@ -2072,8 +2470,14 @@
       "forms": [
         "polyester"
       ],
-      "cluster": 51,
-      "similar": []
+      "cluster": 28,
+      "similar": [],
+      "similar_english": [
+        {
+          "word": "fabric",
+          "score": 0.451
+        }
+      ]
     },
     {
       "word": "pookie",
@@ -2081,8 +2485,9 @@
       "forms": [
         "pookie"
       ],
-      "cluster": 33,
-      "similar": []
+      "cluster": 2,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "pushing P",
@@ -2090,8 +2495,22 @@
       "forms": [
         "pushing P"
       ],
-      "cluster": 15,
-      "similar": []
+      "cluster": 9,
+      "similar": [],
+      "similar_english": [
+        {
+          "word": "push",
+          "score": 0.502
+        },
+        {
+          "word": "pushing",
+          "score": 0.496
+        },
+        {
+          "word": "pushes",
+          "score": 0.467
+        }
+      ]
     },
     {
       "word": "ratio",
@@ -2099,8 +2518,14 @@
       "forms": [
         "ratio"
       ],
-      "cluster": 50,
-      "similar": []
+      "cluster": 43,
+      "similar": [
+        {
+          "word": "L+Ratio",
+          "score": 0.638
+        }
+      ],
+      "similar_english": []
     },
     {
       "word": "rage-bait",
@@ -2108,8 +2533,27 @@
       "forms": [
         "rage-bait"
       ],
-      "cluster": 17,
-      "similar": []
+      "cluster": 49,
+      "similar": [
+        {
+          "word": "nostalgia-baiting",
+          "score": 0.553
+        }
+      ],
+      "similar_english": [
+        {
+          "word": "rage",
+          "score": 0.569
+        },
+        {
+          "word": "bait",
+          "score": 0.485
+        },
+        {
+          "word": "anger",
+          "score": 0.469
+        }
+      ]
     },
     {
       "word": "red flag",
@@ -2117,17 +2561,18 @@
       "forms": [
         "red flag"
       ],
-      "cluster": 48,
+      "cluster": 26,
       "similar": [
         {
           "word": "beige flag",
-          "score": 0.76
+          "score": 0.803
         },
         {
           "word": "green flag",
-          "score": 0.711
+          "score": 0.772
         }
-      ]
+      ],
+      "similar_english": []
     },
     {
       "word": "rizz",
@@ -2135,8 +2580,14 @@
       "forms": [
         "rizz"
       ],
-      "cluster": 110,
-      "similar": []
+      "cluster": 22,
+      "similar": [
+        {
+          "word": "salty",
+          "score": 0.555
+        }
+      ],
+      "similar_english": []
     },
     {
       "word": "Roman Empire",
@@ -2144,8 +2595,22 @@
       "forms": [
         "Roman Empire"
       ],
-      "cluster": 71,
-      "similar": []
+      "cluster": 47,
+      "similar": [],
+      "similar_english": [
+        {
+          "word": "roman",
+          "score": 0.532
+        },
+        {
+          "word": "romans",
+          "score": 0.511
+        },
+        {
+          "word": "rome",
+          "score": 0.478
+        }
+      ]
     },
     {
       "word": "salty",
@@ -2153,8 +2618,19 @@
       "forms": [
         "salty"
       ],
-      "cluster": 17,
-      "similar": []
+      "cluster": 22,
+      "similar": [
+        {
+          "word": "rizz",
+          "score": 0.555
+        }
+      ],
+      "similar_english": [
+        {
+          "word": "salt",
+          "score": 0.481
+        }
+      ]
     },
     {
       "word": "SDIYBT",
@@ -2162,8 +2638,14 @@
       "forms": [
         "SDIYBT"
       ],
-      "cluster": 22,
-      "similar": []
+      "cluster": 1,
+      "similar": [],
+      "similar_english": [
+        {
+          "word": "meaning",
+          "score": 0.46
+        }
+      ]
     },
     {
       "word": "serving cunt",
@@ -2171,8 +2653,22 @@
       "forms": [
         "serving cunt"
       ],
-      "cluster": 19,
-      "similar": []
+      "cluster": 0,
+      "similar": [],
+      "similar_english": [
+        {
+          "word": "cunt",
+          "score": 0.519
+        },
+        {
+          "word": "serving",
+          "score": 0.488
+        },
+        {
+          "word": "serve",
+          "score": 0.47
+        }
+      ]
     },
     {
       "word": "sheesh",
@@ -2180,8 +2676,9 @@
       "forms": [
         "sheesh"
       ],
-      "cluster": 2,
-      "similar": []
+      "cluster": 1,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "shook",
@@ -2189,8 +2686,18 @@
       "forms": [
         "shook"
       ],
-      "cluster": 9,
-      "similar": []
+      "cluster": 22,
+      "similar": [],
+      "similar_english": [
+        {
+          "word": "shaking",
+          "score": 0.586
+        },
+        {
+          "word": "shake",
+          "score": 0.49
+        }
+      ]
     },
     {
       "word": "sigma",
@@ -2199,8 +2706,9 @@
         "sigma",
         "sigma male"
       ],
-      "cluster": 41,
-      "similar": []
+      "cluster": 63,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "simp",
@@ -2208,8 +2716,9 @@
       "forms": [
         "simp"
       ],
-      "cluster": 5,
-      "similar": []
+      "cluster": 10,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "situationship",
@@ -2217,8 +2726,26 @@
       "forms": [
         "situationship"
       ],
-      "cluster": 45,
-      "similar": []
+      "cluster": 64,
+      "similar": [],
+      "similar_english": [
+        {
+          "word": "dating",
+          "score": 0.546
+        },
+        {
+          "word": "relationships",
+          "score": 0.46
+        },
+        {
+          "word": "situations",
+          "score": 0.456
+        },
+        {
+          "word": "relationship",
+          "score": 0.451
+        }
+      ]
     },
     {
       "word": "six-seven",
@@ -2227,8 +2754,22 @@
         "six-seven",
         "6-7"
       ],
-      "cluster": 20,
-      "similar": []
+      "cluster": 48,
+      "similar": [],
+      "similar_english": [
+        {
+          "word": "seven",
+          "score": 0.55
+        },
+        {
+          "word": "seventh",
+          "score": 0.505
+        },
+        {
+          "word": "six",
+          "score": 0.503
+        }
+      ]
     },
     {
       "word": "skibidi",
@@ -2236,8 +2777,14 @@
       "forms": [
         "skibidi"
       ],
-      "cluster": 37,
-      "similar": []
+      "cluster": 22,
+      "similar": [
+        {
+          "word": "brain rot",
+          "score": 0.584
+        }
+      ],
+      "similar_english": []
     },
     {
       "word": "skill issue",
@@ -2245,8 +2792,18 @@
       "forms": [
         "skill issue"
       ],
-      "cluster": 63,
-      "similar": []
+      "cluster": 30,
+      "similar": [],
+      "similar_english": [
+        {
+          "word": "skill",
+          "score": 0.471
+        },
+        {
+          "word": "inability",
+          "score": 0.466
+        }
+      ]
     },
     {
       "word": "sksksk",
@@ -2254,13 +2811,14 @@
       "forms": [
         "sksksk"
       ],
-      "cluster": 101,
+      "cluster": 11,
       "similar": [
         {
           "word": "and I oop",
-          "score": 0.716
+          "score": 0.703
         }
-      ]
+      ],
+      "similar_english": []
     },
     {
       "word": "slaps",
@@ -2268,8 +2826,14 @@
       "forms": [
         "slaps"
       ],
-      "cluster": 13,
-      "similar": []
+      "cluster": 3,
+      "similar": [],
+      "similar_english": [
+        {
+          "word": "slap",
+          "score": 0.618
+        }
+      ]
     },
     {
       "word": "slay",
@@ -2277,8 +2841,19 @@
       "forms": [
         "slay"
       ],
-      "cluster": 100,
-      "similar": []
+      "cluster": 0,
+      "similar": [
+        {
+          "word": "slop",
+          "score": 0.586
+        }
+      ],
+      "similar_english": [
+        {
+          "word": "meaning",
+          "score": 0.48
+        }
+      ]
     },
     {
       "word": "slop",
@@ -2286,8 +2861,14 @@
       "forms": [
         "slop"
       ],
-      "cluster": 24,
-      "similar": []
+      "cluster": 0,
+      "similar": [
+        {
+          "word": "slay",
+          "score": 0.586
+        }
+      ],
+      "similar_english": []
     },
     {
       "word": "snatched",
@@ -2295,8 +2876,19 @@
       "forms": [
         "snatched"
       ],
-      "cluster": 10,
-      "similar": []
+      "cluster": 0,
+      "similar": [
+        {
+          "word": "chopped",
+          "score": 0.562
+        }
+      ],
+      "similar_english": [
+        {
+          "word": "grab",
+          "score": 0.465
+        }
+      ]
     },
     {
       "word": "spiritually Israeli",
@@ -2304,8 +2896,22 @@
       "forms": [
         "spiritually Israeli"
       ],
-      "cluster": 36,
-      "similar": []
+      "cluster": 32,
+      "similar": [],
+      "similar_english": [
+        {
+          "word": "israeli",
+          "score": 0.53
+        },
+        {
+          "word": "hebrew",
+          "score": 0.468
+        },
+        {
+          "word": "jewish",
+          "score": 0.455
+        }
+      ]
     },
     {
       "word": "stan",
@@ -2313,8 +2919,9 @@
       "forms": [
         "stan"
       ],
-      "cluster": 87,
-      "similar": []
+      "cluster": 1,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "sus",
@@ -2322,8 +2929,14 @@
       "forms": [
         "sus"
       ],
-      "cluster": 53,
-      "similar": []
+      "cluster": 27,
+      "similar": [
+        {
+          "word": "sussy baka",
+          "score": 0.562
+        }
+      ],
+      "similar_english": []
     },
     {
       "word": "sussy baka",
@@ -2331,8 +2944,14 @@
       "forms": [
         "sussy baka"
       ],
-      "cluster": 53,
-      "similar": []
+      "cluster": 27,
+      "similar": [
+        {
+          "word": "sus",
+          "score": 0.562
+        }
+      ],
+      "similar_english": []
     },
     {
       "word": "sybau",
@@ -2340,13 +2959,14 @@
       "forms": [
         "sybau"
       ],
-      "cluster": 22,
+      "cluster": 1,
       "similar": [
         {
           "word": "syfm",
-          "score": 0.628
+          "score": 0.698
         }
-      ]
+      ],
+      "similar_english": []
     },
     {
       "word": "syfm",
@@ -2354,13 +2974,14 @@
       "forms": [
         "syfm"
       ],
-      "cluster": 22,
+      "cluster": 1,
       "similar": [
         {
           "word": "sybau",
-          "score": 0.628
+          "score": 0.698
         }
-      ]
+      ],
+      "similar_english": []
     },
     {
       "word": "tea",
@@ -2368,8 +2989,9 @@
       "forms": [
         "tea"
       ],
-      "cluster": 76,
-      "similar": []
+      "cluster": 18,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "touch grass",
@@ -2377,8 +2999,22 @@
       "forms": [
         "touch grass"
       ],
-      "cluster": 75,
-      "similar": []
+      "cluster": 46,
+      "similar": [],
+      "similar_english": [
+        {
+          "word": "grass",
+          "score": 0.524
+        },
+        {
+          "word": "lawn",
+          "score": 0.497
+        },
+        {
+          "word": "turf",
+          "score": 0.487
+        }
+      ]
     },
     {
       "word": "truth nuke",
@@ -2387,8 +3023,9 @@
         "truth nuke",
         "trvthnvke"
       ],
-      "cluster": 0,
-      "similar": []
+      "cluster": 62,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "ts",
@@ -2396,17 +3033,22 @@
       "forms": [
         "ts"
       ],
-      "cluster": 21,
+      "cluster": 10,
       "similar": [
         {
           "word": "ts pmo",
-          "score": 0.664
+          "score": 0.728
         },
         {
           "word": "icl",
-          "score": 0.573
+          "score": 0.67
+        },
+        {
+          "word": "pmo",
+          "score": 0.654
         }
-      ]
+      ],
+      "similar_english": []
     },
     {
       "word": "ts frying me",
@@ -2415,7 +3057,18 @@
         "ts frying me"
       ],
       "cluster": 12,
-      "similar": []
+      "similar": [
+        {
+          "word": "cooked",
+          "score": 0.566
+        }
+      ],
+      "similar_english": [
+        {
+          "word": "fry",
+          "score": 0.494
+        }
+      ]
     },
     {
       "word": "ts pmo",
@@ -2423,17 +3076,22 @@
       "forms": [
         "ts pmo"
       ],
-      "cluster": 21,
+      "cluster": 10,
       "similar": [
         {
           "word": "pmo",
-          "score": 0.878
+          "score": 0.916
         },
         {
           "word": "ts",
-          "score": 0.664
+          "score": 0.728
+        },
+        {
+          "word": "icl",
+          "score": 0.564
         }
-      ]
+      ],
+      "similar_english": []
     },
     {
       "word": "tuff",
@@ -2441,8 +3099,9 @@
       "forms": [
         "tuff"
       ],
-      "cluster": 11,
-      "similar": []
+      "cluster": 1,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "tweaking",
@@ -2450,8 +3109,9 @@
       "forms": [
         "tweaking"
       ],
-      "cluster": 64,
-      "similar": []
+      "cluster": 6,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "twin",
@@ -2459,8 +3119,14 @@
       "forms": [
         "twin"
       ],
-      "cluster": 47,
-      "similar": []
+      "cluster": 31,
+      "similar": [],
+      "similar_english": [
+        {
+          "word": "twins",
+          "score": 0.616
+        }
+      ]
     },
     {
       "word": "unalive",
@@ -2468,8 +3134,9 @@
       "forms": [
         "unalive"
       ],
-      "cluster": 8,
-      "similar": []
+      "cluster": 62,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "unc",
@@ -2477,8 +3144,9 @@
       "forms": [
         "unc"
       ],
-      "cluster": 1,
-      "similar": []
+      "cluster": 37,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "understood the assignment",
@@ -2486,8 +3154,18 @@
       "forms": [
         "understood the assignment"
       ],
-      "cluster": 34,
-      "similar": []
+      "cluster": 40,
+      "similar": [],
+      "similar_english": [
+        {
+          "word": "assignments",
+          "score": 0.516
+        },
+        {
+          "word": "assignment",
+          "score": 0.496
+        }
+      ]
     },
     {
       "word": "uwu",
@@ -2495,8 +3173,9 @@
       "forms": [
         "uwu"
       ],
-      "cluster": 1,
-      "similar": []
+      "cluster": 37,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "vaguepost",
@@ -2504,8 +3183,9 @@
       "forms": [
         "vaguepost"
       ],
-      "cluster": 59,
-      "similar": []
+      "cluster": 45,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "vibe check",
@@ -2513,8 +3193,14 @@
       "forms": [
         "vibe check"
       ],
-      "cluster": 115,
-      "similar": []
+      "cluster": 26,
+      "similar": [],
+      "similar_english": [
+        {
+          "word": "vibe",
+          "score": 0.578
+        }
+      ]
     },
     {
       "word": "vro",
@@ -2522,8 +3208,9 @@
       "forms": [
         "vro"
       ],
-      "cluster": 56,
-      "similar": []
+      "cluster": 10,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "W",
@@ -2531,13 +3218,14 @@
       "forms": [
         "W"
       ],
-      "cluster": 44,
+      "cluster": 9,
       "similar": [
         {
           "word": "L",
-          "score": 0.821
+          "score": 0.829
         }
-      ]
+      ],
+      "similar_english": []
     },
     {
       "word": "washed",
@@ -2545,8 +3233,18 @@
       "forms": [
         "washed"
       ],
-      "cluster": 30,
-      "similar": []
+      "cluster": 22,
+      "similar": [],
+      "similar_english": [
+        {
+          "word": "washing",
+          "score": 0.492
+        },
+        {
+          "word": "wash",
+          "score": 0.456
+        }
+      ]
     },
     {
       "word": "who is this diva?",
@@ -2554,8 +3252,9 @@
       "forms": [
         "who is this diva?"
       ],
-      "cluster": 43,
-      "similar": []
+      "cluster": 41,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "yap",
@@ -2563,8 +3262,9 @@
       "forms": [
         "yap"
       ],
-      "cluster": 18,
-      "similar": []
+      "cluster": 7,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "yart",
@@ -2572,8 +3272,9 @@
       "forms": [
         "yart"
       ],
-      "cluster": 18,
-      "similar": []
+      "cluster": 7,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "Yassify",
@@ -2581,8 +3282,9 @@
       "forms": [
         "Yassify"
       ],
-      "cluster": 54,
-      "similar": []
+      "cluster": 7,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "you good?",
@@ -2590,8 +3292,14 @@
       "forms": [
         "you good?"
       ],
-      "cluster": 26,
-      "similar": []
+      "cluster": 34,
+      "similar": [
+        {
+          "word": "good boy",
+          "score": 0.613
+        }
+      ],
+      "similar_english": []
     },
     {
       "word": "zesty",
@@ -2599,8 +3307,14 @@
       "forms": [
         "zesty"
       ],
-      "cluster": 46,
-      "similar": []
+      "cluster": 2,
+      "similar": [
+        {
+          "word": "glizzy",
+          "score": 0.576
+        }
+      ],
+      "similar_english": []
     },
     {
       "word": "zaza",
@@ -2609,8 +3323,9 @@
         "zaza",
         "za"
       ],
-      "cluster": 81,
-      "similar": []
+      "cluster": 14,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "skull emoji 💀",
@@ -2618,21 +3333,26 @@
       "forms": [
         "skull emoji 💀"
       ],
-      "cluster": 38,
+      "cluster": 29,
       "similar": [
         {
           "word": "loudly crying face emoji 😭",
-          "score": 0.827
-        },
-        {
-          "word": "broken heart emoji 💔",
-          "score": 0.632
+          "score": 0.837
         },
         {
           "word": "face with bags under eyes emoji 🫩",
-          "score": 0.586
+          "score": 0.687
+        },
+        {
+          "word": "broken heart emoji 💔",
+          "score": 0.682
+        },
+        {
+          "word": "wilted flower emoji 🥀",
+          "score": 0.619
         }
-      ]
+      ],
+      "similar_english": []
     },
     {
       "word": "loudly crying face emoji 😭",
@@ -2640,25 +3360,26 @@
       "forms": [
         "loudly crying face emoji 😭"
       ],
-      "cluster": 38,
+      "cluster": 29,
       "similar": [
         {
           "word": "skull emoji 💀",
-          "score": 0.827
+          "score": 0.837
         },
         {
           "word": "broken heart emoji 💔",
-          "score": 0.68
+          "score": 0.735
         },
         {
           "word": "face with bags under eyes emoji 🫩",
-          "score": 0.652
+          "score": 0.704
         },
         {
           "word": "wilted flower emoji 🥀",
-          "score": 0.558
+          "score": 0.665
         }
-      ]
+      ],
+      "similar_english": []
     },
     {
       "word": "broken heart emoji 💔",
@@ -2666,25 +3387,26 @@
       "forms": [
         "broken heart emoji 💔"
       ],
-      "cluster": 38,
+      "cluster": 29,
       "similar": [
         {
-          "word": "loudly crying face emoji 😭",
-          "score": 0.68
+          "word": "wilted flower emoji 🥀",
+          "score": 0.755
         },
         {
-          "word": "wilted flower emoji 🥀",
-          "score": 0.657
+          "word": "loudly crying face emoji 😭",
+          "score": 0.735
         },
         {
           "word": "skull emoji 💀",
-          "score": 0.632
+          "score": 0.682
         },
         {
           "word": "face with bags under eyes emoji 🫩",
-          "score": 0.552
+          "score": 0.643
         }
-      ]
+      ],
+      "similar_english": []
     },
     {
       "word": "wilted flower emoji 🥀",
@@ -2692,15 +3414,29 @@
       "forms": [
         "wilted flower emoji 🥀"
       ],
-      "cluster": 38,
+      "cluster": 29,
       "similar": [
         {
           "word": "broken heart emoji 💔",
-          "score": 0.657
+          "score": 0.755
         },
         {
           "word": "loudly crying face emoji 😭",
-          "score": 0.558
+          "score": 0.665
+        },
+        {
+          "word": "skull emoji 💀",
+          "score": 0.619
+        },
+        {
+          "word": "face with bags under eyes emoji 🫩",
+          "score": 0.565
+        }
+      ],
+      "similar_english": [
+        {
+          "word": "roses",
+          "score": 0.461
         }
       ]
     },
@@ -2710,21 +3446,26 @@
       "forms": [
         "face with bags under eyes emoji 🫩"
       ],
-      "cluster": 38,
+      "cluster": 29,
       "similar": [
         {
           "word": "loudly crying face emoji 😭",
-          "score": 0.652
+          "score": 0.704
         },
         {
           "word": "skull emoji 💀",
-          "score": 0.586
+          "score": 0.687
         },
         {
           "word": "broken heart emoji 💔",
-          "score": 0.552
+          "score": 0.643
+        },
+        {
+          "word": "wilted flower emoji 🥀",
+          "score": 0.565
         }
-      ]
+      ],
+      "similar_english": []
     },
     {
       "word": "brat",
@@ -2732,8 +3473,9 @@
       "forms": [
         "brat"
       ],
-      "cluster": 40,
-      "similar": []
+      "cluster": 42,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "delulu",
@@ -2741,13 +3483,14 @@
       "forms": [
         "delulu"
       ],
-      "cluster": 78,
+      "cluster": 6,
       "similar": [
         {
           "word": "delusionship",
-          "score": 0.679
+          "score": 0.743
         }
-      ]
+      ],
+      "similar_english": []
     },
     {
       "word": "demure",
@@ -2756,8 +3499,9 @@
         "demure",
         "very demure"
       ],
-      "cluster": 31,
-      "similar": []
+      "cluster": 18,
+      "similar": [],
+      "similar_english": []
     },
     {
       "word": "Ohio",
@@ -2765,13 +3509,14 @@
       "forms": [
         "Ohio"
       ],
-      "cluster": 58,
+      "cluster": 13,
       "similar": [
         {
           "word": "only in Ohio",
-          "score": 0.702
+          "score": 0.772
         }
-      ]
+      ],
+      "similar_english": []
     }
   ]
 }

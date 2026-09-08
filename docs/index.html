@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Code Slang — 2020s Slang Dictionary</title>
+<meta name="description" content="Browse 2020s slang definitions with real usage examples, similar terms, and sources." />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <p class="eyebrow">Slang &amp; Trending · 2020s</p>
+    <h1>Code Slang Dictionary</h1>
+    <p class="sub" id="count-line">Loading definitions…</p>
+    <div class="controls">
+      <input type="search" id="search" placeholder="Search slang (e.g. rizz, aura, cooked)…" autocomplete="off" />
+      <select id="cluster" aria-label="Filter by cluster">
+        <option value="">All clusters</option>
+      </select>
+      <button class="btn" id="random" type="button">Random</button>
+    </div>
+    <div class="wotd" id="wotd" hidden>
+      <h2>Word of the day</h2>
+      <p><strong><a id="wotd-link" href="#">—</a></strong> — <span id="wotd-def"></span></p>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <nav class="az" id="az" aria-label="Browse by letter"></nav>
+  <p class="meta-line" id="result-line"></p>
+  <div class="grid" id="grid"></div>
+  <div class="empty" id="empty" hidden>No matches. Try another spelling or pick a different letter.</div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p>Layout inspired by <a href="https://www.merriam-webster.com/slang">Merriam-Webster Slang</a> (card grid),
+    <a href="https://www.urbandictionary.com/">Urban Dictionary</a> (definition-first cards + related words), and
+    <a href="https://en.wiktionary.org/wiki/rizz">Wiktionary</a> (definition → usage → similar → sources).</p>
+    <p id="gen-line"></p>
+  </div>
+</footer>
+
+<button id="toTop" class="to-top" type="button" aria-label="Back to top" hidden>↑</button>
+<script src="app.js"></script>
+</body>
+</html>

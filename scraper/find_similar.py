@@ -60,11 +60,11 @@ def build_encode_text(entry, use_usage_text=False, usage_map=None):
     """Build the text to embed for a slang entry."""
     word = entry.get("word", "").strip()
     definition = entry.get("definition", "").strip()
-    # Primary anchor: "word: definition" gives phrase grounding
+    # Slang-sense template (A only): force model toward slang definition, not literal word
     if word and definition:
-        text = f"{word}: {definition}"
+        text = f"Slang term '{word}' means {definition}"
     elif word:
-        text = word
+        text = f"Slang term '{word}'"
     else:
         text = definition
 
@@ -105,6 +105,48 @@ def load_usage_map(usage_path: Path):
     return mp
 
 
+def _get_english_vocab(n, exclude_set):
+    """Load wordfreq top_n English words, filtered, excluding slang forms. Returns list[str]."""
+    try:
+        from wordfreq import top_n_list
+    except ImportError:
+        raise ImportError("wordfreq not installed. Run: pip install wordfreq")
+    raw = top_n_list("en", n)
+    out = []
+    seen = set()
+    for w in raw:
+        lw = (w or "").strip().lower()
+        if not lw or len(lw) < 3:
+            continue
+        if not re.fullmatch(r"[a-z]+(?:'[a-z]+)?", lw):
+            continue
+        if lw in exclude_set:
+            continue
+        if lw in seen:
+            continue
+        seen.add(lw)
+        out.append(lw)
+        if len(out) >= n:
+            break
+    # If filtering reduced size, pad with deeper list
+    if len(out) < n:
+        extra_n = n * 2
+        raw2 = top_n_list("en", extra_n)
+        for w in raw2[len(raw):]:
+            lw = (w or "").strip().lower()
+            if not lw or len(lw) < 3:
+                continue
+            if not re.fullmatch(r"[a-z]+(?:'[a-z]+)?", lw):
+                continue
+            if lw in exclude_set or lw in seen:
+                continue
+            seen.add(lw)
+            out.append(lw)
+            if len(out) >= n:
+                break
+    return out[:n]
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--data", default=str(DEFAULT_DATA), help="Path to slang.json")
@@ -116,6 +158,11 @@ def main(argv=None):
     parser.add_argument("--top", type=int, default=5, help="Max similar neighbours per word within cluster")
     parser.add_argument("--min-score", type=float, default=0.55,
                         help="Minimum cosine similarity to keep a neighbour (default 0.55)")
+    parser.add_argument("--english", action="store_true", help="Also find similar standard English words via wordfreq kNN (hybrid)")
+    parser.add_argument("--english-top", type=int, default=5, help="Max similar English words per slang (default 5)")
+    parser.add_argument("--english-threshold", type=float, default=0.45,
+                        help="Minimum cosine for English neighbours (default: 0.45, lower than slang 0.55 because bare-word English scores lower)")
+    parser.add_argument("--english-vocab-size", type=int, default=10000, help="Number of wordfreq English words to index (default 10000)")
     parser.add_argument("--use-usage", action="store_true",
                         help="Enrich embed text with best usage sentence from slang_usage.json")
     parser.add_argument("--no-usage", dest="use_usage", action="store_false",
@@ -216,6 +263,64 @@ def main(argv=None):
     # Clip for numerical stability
     sim_matrix = sim_matrix.astype(float)
 
+    # ---- Hybrid English kNN (wordfreq, bare-word, same model, same threshold) ----
+    english_words = []
+    english_embeddings = None
+    english_sim = None  # 179 x vocab matrix
+    if args.english:
+        # Build exclude set from slang words/forms (normalized)
+        exclude = set()
+        for e in entries:
+            for f in e.get("forms", [e.get("word","")]):
+                nf = normalize_form(f)
+                if nf:
+                    exclude.add(nf)
+                    # also add space-removed variant for phrase? keep phrase as is
+                    exclude.add(nf.replace(" ", ""))
+            # also raw word lower
+            w = (e.get("word") or "").strip().lower()
+            if w:
+                exclude.add(w)
+        print(f"Loading wordfreq top {args.english_vocab_size} English words (excluding {len(exclude)} slang forms) ...")
+        english_words = _get_english_vocab(args.english_vocab_size, exclude)
+        print(f"English vocab filtered: {len(english_words)} words")
+        print(f"Encoding {len(english_words)} English words with {args.model} (bare-word, no definition) ...")
+        # Cache path
+        cache_dir = BASE / ".cache"
+        cache_dir.mkdir(exist_ok=True)
+        cache_path = cache_dir / f"english_emb_wordfreq{args.english_vocab_size}_{args.model.replace('/','_')}.npy"
+        cache_words_path = cache_dir / f"english_vocab_wordfreq{args.english_vocab_size}.json"
+        # Try load cache
+        use_cache = False
+        if cache_path.exists() and cache_words_path.exists():
+            try:
+                cached_words = json.loads(cache_words_path.read_text(encoding="utf-8"))
+                if cached_words == english_words:
+                    english_embeddings = np.load(cache_path)
+                    if english_embeddings.shape[0] == len(english_words) and english_embeddings.shape[1] == embeddings.shape[1]:
+                        use_cache = True
+                        print(f"Loaded cached English embeddings from {cache_path}")
+            except Exception as exc:
+                print(f"Cache miss: {exc}")
+        if not use_cache:
+            english_embeddings = model.encode(
+                english_words,
+                batch_size=args.batch_size,
+                convert_to_numpy=True,
+                normalize_embeddings=True,
+                show_progress_bar=False,
+            )
+            try:
+                np.save(cache_path, english_embeddings)
+                cache_words_path.write_text(json.dumps(english_words, ensure_ascii=False, indent=2), encoding="utf-8")
+                print(f"Cached English embeddings to {cache_path}")
+            except Exception as exc:
+                print(f"Cache save failed: {exc}")
+        print(f"English embeddings shape: {english_embeddings.shape}")
+        print(f"Computing slang-English cosine (hybrid) with threshold {args.english_threshold} ...")
+        # 179 x vocab cosine (dot because normalized)
+        english_sim = embeddings @ english_embeddings.T
+
     # Build entries with similar lists
     # Normalize map for form exclusion
     enriched_entries = []
@@ -223,7 +328,7 @@ def main(argv=None):
         word = entry["word"]
         lab = int(labels[idx])
         member_indices = cluster_to_indices[lab]
-        # Collect neighbours in same cluster
+        # Collect neighbours in same cluster (slang)
         neighbours = []
         for j in member_indices:
             if j == idx:
@@ -239,12 +344,26 @@ def main(argv=None):
             {"word": words[j], "score": round(float(s), 3)}
             for j, s in top
         ]
+        # English neighbours (hybrid)
+        similar_english = []
+        if args.english and english_sim is not None:
+            row = english_sim[idx]
+            # indices of top candidates: use argpartition for efficiency, but vocab 10k small so argsort fine
+            # filter by threshold first
+            candidates = [(j, float(row[j])) for j in range(len(english_words)) if float(row[j]) >= args.english_threshold]
+            candidates.sort(key=lambda x: (-x[1], english_words[x[0]]))
+            top_e = candidates[: args.english_top]
+            similar_english = [
+                {"word": english_words[j], "score": round(float(s), 3)}
+                for j, s in top_e
+            ]
         enriched_entries.append({
             "word": word,
             "definition": entry.get("definition", ""),
             "forms": entry.get("forms", [word]),
             "cluster": lab,
             "similar": similar,
+            "similar_english": similar_english,
         })
 
     # Build clusters summary
@@ -270,10 +389,15 @@ def main(argv=None):
             "top": args.top,
             "min_score": args.min_score,
             "use_usage": args.use_usage,
+            "english": args.english,
+            "english_top": args.english_top if args.english else None,
+            "english_threshold": args.english_threshold if args.english else None,
+            "english_vocab_size": args.english_vocab_size if args.english else None,
         },
         "count": len(enriched_entries),
         "n_clusters": n_clusters,
         "silhouette_cosine": round(silhouette, 3) if silhouette is not None else None,
+        "english_vocab_size": len(english_words) if args.english else 0,
         "clusters": clusters_summary,
         "entries": enriched_entries,
     }
@@ -286,7 +410,11 @@ def main(argv=None):
     print(f"\nPreview ({preview} entries):")
     for e in enriched_entries[:preview]:
         sims = ", ".join(f"{s['word']}({s['score']})" for s in e["similar"]) or "(singleton)"
-        print(f"  {e['word']} [cluster {e['cluster']}]: {sims}")
+        eng = ", ".join(f"{s['word']}({s['score']})" for s in e.get("similar_english", [])[:3]) or "-"
+        if args.english:
+            print(f"  {e['word']} [cluster {e['cluster']}]: slang: {sims} | english: {eng}")
+        else:
+            print(f"  {e['word']} [cluster {e['cluster']}]: {sims}")
 
     return 0
 

@@ -37,9 +37,10 @@ function placeholderArt(word) {
 }
 
 async function init() {
+  const V = window.__V || "1";
   const [res, blockRes] = await Promise.all([
-    fetch("data/combined.json"),
-    fetch("data/blocklist.json").catch(() => null),
+    fetch("data/combined.json?v=" + V),
+    fetch("data/blocklist.json?v=" + V).catch(() => null),
   ]);
   const data = await res.json();
   let blocked = new Set();
@@ -86,7 +87,7 @@ async function init() {
   const slug = slugify(entry.word);
   const img = document.createElement("img");
   img.className = "word-art";
-  img.src = "data/images/" + slug + ".png";
+  img.src = "data/images/" + slug + ".png?v=" + V;
   img.alt = entry.word + " illustration";
   img.loading = "lazy";
   img.decoding = "async";
@@ -96,10 +97,10 @@ async function init() {
     const stage = img.dataset.fallback || "images";
     if (stage === "images") {
       img.dataset.fallback = "memes-jpg";
-      img.src = "data/memes/" + slug + ".jpg";
+      img.src = "data/memes/" + slug + ".jpg?v=" + V;
     } else if (stage === "memes-jpg") {
       img.dataset.fallback = "memes-png";
-      img.src = "data/memes/" + slug + ".png";
+      img.src = "data/memes/" + slug + ".png?v=" + V;
     } else if (stage === "memes-png") {
       img.dataset.fallback = "placeholder";
       img.src = placeholderArt(entry.word);

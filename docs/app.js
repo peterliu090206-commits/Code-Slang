@@ -183,9 +183,10 @@ function wordOfDay() {
 }
 
 async function init() {
+  const V = window.__V || "1";
   const [res, blockRes] = await Promise.all([
-    fetch("data/combined.json"),
-    fetch("data/blocklist.json").catch(() => null),
+    fetch("data/combined.json?v=" + V),
+    fetch("data/blocklist.json?v=" + V).catch(() => null),
   ]);
   DATA = await res.json();
   try {

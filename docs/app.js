@@ -1,6 +1,6 @@
 let DATA = { entries: [], clusters: [] };
 let BLOCKED = new Set();
-let showCensored = localStorage.getItem("codeslang.showCensored") === "1";
+let showCensored = false; // always start censored — never persisted across loads
 let activeLetter = "All";
 
 const grid = document.getElementById("grid");
@@ -285,7 +285,6 @@ if (showCensoredEl) {
     showCensoredEl.dataset.wired = "1";
     showCensoredEl.addEventListener("change", () => {
       showCensored = showCensoredEl.checked;
-      localStorage.setItem("codeslang.showCensored", showCensored ? "1" : "0");
       buildAZ();
       wordOfDay();
       render();

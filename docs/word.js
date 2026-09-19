@@ -2,6 +2,9 @@ function getParam(name) {
   return new URLSearchParams(location.search).get(name) || "";
 }
 
+// Session-only: always start censored on every page load, never persisted.
+let showCensored = false;
+
 function wordLink(word) {
   return "word.html?w=" + encodeURIComponent(word);
 }
@@ -50,7 +53,6 @@ async function init() {
       blocked = new Set((blockData.words || []).map((w) => String(w).toLowerCase()));
     }
   } catch { /* no blocklist -> show everything */ }
-  const showCensored = localStorage.getItem("codeslang.showCensored") === "1";
   const entries = data.entries;
   const byLower = new Map(entries.map((e) => [e.word.toLowerCase(), e]));
   const q = getParam("w").toLowerCase();
@@ -70,8 +72,8 @@ async function init() {
     const btn = el("button", "Show censored term", "btn primary");
     btn.type = "button";
     btn.addEventListener("click", () => {
-      localStorage.setItem("codeslang.showCensored", "1");
-      location.reload();
+      showCensored = true; // session-only: a reload re-censors
+      init();
     });
     const back = el("a", "← Back to all slang", "btn");
     back.href = "index.html";
@@ -195,6 +197,7 @@ async function init() {
   // Prev / next alphabetical
   const idx = entries.findIndex((e) => e.word.toLowerCase() === entry.word.toLowerCase());
   const pager = document.getElementById("pager");
+  pager.innerHTML = "";
   const prev = entries[(idx - 1 + entries.length) % entries.length];
   const next = entries[(idx + 1) % entries.length];
   const pa = el("a", "← " + prev.word, "btn");
@@ -207,7 +210,8 @@ async function init() {
 
 function setupBackToTop() {
   const btn = document.getElementById("toTop");
-  if (!btn) return;
+  if (!btn || btn.dataset.ready) return;
+  btn.dataset.ready = "1";
   const toggle = () => {
     const show = window.scrollY > 0;
     btn.hidden = !show;

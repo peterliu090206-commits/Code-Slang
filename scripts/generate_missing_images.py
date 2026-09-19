@@ -257,7 +257,7 @@ def parse_args(argv=None):
     p.add_argument("--scheduler", default="normal")
     p.add_argument("--seed", type=int, default=None)
     p.add_argument("--timeout", type=int, default=600)
-    p.add_argument("--denoise", type=float, default=0.35, help="img2img transform strength in (0, 1] (default 0.35 subtle).")
+    p.add_argument("--denoise", type=float, default=0.65, help="img2img transform strength in (0, 1] (default 0.65 strong restyle).")
     p.add_argument("--firecrawl-key", default=os.environ.get(ENV_KEY, ""), help=f"Firecrawl API key (or set {ENV_KEY}).")
     p.add_argument("--meme-query-template", default="{word} meme", help='Meme search query template; {word} is replaced (default "{word} meme").')
     p.add_argument("--no-meme-cache", action="store_true", help="Always re-download the meme instead of reusing docs/data/memes/<slug>.*.")

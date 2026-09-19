@@ -6,7 +6,7 @@ ComfyUI HTTP API (stdlib only — no third-party dependencies).
 
 Usage:
     py -3.12 scripts/comfyUI.py --positive "..." --prefix rizz --output docs/data/images/rizz.png
-    py -3.12 scripts/comfyUI.py --positive "..." --init-image docs/data/memes/rizz.jpg --denoise 0.35 --prefix rizz --output docs/data/images/rizz.png
+    py -3.12 scripts/comfyUI.py --positive "..." --init-image docs/data/memes/rizz.jpg --denoise 0.65 --prefix rizz --output docs/data/images/rizz.png
     py -3.12 scripts/comfyUI.py --positive "..." --print-workflow
     py -3.12 scripts/comfyUI.py --positive "..." --background
 """
@@ -24,7 +24,7 @@ import uuid
 from pathlib import Path
 
 DEFAULT_SERVER = "http://127.0.0.1:8188"
-DEFAULT_CKPT = "sd_xl_base_1.0.safetensors"
+DEFAULT_CKPT = "dreamshaper_xl_alpha2.safetensors"
 DEFAULT_NEGATIVE = (
     "blurry, low quality, distorted face, extra fingers, watermark, text, logo, deformed, "
     "nsfw, nude, nudity, naked, sexually explicit, pornographic, erotic content, "
@@ -85,7 +85,7 @@ def build_img2img_workflow(
     positive,
     init_image,
     negative=DEFAULT_NEGATIVE,
-    denoise=0.35,
+    denoise=0.65,
     filename_prefix="comfy",
     ckpt_name=DEFAULT_CKPT,
     seed=None,
@@ -101,7 +101,9 @@ def build_img2img_workflow(
 
     init_image must already exist in the ComfyUI input dir — see upload_image().
     denoise controls the transform strength: ~0.2-0.4 subtle touch-up that keeps
-    the starter composition, 0.6+ heavy restyle, 1.0 ignores the input entirely.
+    the starter composition, 0.6-0.8 strong restyle that changes much more on
+    top of the initial picture while keeping general layout, 1.0 ignores the
+    input entirely. Default 0.65 = strong cartoony restyle.
     Output size is driven by the input image via VAEEncode (no EmptyLatentImage).
     """
     if seed is None:
@@ -238,11 +240,11 @@ def parse_args(argv=None):
     p.add_argument("--width", type=int, default=1024, help="txt2img latent width (ignored with --init-image).")
     p.add_argument("--height", type=int, default=1024, help="txt2img latent height (ignored with --init-image).")
     p.add_argument("--init-image", default=None, help="Local meme/starter image to upload and restyle via img2img.")
-    p.add_argument("--denoise", type=float, default=0.35, help="img2img transform strength in (0, 1] (default 0.35 subtle).")
+    p.add_argument("--denoise", type=float, default=0.65, help="img2img transform strength in (0, 1] (default 0.65 strong restyle).")
+    p.add_argument("--ckpt", default=DEFAULT_CKPT, help="Checkpoint file (default: dreamshaper_xl_alpha2 cartoony/artistic).")
     p.add_argument("--prefix", default="comfy", help="SaveImage filename_prefix.")
     p.add_argument("--output", default=None, help="Where to save the PNG (default: docs/data/images/<prefix>.png).")
     p.add_argument("--server", default=DEFAULT_SERVER)
-    p.add_argument("--ckpt", default=DEFAULT_CKPT)
     p.add_argument("--seed", type=int, default=None, help="Random if omitted.")
     p.add_argument("--steps", type=int, default=25)
     p.add_argument("--cfg", type=float, default=7.0)

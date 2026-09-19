@@ -50,10 +50,27 @@ function render() {
   for (const e of list.slice(0, 300)) {
     const card = document.createElement("article");
     card.className = "card";
+    const href = wordLink(e.word);
+    card.tabIndex = 0;
+    card.setAttribute("role", "link");
+    card.setAttribute("aria-label", e.word);
+    card.addEventListener("click", (ev) => {
+      if (ev.target.closest(".chip")) return;
+      if (ev.target.closest("a")) return;
+      location.href = href;
+    });
+    card.addEventListener("keydown", (ev) => {
+      if (ev.key !== "Enter" && ev.key !== " ") return;
+      if (ev.target.closest && ev.target.closest(".chip")) return;
+      if (ev.target !== card) return;
+      ev.preventDefault();
+      location.href = href;
+    });
     const h = document.createElement("h3");
     const a = document.createElement("a");
-    a.href = wordLink(e.word);
+    a.href = href;
     a.textContent = e.word;
+    a.tabIndex = -1;
     h.appendChild(a);
     const p = document.createElement("p");
     p.className = "def";

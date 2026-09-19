@@ -18,9 +18,38 @@ function el(tag, text, cls) {
   return n;
 }
 
+function slugify(word) {
+  return (word || "")
+    .toLowerCase()
+    .replace(/\s+/g, "_")
+    .replace(/[^a-z0-9_]/g, "")
+    .replace(/_+/g, "_")
+    .replace(/^_+|_+$/g, "") || "untitled";
+}
+
+function placeholderArt(word) {
+  const letter = ((word || "?").trim()[0] || "?").toUpperCase().replace(/[<>&"']/, "?");
+  const svg = "<svg xmlns='http://www.w3.org/2000/svg' width='264' height='264'>"
+    + "<rect width='100%' height='100%' rx='24' fill='#f1ede6'/>"
+    + "<text x='50%' y='56%' text-anchor='middle' dominant-baseline='middle' font-family='system-ui,sans-serif' font-size='120' font-weight='700' fill='#6f6a63'>"
+    + letter + "</text></svg>";
+  return "data:image/svg+xml," + encodeURIComponent(svg);
+}
+
 async function init() {
-  const res = await fetch("data/combined.json");
+  const [res, blockRes] = await Promise.all([
+    fetch("data/combined.json"),
+    fetch("data/blocklist.json").catch(() => null),
+  ]);
   const data = await res.json();
+  let blocked = new Set();
+  try {
+    if (blockRes && blockRes.ok) {
+      const blockData = await blockRes.json();
+      blocked = new Set((blockData.words || []).map((w) => String(w).toLowerCase()));
+    }
+  } catch { /* no blocklist -> show everything */ }
+  const showCensored = localStorage.getItem("codeslang.showCensored") === "1";
   const entries = data.entries;
   const byLower = new Map(entries.map((e) => [e.word.toLowerCase(), e]));
   const q = getParam("w").toLowerCase();
@@ -32,10 +61,58 @@ async function init() {
     box.querySelector("a").href = "index.html";
     return;
   }
+  if (blocked.has(entry.word.toLowerCase()) && !showCensored) {
+    document.title = "Censored — Code Slang";
+    box.append(el("p", "Slang · censored", "eyebrow"));
+    box.append(el("h1", entry.word));
+    box.append(el("p", "This term is hidden by the censor filter (flagged at scrape time by better-profanity or the manual blocklist)."));
+    const btn = el("button", "Show censored term", "btn primary");
+    btn.type = "button";
+    btn.addEventListener("click", () => {
+      localStorage.setItem("codeslang.showCensored", "1");
+      location.reload();
+    });
+    const back = el("a", "← Back to all slang", "btn");
+    back.href = "index.html";
+    const row = el("div", undefined, "forms");
+    row.append(btn, back);
+    box.append(row);
+    setupBackToTop();
+    return;
+  }
   document.title = entry.word + " — Code Slang";
 
-  box.append(el("p", "Slang · " + (entry.cluster === null || entry.cluster === undefined ? "uncategorized" : "cluster " + entry.cluster), "eyebrow"));
-  box.append(el("h1", entry.word));
+  const head = el("div", undefined, "detail-head");
+  const slug = slugify(entry.word);
+  const img = document.createElement("img");
+  img.className = "word-art";
+  img.src = "data/images/" + slug + ".png";
+  img.alt = entry.word + " illustration";
+  img.loading = "lazy";
+  img.decoding = "async";
+  img.width = 132;
+  img.height = 132;
+  img.addEventListener("error", () => {
+    const stage = img.dataset.fallback || "images";
+    if (stage === "images") {
+      img.dataset.fallback = "memes-jpg";
+      img.src = "data/memes/" + slug + ".jpg";
+    } else if (stage === "memes-jpg") {
+      img.dataset.fallback = "memes-png";
+      img.src = "data/memes/" + slug + ".png";
+    } else if (stage === "memes-png") {
+      img.dataset.fallback = "placeholder";
+      img.src = placeholderArt(entry.word);
+      img.alt = entry.word + " (no illustration yet)";
+    } else {
+      img.remove();
+    }
+  });
+  const titleWrap = el("div", undefined, "detail-title");
+  titleWrap.append(el("p", "Slang · " + (entry.cluster === null || entry.cluster === undefined ? "uncategorized" : "cluster " + entry.cluster), "eyebrow"));
+  titleWrap.append(el("h1", entry.word));
+  head.append(img, titleWrap);
+  box.append(head);
 
   const forms = el("div", undefined, "forms");
   for (const f of entry.forms || []) forms.append(el("span", f, "chip"));

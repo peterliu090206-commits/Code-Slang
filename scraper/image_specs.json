@@ -39,7 +39,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "ate",
@@ -51,9 +51,9 @@
     "negative_extra": "",
     "aspect": "1:1",
     "safety": "green",
-    "skip_image": true,
+    "skip_image": false,
     "seed": null,
-    "status": "needs-revision",
+    "status": "approved",
     "rejected_prompts": [
       {
         "positive": "gold star medal with a single bite taken out, sticker emblem, gold/red, bold contrast, flat bold vector sticker, thick outline, solid background, no text, no watermark, family-friendly",
@@ -272,9 +272,9 @@
     "negative_extra": "",
     "aspect": "1:1",
     "safety": "green",
-    "skip_image": true,
+    "skip_image": false,
     "seed": null,
-    "status": "needs-revision",
+    "status": "approved",
     "rejected_prompts": [
       {
         "positive": "friendly cartoon mate waving hello, single character, blue/white, cheery contrast, flat bold vector sticker, thick outline, solid background, no text, no watermark, family-friendly",
@@ -313,7 +313,7 @@
     "safety": "yellow",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "brat",
@@ -327,7 +327,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "broken heart emoji 💔",
@@ -341,7 +341,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "bruh",
@@ -355,7 +355,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "buns",
@@ -369,7 +369,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "bussin'",
@@ -383,7 +383,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "bussy",
@@ -411,7 +411,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "caught in 4K",
@@ -425,7 +425,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "chopped",
@@ -439,7 +439,7 @@
     "safety": "yellow",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "chud",
@@ -453,7 +453,7 @@
     "safety": "yellow",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "clanker",
@@ -467,7 +467,7 @@
     "safety": "yellow",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "clapback",
@@ -481,7 +481,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "cook",
@@ -495,7 +495,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "cooked",
@@ -509,7 +509,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "cracked",
@@ -537,7 +537,7 @@
     "safety": "yellow",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "crine",
@@ -551,7 +551,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "dead",
@@ -565,7 +565,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "delulu",
@@ -579,7 +579,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "delusionship",
@@ -593,7 +593,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "demure",
@@ -607,7 +607,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "dih",
@@ -635,7 +635,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "edge",
@@ -663,7 +663,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "face card",
@@ -677,7 +677,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "face with bags under eyes emoji 🫩",
@@ -691,7 +691,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "fah",
@@ -719,7 +719,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "fine shyt",
@@ -733,7 +733,7 @@
     "safety": "yellow",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "finna",
@@ -747,7 +747,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "fire",
@@ -761,7 +761,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "fit",
@@ -775,7 +775,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "flop era",
@@ -789,7 +789,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "flow state",
@@ -803,7 +803,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "fuh",
@@ -817,7 +817,7 @@
     "safety": "yellow",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "function",
@@ -831,7 +831,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "gagged",
@@ -845,7 +845,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "gas",
@@ -859,7 +859,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "geeked",
@@ -873,7 +873,7 @@
     "safety": "yellow",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "gem",
@@ -887,7 +887,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "ghost",
@@ -915,7 +915,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "glizzy",
@@ -929,7 +929,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "glow-up",
@@ -943,7 +943,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "gng",
@@ -957,7 +957,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "GOAT",
@@ -971,7 +971,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "good boy",
@@ -985,7 +985,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "goofy ahh",
@@ -999,7 +999,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "gooning",
@@ -1041,7 +1041,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "Gucci",
@@ -1055,7 +1055,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "gyatt",
@@ -1097,7 +1097,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "hit different",
@@ -1111,7 +1111,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "ick",
@@ -1125,7 +1125,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "icl",
@@ -1139,7 +1139,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "IJBOL",
@@ -1153,7 +1153,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "iPad kid",
@@ -1167,7 +1167,7 @@
     "safety": "yellow",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "it's giving",
@@ -1181,7 +1181,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "it's joever",
@@ -1195,7 +1195,7 @@
     "safety": "yellow",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "iykyk",
@@ -1209,7 +1209,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "jestermaxxing",
@@ -1223,7 +1223,7 @@
     "safety": "yellow",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "jit",
@@ -1237,7 +1237,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "Karen",
@@ -1251,7 +1251,7 @@
     "safety": "yellow",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "Khia",
@@ -1265,7 +1265,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "Kirkifying",
@@ -1321,7 +1321,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "L+Ratio",
@@ -1335,7 +1335,7 @@
     "safety": "yellow",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "larp",
@@ -1349,7 +1349,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "lit",
@@ -1363,7 +1363,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "locked in",
@@ -1377,7 +1377,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "looksmaxxing",
@@ -1391,7 +1391,7 @@
     "safety": "yellow",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "loudly crying face emoji 😭",
@@ -1405,7 +1405,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "lowkenuinely",
@@ -1419,7 +1419,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "lowkirkenuinely",
@@ -1447,7 +1447,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "mew",
@@ -1461,7 +1461,7 @@
     "safety": "yellow",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "mid",
@@ -1475,7 +1475,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "mog",
@@ -1489,7 +1489,7 @@
     "safety": "yellow",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "moot",
@@ -1503,7 +1503,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "moving",
@@ -1517,7 +1517,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "nepo baby",
@@ -1531,7 +1531,7 @@
     "safety": "yellow",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "nostalgia-baiting",
@@ -1545,7 +1545,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "nothing ever happens",
@@ -1559,7 +1559,7 @@
     "safety": "yellow",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "nugu",
@@ -1573,7 +1573,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "oh that's not",
@@ -1587,7 +1587,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "Ohio",
@@ -1601,7 +1601,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "OK boomer",
@@ -1615,7 +1615,7 @@
     "safety": "yellow",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "only in Ohio",
@@ -1643,7 +1643,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "oomf",
@@ -1657,7 +1657,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "opp",
@@ -1671,7 +1671,7 @@
     "safety": "yellow",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "out of pocket",
@@ -1685,7 +1685,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "owned",
@@ -1699,7 +1699,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "pick-me",
@@ -1713,7 +1713,7 @@
     "safety": "yellow",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "pmo",
@@ -1727,7 +1727,7 @@
     "safety": "yellow",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "polyester",
@@ -1741,7 +1741,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "pookie",
@@ -1755,7 +1755,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "pushing P",
@@ -1769,7 +1769,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "rage-bait",
@@ -1783,7 +1783,7 @@
     "safety": "yellow",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "ratio",
@@ -1797,7 +1797,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "red flag",
@@ -1811,7 +1811,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "rizz",
@@ -1825,7 +1825,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "Roman Empire",
@@ -1839,7 +1839,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "salty",
@@ -1853,7 +1853,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "SDIYBT",
@@ -1867,7 +1867,7 @@
     "safety": "yellow",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "serving cunt",
@@ -1895,7 +1895,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "shook",
@@ -1909,7 +1909,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "sigma",
@@ -1923,7 +1923,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "simp",
@@ -1937,7 +1937,7 @@
     "safety": "yellow",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "situationship",
@@ -1951,7 +1951,7 @@
     "safety": "yellow",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "six-seven",
@@ -1965,7 +1965,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "skibidi",
@@ -1979,7 +1979,7 @@
     "safety": "yellow",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "skill issue",
@@ -1993,7 +1993,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "sksksk",
@@ -2007,7 +2007,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "skull emoji 💀",
@@ -2021,7 +2021,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "slaps",
@@ -2035,7 +2035,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "slay",
@@ -2049,7 +2049,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "slop",
@@ -2063,7 +2063,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "snatched",
@@ -2077,7 +2077,7 @@
     "safety": "yellow",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "spiritually Israeli",
@@ -2105,7 +2105,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "sus",
@@ -2119,7 +2119,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "sussy baka",
@@ -2133,7 +2133,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "sybau",
@@ -2147,7 +2147,7 @@
     "safety": "yellow",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "syfm",
@@ -2161,7 +2161,7 @@
     "safety": "yellow",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "tea",
@@ -2175,7 +2175,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "touch grass",
@@ -2189,7 +2189,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "truth nuke",
@@ -2203,7 +2203,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "ts",
@@ -2217,7 +2217,7 @@
     "safety": "yellow",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "ts frying me",
@@ -2231,7 +2231,7 @@
     "safety": "yellow",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "ts pmo",
@@ -2245,7 +2245,7 @@
     "safety": "yellow",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "tuff",
@@ -2259,7 +2259,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "tweaking",
@@ -2273,7 +2273,7 @@
     "safety": "yellow",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "twin",
@@ -2287,7 +2287,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "unalive",
@@ -2301,7 +2301,7 @@
     "safety": "yellow",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "unc",
@@ -2315,7 +2315,7 @@
     "safety": "yellow",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "understood the assignment",
@@ -2329,7 +2329,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "uwu",
@@ -2343,7 +2343,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "vaguepost",
@@ -2357,7 +2357,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "vibe check",
@@ -2371,7 +2371,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "vro",
@@ -2385,7 +2385,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "W",
@@ -2399,7 +2399,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "washed",
@@ -2413,7 +2413,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "who is this diva?",
@@ -2427,7 +2427,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "wilted flower emoji 🥀",
@@ -2441,7 +2441,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "yap",
@@ -2455,7 +2455,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "yart",
@@ -2483,7 +2483,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "you good?",
@@ -2497,7 +2497,7 @@
     "safety": "green",
     "skip_image": false,
     "seed": null,
-    "status": "pending"
+    "status": "approved"
   },
   {
     "word": "zaza",

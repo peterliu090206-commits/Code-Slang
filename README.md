@@ -12,8 +12,56 @@ see "Common recipes" for live counts.
 Audience: future-me. Everything runnable is documented with exact commands.
 For any script, `py -3 <script> --help` is authoritative if this file disagrees.
 
+## Summary
+
+- **What:** a static, no-backend slang dictionary (GitHub Pages from `docs/`)
+  with definitions, real-usage quotes, similar terms, sources, clusters, a
+  manual censor gate, and one sticker-style AI illustration per word.
+- **Two pipelines, one site:**
+  - *Text:* Wikipedia scrape → web examples → usage sentences → similarity
+    clusters → blocklist → `combined.json`.
+  - *Images:* curated prompt specs → local ComfyUI (SDXL sticker style) →
+    staging → checkbox review → approved art.
+- **Golden rules:**
+  - Nothing reaches `docs/data/images/` except through review approval.
+  - Rejected images never regenerate silently — they loop through prompt revision.
+  - Definition text never enters an image prompt.
+  - `scrape_slang.py` overwrites `slang.json` on sight — back up first.
+
+### Pipeline at a glance
+
+| Stage | Script | In → Out |
+|---|---|---|
+| Scrape words | `scraper/scrape_slang.py` | Wikipedia → `slang.json` |
+| Web examples | `scraper/firecrawl_examples.py` | `slang.json` → `+examples` |
+| Usage sentences | `scraper/extract_usage.py` | `slang.json` → `slang_usage.json` |
+| Similar + clusters | `scraper/find_similar.py` | slang + usage → `slang_similar.json` |
+| Censor list | `scraper/build_blocklist.py` | manual list → `docs/data/blocklist.json` |
+| Site payload | `scripts/build_data.py` | all text JSON → `combined.json` |
+| Prompt specs | `scripts/draft_specs.py` | `slang.json` → `image_specs.json` |
+| Generate art | `scripts/generate_from_specs.py` | specs → `images_pending/` |
+| Review queue | `scripts/build_review.py` + `review.html` | staging → `review_queue.json` + UI |
+| Apply decisions | `scripts/review_move.py` | decisions → `images/` / revision |
+
+### Image word states
+
+| Status | Meaning | Generates? | Shows on site? |
+|---|---|---|---|
+| `pending` | Awaiting generation | Yes (if missing) | Letter tile fallback |
+| `approved` | Shipped to `images/` | No | Illustration |
+| `blocked` | Censored word | Never | Hidden (session reveal) |
+| `needs-revision` | Bad image, fine word | Only after `revise` | Letter tile fallback |
+| `typographic` / red | Skip by design | Never | Letter tile fallback |
+
+### Safety in one line
+
+Sticker style + negative prompt → human checkbox review (unchecked = approve)
+→ manual blocklist; rejected prompts are saved as negative examples and the
+checker forbids reusing them.
+
 ## Contents
 
+- [Summary](#summary)
 - [Prerequisites](#prerequisites)
 - [E2E flow A — word to website (text data)](#e2e-flow-a--word-to-website-text-data)
 - [E2E flow B — word to illustration (image pipeline)](#e2e-flow-b--word-to-illustration-image-pipeline)
@@ -343,3 +391,50 @@ pejorative-adjacent, keep family-friendly · `red` never generate.
 - `review.html` needs a local http server (fetch fails over `file://` for JSON
   in some browsers); ComfyUI and the site server are two different servers on
   different ports — don't confuse :8188 and your static port.
+
+---
+
+# 摘要（简体中文）
+
+- **项目内容：** 静态、无后端的俚语词典（GitHub Pages，从 `docs/` 发布），
+  包含释义、真实用例引文、近义词、来源、相似度聚类、人工审核门控，
+  每个词配一张贴纸风格的 AI 插图。
+- **两条流水线，同一个网站：**
+  - *文本：* 维基抓取 → 网页例句 → 用例句子 → 相似度聚类 → 屏蔽词表 → `combined.json`。
+  - *图片：* 人工编写的提示词规格 → 本地 ComfyUI（SDXL 贴纸风格）→
+    暂存 → 复选框审核 → 通过的图入库。
+- **铁律：**
+  - 只有通过审核的图片才能进入 `docs/data/images/`。
+  - 被拒的图片不会悄悄重跑——必须走提示词修订流程。
+  - 释义文本永远不进入图片提示词。
+  - `scraper/scrape_slang.py` 一运行就覆盖 `slang.json`——先备份。
+
+## 流程一览
+
+| 阶段 | 脚本 | 输入 → 输出 |
+|---|---|---|
+| 抓词 | `scraper/scrape_slang.py` | 维基 → `slang.json` |
+| 网页例句 | `scraper/firecrawl_examples.py` | `slang.json` → 增加 `examples` |
+| 用例句子 | `scraper/extract_usage.py` | `slang.json` → `slang_usage.json` |
+| 近义词 + 聚类 | `scraper/find_similar.py` | 词语 + 用例 → `slang_similar.json` |
+| 屏蔽词表 | `scraper/build_blocklist.py` | 人工名单 → `docs/data/blocklist.json` |
+| 网站数据包 | `scripts/build_data.py` | 全部文本 JSON → `combined.json` |
+| 提示词规格 | `scripts/draft_specs.py` | `slang.json` → `image_specs.json` |
+| 生成图片 | `scripts/generate_from_specs.py` | 规格 → `images_pending/` |
+| 审核队列 | `scripts/build_review.py` + `review.html` | 暂存 → `review_queue.json` + 界面 |
+| 执行审核决定 | `scripts/review_move.py` | 决定文件 → `images/` / 修订流程 |
+
+## 词语图片状态
+
+| 状态 | 含义 | 会生成吗 | 网站上显示什么 |
+|---|---|---|---|
+| `pending` | 等待生成 | 缺图时会生成 | 字母占位图 |
+| `approved` | 已入库 `images/` | 否 | 插图 |
+| `blocked` | 被屏蔽的词 | 永不生成 | 隐藏（可会话内查看） |
+| `needs-revision` | 图不行、词没问题 | `revise` 之后才会 | 字母占位图 |
+| `typographic` / red | 按设计跳过 | 永不生成 | 字母占位图 |
+
+## 安全一句话
+
+贴纸风格 + 负面提示词 → 人工复选框审核（不勾选 = 通过）→
+人工屏蔽词表；被拒的提示词会存为反面例子，检查器禁止重复使用。

@@ -1,0 +1,80 @@
+{
+  "seed": 42,
+  "note": "T01 probe matrix: 8 words x 5 strategies. Same seed for every probe for cross-candidate comparability. No definition text in subjects. Outputs go to docs/data/probes/ (never docs/data/images/).",
+  "probes": [
+    {
+      "word": "touch grass",
+      "slug": "touch_grass",
+      "strategy": "literal",
+      "subject": "giant hand gently touching a small patch of green lawn, single surreal scene",
+      "style_preset": "sticker",
+      "palette": "green/sky-blue, fresh high contrast",
+      "safety": "green"
+    },
+    {
+      "word": "caught in 4K",
+      "slug": "caught_in_4k",
+      "strategy": "literal",
+      "subject": "startled cartoon character caught in a giant camera viewfinder frame, single scene",
+      "style_preset": "sticker",
+      "palette": "black/yellow viewfinder accents, bold contrast",
+      "safety": "green"
+    },
+    {
+      "word": "sigma",
+      "slug": "sigma",
+      "strategy": "persona",
+      "subject": "lone wolf archetype character, confident stance, stylized cartoon mascot, single character",
+      "style_preset": "sticker",
+      "palette": "dark grey/electric blue, moody contrast",
+      "safety": "green"
+    },
+    {
+      "word": "baddie",
+      "slug": "baddie",
+      "strategy": "persona",
+      "subject": "confident stylish cartoon woman with sunglasses, fashion mascot pose, single character",
+      "style_preset": "sticker",
+      "palette": "pink/black/gold, glam contrast",
+      "safety": "yellow",
+      "safety_note": "Safety probe: persona adjacent to sexualized readings. Must render family-friendly, non-sexualized. Reject anything suggestive."
+    },
+    {
+      "word": "ghost",
+      "slug": "ghost",
+      "strategy": "situational",
+      "subject": "small cartoon ghost figure drifting away from an unanswered phone, single wistful vignette",
+      "style_preset": "sticker",
+      "palette": "pale blue/grey, soft melancholy contrast",
+      "safety": "green"
+    },
+    {
+      "word": "only in Ohio",
+      "slug": "only_in_ohio",
+      "strategy": "template-recreation",
+      "subject": "absurd surreal downtown street with floating traffic light and tilted houses, ominous humor, composition described from text only",
+      "style_preset": "sticker",
+      "palette": "murky green/grey with red accent, eerie contrast",
+      "safety": "green",
+      "safety_note": "Recreate composition from this text description only. Never copy an existing meme image."
+    },
+    {
+      "word": "sus",
+      "slug": "sus",
+      "strategy": "symbolic",
+      "subject": "suspicious hooded silhouette side-eye, single icon character, original twist",
+      "style_preset": "sticker",
+      "palette": "red/white, high contrast",
+      "safety": "green"
+    },
+    {
+      "word": "L",
+      "slug": "l",
+      "strategy": "symbolic",
+      "subject": "giant block letter L as a bold graphic emblem, flat icon",
+      "style_preset": "sticker",
+      "palette": "red/dark grey, hard contrast",
+      "safety": "green"
+    }
+  ]
+}

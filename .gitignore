@@ -179,3 +179,8 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+# T03 taxonomy pipeline: review staging + run logs (never commit)
+docs/data/images_pending/
+scraper/image_runs.jsonl
+docs/data/review_queue.json

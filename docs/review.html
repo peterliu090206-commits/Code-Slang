@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Review queue — Code Slang</title>
+<link rel="stylesheet" href="styles.css?v=20260926-191425" />
+<style>
+.queue-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+@media (max-width: 800px) { .queue-grid { grid-template-columns: 1fr; } }
+.qcard { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 14px; display: flex; gap: 14px; }
+.qcard img { width: 132px; height: 132px; object-fit: cover; border-radius: 12px; border: 1px solid var(--line); flex-shrink: 0; background: var(--chip); }
+.qcard .body { min-width: 0; flex: 1; }
+.qcard h3 { margin: 0 0 4px; font-size: 20px; }
+.qcard .subj { margin: 6px 0; font-size: 14px; color: #333; }
+.card-check { display: flex; justify-content: flex-end; margin-top: 8px; }
+.state-warn { color: #b45309; font-size: 13px; }
+.state-ok { color: var(--accent); font-size: 13px; }
+.conflict { border-left: 5px solid #b91c1c; }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <p style="margin-top:20px"><a class="top-link" href="index.html">← All slang</a></p>
+  <p class="eyebrow">Localhost only · image review</p>
+  <h1>Review queue</h1>
+  <p class="sub" id="stats">Loading…</p>
+  <div id="local-only" hidden>
+    <p>This page works on localhost only (it reads local staging files). Open it via a local server, not GitHub Pages.</p>
+  </div>
+  <div id="content" hidden>
+    <section class="block" id="conflicts-wrap" hidden>
+      <h2 style="color:#b91c1c">Conflicts — blocked words with images</h2>
+      <div class="queue-grid" id="conflicts"></div>
+    </section>
+    <section class="block">
+      <h2>Pending review</h2>
+      <p class="sub">Unchecked = approve. Check <b>reject</b> to delete the staged image and queue the word for prompt revision (never censored). Use the floating button to export, then run <code>py -3 scripts/review_move.py apply-batch review_decisions.json</code>.</p>
+      <div class="queue-grid" id="pending"></div>
+    </section>
+    <section class="block" id="revise-wrap" hidden>
+      <h2>Needs prompt revision</h2>
+      <p class="sub">Rejected images with their failed prompts saved as negative examples. Export a packet, revise with your LLM, apply, and the word requeues with the new prompt.</p>
+      <div class="queue-grid" id="revise"></div>
+    </section>
+    <section class="block">
+      <h2>Approved</h2>
+      <div class="tags" id="approved"></div>
+    </section>
+    <section class="block">
+      <h2>Skipped — HTML fallback, no image expected</h2>
+      <p class="sub" id="skipped-line"></p>
+      <div class="tags" id="skipped"></div>
+    </section>
+  </div>
+</main>
+<button id="toTop" class="to-top" type="button" aria-label="Back to top" hidden>↑</button>
+<button id="review-fab" class="blacklist-fab" type="button" hidden>Export review</button>
+<script>window.__V="20260926-191425";</script>
+<script src="review.js?v=20260926-191425"></script>
+</body>
+</html>

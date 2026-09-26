@@ -22,6 +22,7 @@ OUT = DOCS / "data" / "combined.json"
 VERSIONED_ASSETS = {
     "index.html": [("link", "styles.css"), ("script", "app.js")],
     "word.html": [("link", "styles.css"), ("script", "word.js")],
+    "review.html": [("link", "styles.css"), ("script", "review.js")],
 }
 
 VERSION_TAG_RE = re.compile(r"\?v=[\w.\-]+", re.IGNORECASE)

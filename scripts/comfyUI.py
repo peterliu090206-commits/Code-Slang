@@ -28,7 +28,8 @@ DEFAULT_CKPT = "dreamshaper_xl_alpha2.safetensors"
 DEFAULT_NEGATIVE = (
     "blurry, low quality, distorted face, extra fingers, watermark, text, logo, deformed, "
     "nsfw, nude, nudity, naked, sexually explicit, pornographic, erotic content, "
-    "excessive skin exposure, gore, blood, graphic violence, disturbing imagery, hate symbols"
+    "excessive skin exposure, gore, blood, graphic violence, disturbing imagery, hate symbols, "
+    "photorealistic, real person, celebrity likeness"
 )
 
 

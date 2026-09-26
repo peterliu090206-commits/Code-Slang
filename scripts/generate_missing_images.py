@@ -1,23 +1,15 @@
 #!/usr/bin/env python3
-"""Generate images for slang words missing them (meme-seeded img2img).
+"""DEPRECATED — do not use for new work (see scripts/generate_from_specs.py).
 
-Scans scraper/slang.json, maps each word to docs/data/images/<slug>.png
-(slug = lowercase, spaces -> underscores, other unsafe chars stripped).
-
-For each word this script fetches the first "{word} meme" image result via
-the Firecrawl search API (sources=["images"]), caches it under
-docs/data/memes/<slug>.<ext> for reuse, uploads it to the ComfyUI input
-dir, and queues an SDXL img2img job via comfyUI.py that restyles the meme
-with prompt = "<word>, <definition>, <style suffix>" at low denoise.
-If the meme search/download/upload fails, it falls back to plain txt2img
-so one bad word never blocks the batch.
-
-Usage:
-    py -3.12 scripts/generate_missing_images.py --list-missing
-    py -3.12 scripts/generate_missing_images.py --dry-run --batch-size 5
-    py -3.12 scripts/generate_missing_images.py --batch-size 5
-    py -3.12 scripts/generate_missing_images.py --limit 1 --steps 10 --width 512 --height 512
+Old scrape-and-img2img pipeline, retired by the T03 taxonomy cutover:
+it fetched "{word} meme" pixels via Firecrawl and restyled them with
+img2img, which copies scraped composition. The replacement
+(scripts/generate_from_specs.py) generates from-scratch txt2img from
+curated scraper/image_specs.json rows into docs/data/images_pending/.
+This file is kept for reference only; running it prints a warning.
 """
+
+import warnings
 
 import argparse
 import json
@@ -272,6 +264,10 @@ def main(argv=None):
     except Exception:
         pass
     args = parse_args(argv)
+    msg = ("generate_missing_images.py is DEPRECATED; use "
+           "scripts/generate_from_specs.py (taxonomy txt2img pipeline)")
+    warnings.warn(msg, DeprecationWarning, stacklevel=2)
+    print(f"WARNING: {msg}")
     words = load_words()
     print(f"{len(words)} words in slang.json, {IMAGES_DIR} as image dir")
 
